@@ -1,0 +1,306 @@
+---
+title: "ca-variable-examination"
+format: html
+---
+
+```{r}
+library(tidyverse)
+
+ca <- read_csv("../../minerva/CollectiveAction/DT-CollectiveAction_raw2025.csv")
+
+ca <- ca[, -c(30:44)]
+
+ca <- ca %>%
+  mutate(across(everything(), ~ ifelse(.x %in% c(88, 99), NA, .x)))
+
+```
+
+```{r}
+colnames(ca)
+```
+# Gathering
+```{r}
+# Gathering
+ga <- ca %>%
+  select(starts_with("GA"))
+
+# across all gathering variables we want to see data coverage for each variable
+ga_coverage <- ga %>%
+  summarise(across(
+    everything(),
+    ~ sum(!is.na(.)),
+    .names = "{.col}"
+  )) %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "variable",
+    values_to = "non_missing_n"
+  ) %>%
+  mutate(
+    total_n = nrow(ga),
+    percent_coverage = 100 * non_missing_n / total_n
+  )
+
+ga_coverage
+```
+
+```{r}
+table(ga$`GA-CAL1-R`)
+table(ga$`GA-CALA-R`)
+table(ga$`GA-CAL1B-R`)
+table(ga$`GA-CAL1C-R`)
+```
+
+# Hunting
+```{r}
+hu <- ca %>%
+  select(starts_with("HU"))
+
+# across all gathering variables we want to see data coverage for each variable
+hu_coverage <- hu %>%
+  summarise(across(
+    everything(),
+    ~ sum(!is.na(.)),
+    .names = "{.col}"
+  )) %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "variable",
+    values_to = "non_missing_n"
+  ) %>%
+  mutate(
+    total_n = nrow(hu),
+    percent_coverage = 100 * non_missing_n / total_n
+  )
+
+hu_coverage
+```
+
+```{r}
+table(hu$`HU-CAL1-R`)
+table(hu$`HU-CAL1A-R`)
+table(hu$`HU-CAL1B-R`)
+table(hu$`HU-CAL1C-R`)
+```
+# Fishing
+```{r}
+fi <- ca %>%
+  select(starts_with("FI"))
+
+# across all gathering variables we want to see data coverage for each variable
+fi_coverage <- fi %>%
+  summarise(across(
+    everything(),
+    ~ sum(!is.na(.)),
+    .names = "{.col}"
+  )) %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "variable",
+    values_to = "non_missing_n"
+  ) %>%
+  mutate(
+    total_n = nrow(fi),
+    percent_coverage = 100 * non_missing_n / total_n
+  )
+
+fi_coverage
+```
+
+```{r}
+table(fi$`FI-CAL1-R`)
+table(fi$`FI-CAL1A-R`)
+table(fi$`FI-CAL1B-R`)
+table(fi$`FI-CAL1C-R`)
+```
+
+# Animal Husbandry
+```{r}
+ah <- ca %>%
+  select(starts_with("AH"))
+
+# across all gathering variables we want to see data coverage for each variable
+ah_coverage <- ah %>%
+  summarise(across(
+    everything(),
+    ~ sum(!is.na(.)),
+    .names = "{.col}"
+  )) %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "variable",
+    values_to = "non_missing_n"
+  ) %>%
+  mutate(
+    total_n = nrow(ah),
+    percent_coverage = 100 * non_missing_n / total_n
+  )
+
+ah_coverage
+```
+
+```{r}
+table(ah$`AH-CAL1-R`)
+table(ah$`AH-CAL1A-R`)
+table(ah$`AH-CAL1B-R`)
+table(ah$`AH-CAL1C-R`)
+```
+
+# Agriculture
+```{r}
+ag <- ca %>%
+  select(starts_with("AG"))
+
+# across all gathering variables we want to see data coverage for each variable
+ag_coverage <- ag %>%
+  summarise(across(
+    everything(),
+    ~ sum(!is.na(.)),
+    .names = "{.col}"
+  )) %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "variable",
+    values_to = "non_missing_n"
+  ) %>%
+  mutate(
+    total_n = nrow(ag),
+    percent_coverage = 100 * non_missing_n / total_n
+  )
+
+ag_coverage
+```
+
+```{r}
+table(ag$`AG-CAL1-R`)
+table(ag$`AG-CAL1A-R`)
+table(ag$`AG-CAL1B-R`)
+table(ag$`AG-CAL1C-R`)
+```
+
+
+# indicator domains based off of whether subsistence strategy is practiced (w/o reference to collective participation)
+
+```{r}
+new_ca <- ca %>%
+  mutate(
+    GA_practiced = ifelse(`GA-CAL1-R` == 77, 0, 1),
+    HU_practiced = ifelse(`HU-CAL1-R` == 77, 0, 1),
+    FI_practiced = ifelse(`FI-CAL1-R` == 77, 0, 1),
+    AH_practiced = ifelse(`AH-CAL1-R` == 77, 0, 1),
+    AG_practiced = ifelse(`AG-CAL1-R` == 77, 0, 1),
+    across(everything(), ~ ifelse(.x %in% 77, NA, .x)),
+    across(contains("CAL1b"), ~ 5 - .x) # reverse scale to be increasing
+    
+  )
+```
+
+
+## take a look individually at EA data coverage
+```{r}
+# GA 
+table(ca$`EA-GA`)
+table(ca$`EA-HU`)
+table(ca$`EA-FI`)
+table(ca$`EA-AH`)
+table(ca$`EA-AG`)
+```
+# examine each society's coverage across EA and subsistence variable pairs
+```{r}
+pair_indicators <- new_ca %>%
+  mutate(
+    GA_pair = if_else(`EA-GA` != 0 & `GA-CAL1-R` >= 0, 1, 0),
+    HU_pair = if_else(`EA-HU` != 0 & `HU-CAL1-R` >= 0, 1, 0),
+    FI_pair = if_else(`EA-FI` != 0 & `FI-CAL1-R` >= 0, 1, 0),
+    AH_pair = if_else(`EA-AH` != 0 & `AH-CAL1-R` >= 0, 1, 0),
+    AG_pair = if_else(`EA-AG` != 0 & `AG-CAL1-R` >= 0, 1, 0)
+  ) %>%
+  mutate(
+    pair_coverage_count = rowSums(across(ends_with("_pair")), na.rm = TRUE)
+  ) %>%
+  select(`SCCS ID`, OWC, GA_pair, `EA-GA`, HU_pair, `EA-HU`, FI_pair, `EA-FI`, AH_pair, `EA-AH`, AG_pair, `EA-AG`, pair_coverage_count)
+pair_indicators
+
+
+table(pair_indicators$pair_coverage_count)
+
+# number of valid pairs per domain
+pair_indicators %>%
+  summarise(across(ends_with("_pair"), ~ sum(. == 1, na.rm = TRUE)))
+```
+```{r}
+pair_indicators %>%
+  ggplot(aes(x = pair_coverage_count)) +
+  geom_bar() +
+  labs(
+    x = "Number of usable EA–CAL1 domain pairs",
+    y = "Number of societies",
+    title = "Coverage of subsistence-domain pairs across societies"
+  ) +
+  theme_minimal()
+```
+```{r}
+# pairwise coverage matrix, for each pair of domains, count how many have both pair indicators = 1
+pair_vars <- pair_indicators %>%
+  select(ends_with("_pair")) %>%
+  mutate(across(everything(), ~ replace_na(.x, 0)))
+
+pair_matrix <- t(as.matrix(pair_vars)) %*% as.matrix(pair_vars)
+
+pair_matrix
+
+pair_matrix_df <- as.data.frame(pair_matrix) %>%
+  rownames_to_column("domain1") %>%
+  pivot_longer(-domain1, names_to = "domain2", values_to = "n_societies")
+
+
+pair_matrix_df %>%
+  filter(domain1 < domain2)
+```
+
+
+```{r}
+ea_long <- ca %>%
+  select(`SCCS ID`, starts_with("EA-"), -`EA-SUB-PER`) %>%
+  pivot_longer(
+    cols = starts_with("EA-"),
+    names_to = "domain",
+    values_to = "importance"
+  ) %>%
+  filter(!is.na(importance), !importance %in% c(77, 88, 99)) %>%
+  mutate(
+    domain = factor(
+      domain,
+      levels = c("EA-GA", "EA-HU", "EA-FI", "EA-AH", "EA-AG")
+    ),
+    importance = factor(importance, ordered = TRUE)
+  )
+
+ggplot(ea_long, aes(x = domain, fill = importance)) +
+  geom_bar() +
+  labs(
+    x = "Subsistence domain",
+    y = "Number of societies",
+    fill = "Subsistence importance",
+    title = "Counts of societies by subsistence importance"
+  ) +
+  theme_minimal()
+```
+```{r}
+ea_counts <- ea_long %>%
+  count(domain, importance)
+
+ggplot(ea_counts, aes(x = importance, y = n, group = domain, color = domain)) +
+  # geom_line(linewidth = 1) +
+  geom_smooth(method = "loess", se = FALSE) +
+  geom_point(size = 2) +
+  geom_jitter(width = 1, height = 1) +
+  labs(
+    x = "Subsistence importance",
+    y = "Number of societies",
+    color = "Domain",
+    title = "Distribution of societies across subsistence domains"
+  ) +
+  theme_minimal()
+```
+

@@ -1,0 +1,265 @@
+---
+title: "cluster-hzcats-variables-dists"
+format: html
+---
+```{r}
+library(tidyverse)
+library(patchwork)
+hz <- read_csv("../../minerva/Hazards/Datasets/DT-hzcats-society-level.csv")
+```
+
+This document is to explore the relative distributions of the initial variables planned for the cluster analysis.
+
+## all hazards count
+```{r}
+hz %>%
+  filter(!is.na(allhazards_est_count_30)) %>%
+  ggplot(aes(x = allhazards_est_count_30)) +
+  geom_histogram(binwidth = 5, color = "black", fill = "lightblue") +
+  scale_x_continuous(breaks = seq(0, 100, by = 5)) +
+  theme_minimal() +
+  labs(
+    title = "allhazards_est_count_30",
+    x = "est hazard count",
+    y = "n societies"
+  )
+
+hz %>%
+  filter(!is.na(allhazards_est_count_30_IA)) %>%
+  ggplot(aes(x = allhazards_est_count_30_IA)) +
+  geom_histogram(binwidth = 5, color = "black", fill = "palegreen3") +
+  scale_x_continuous(breaks = seq(0, 100, by = 5)) +
+  theme_minimal() +
+  labs(
+    title = "allhazards_est_count_30_IA",
+    x = "est hazard count",
+    y = "n societies"
+  )
+
+```
+## disaster counts
+```{r}
+hz %>%
+  filter(!is.na(disaster_est_count_30)) %>%
+  ggplot(aes(x = disaster_est_count_30)) +
+  geom_histogram(binwidth = 5, color = "black", fill = "lightblue") +
+  scale_x_continuous(breaks = seq(0, 100, by = 5)) +
+  theme_minimal() +
+  labs(
+    title = "disaster_est_count_30",
+    x = "est disaster count",
+    y = "n societies"
+  )
+
+hz %>%
+  filter(!is.na(disaster_est_count_30_IA)) %>%
+  ggplot(aes(x = disaster_est_count_30_IA)) +
+  geom_histogram(binwidth = 5, color = "black", fill = "palegreen3") +
+  scale_x_continuous(breaks = seq(0, 100, by = 5)) +
+  theme_minimal() +
+  labs(
+    title = "allhazards_est_count_30_IA",
+    x = "est disaster count",
+    y = "n societies"
+  )
+
+```
+## disaster counts
+```{r}
+hz %>%
+  filter(!is.na(disaster_est_count_30)) %>%
+  ggplot(aes(x = disaster_est_count_30)) +
+  geom_histogram(binwidth = 5, color = "black", fill = "lightblue") +
+  scale_x_continuous(breaks = seq(0, 100, by = 5)) +
+  theme_minimal() +
+  labs(
+    title = "disaster_est_count_30",
+    x = "est disaster count",
+    y = "n societies"
+  )
+
+hz %>%
+  filter(!is.na(disaster_est_count_30_IA)) %>%
+  ggplot(aes(x = disaster_est_count_30_IA)) +
+  geom_histogram(binwidth = 5, color = "black", fill = "palegreen3") +
+  scale_x_continuous(breaks = seq(0, 100, by = 5)) +
+  theme_minimal() +
+  labs(
+    title = "allhazards_est_count_30_IA",
+    x = "est disaster count",
+    y = "n societies"
+  )
+
+```
+
+## normative counts
+```{r}
+hz %>%
+  filter(!is.na(normative_est_count_30)) %>%
+  ggplot(aes(x = normative_est_count_30)) +
+  geom_histogram(binwidth = 5, color = "black", fill = "lightblue") +
+  scale_x_continuous(breaks = seq(0, 100, by = 5)) +
+  theme_minimal() +
+  labs(
+    title = "normative_est_count_30",
+    x = "est normative hz count",
+    y = "n societies"
+  )
+
+hz %>%
+  filter(!is.na(normative_est_count_30_IA)) %>%
+  ggplot(aes(x = normative_est_count_30_IA)) +
+  geom_histogram(binwidth = 5, color = "black", fill = "palegreen3") +
+  scale_x_continuous(breaks = seq(0, 100, by = 5)) +
+  theme_minimal() +
+  labs(
+    title = "normative_est_count_30_IA",
+    x = "est normative hazard count",
+    y = "n societies"
+  )
+
+```
+
+## all hazard food destroying severity exposure
+```{r}
+hz %>%
+  filter(!is.na(allhazards_H9a_sev_exposure_30)) %>%
+  ggplot(aes(x = allhazards_H9a_sev_exposure_30)) +
+  geom_histogram(binwidth = 5, color = "black", fill = "lightblue") +
+  scale_x_continuous(breaks = seq(0, 100, by = 5)) +
+  theme_minimal() +
+  labs(
+    title = "allhazards_H9a_sev_exposure_30",
+    x = "food destroying hazard exposure",
+    y = "n societies"
+  )
+
+hz %>%
+  filter(!is.na(allhazards_H9a_sev_exposure_30_IA)) %>%
+  ggplot(aes(x = allhazards_H9a_sev_exposure_30_IA)) +
+  geom_histogram(binwidth = 5, color = "black", fill = "palegreen3") +
+  scale_x_continuous(breaks = seq(0, 100, by = 5)) +
+  theme_minimal() +
+  labs(
+    title = "allhazards_H9a_sev_exposure_30_IA",
+    x = "food destroying hazard exposure",
+    y = "n societies"
+  )
+
+```
+
+## all hazard severity exposure
+```{r}
+hz %>%
+  filter(!is.na(allhazards_sev_exposure_30)) %>%
+  ggplot(aes(x = allhazards_sev_exposure_30)) +
+  geom_histogram(binwidth = 5, color = "black", fill = "lightblue") +
+  scale_x_continuous(breaks = seq(0, 100, by = 5)) +
+  theme_minimal() +
+  labs(
+    title = "allhazards_sev_exposure_30",
+    x = "hazard severity exposure",
+    y = "n societies"
+  )
+
+hz %>%
+  filter(!is.na(allhazards_sev_exposure_30_IA)) %>%
+  ggplot(aes(x = allhazards_sev_exposure_30_IA)) +
+  geom_histogram(binwidth = 5, color = "black", fill = "palegreen3") +
+  scale_x_continuous(breaks = seq(0, 100, by = 5)) +
+  theme_minimal() +
+  labs(
+    title = "allhazards_sev_exposure_30_IA",
+    x = "hazard severity exposure",
+    y = "n societies"
+  )
+
+```
+```{r}
+plot_pair <- function(var_base, xlab_text) {
+  
+  p_top <- hz %>%
+    filter(!is.na(.data[[var_base]])) %>%
+    ggplot(aes(x = .data[[var_base]])) +
+    geom_histogram(binwidth = 5, color = "black", fill = "lightblue") +
+    scale_x_continuous(breaks = seq(0, 100, by = 5)) +
+    theme_minimal() +
+    labs(title = var_base, x = xlab_text, y = "n societies")
+  
+  p_bottom <- hz %>%
+    filter(!is.na(.data[[paste0(var_base, "_IA")]])) %>%
+    ggplot(aes(x = .data[[paste0(var_base, "_IA")]])) +
+    geom_histogram(binwidth = 5, color = "black", fill = "palegreen3") +
+    scale_x_continuous(breaks = seq(0, 100, by = 5)) +
+    theme_minimal() +
+    labs(title = paste0(var_base, "_IA"), x = xlab_text, y = "n societies")
+  
+  p_top / p_bottom
+}
+```
+
+```{r}
+plot_pair("allhazards_est_count_30", "est hazard count")
+plot_pair("disaster_est_count_30", "est disaster count")
+plot_pair("normative_est_count_30", "est normative hz count")
+plot_pair("allhazards_H9a_sev_exposure_30", "food destroying hazard exposure")
+plot_pair("allhazards_sev_exposure_30", "hazard severity exposure")
+```
+
+```{r}
+test <- hz %>%
+  filter(!is.na(allhazards_est_count_30), !is.na(disaster_est_count_30), 
+         !is.na(allhazards_H9a_sev_exposure_30), !is.na(allhazards_sev_exposure_30))
+
+vars <- c(
+  "allhazards_est_count_30",
+  "disaster_est_count_30",
+  "normative_est_count_30",
+  "allhazards_H9a_sev_exposure_30",
+  "allhazards_sev_exposure_30"
+)
+IA_vars <- c(
+  "allhazards_est_count_30_IA",
+  "disaster_est_count_30_IA",
+  "normative_est_count_30_IA",
+  "allhazards_H9a_sev_exposure_30_IA",
+  "allhazards_sev_exposure_30_IA"
+)
+hz %>%
+  select(all_of(vars)) %>%
+  summarise(across(everything(),
+                   ~ sum(is.na(.)))) %>%
+  pivot_longer(everything(),
+               names_to = "variable",
+               values_to = "n_missing") %>%
+  mutate(prop_missing = n_missing / nrow(hz))
+
+hz %>%
+  select(all_of(IA_vars)) %>%
+  summarise(across(everything(),
+                   ~ sum(is.na(.)))) %>%
+  pivot_longer(everything(),
+               names_to = "variable",
+               values_to = "n_missing") %>%
+  mutate(prop_missing = n_missing / nrow(hz))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
