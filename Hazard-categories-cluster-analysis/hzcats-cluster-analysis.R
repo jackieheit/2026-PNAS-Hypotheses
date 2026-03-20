@@ -35,7 +35,7 @@ fviz_nbclust(hz_scaled, kmeans, method = "wss")
 
 kmeans_pre <- kmeans(
   hz_scaled,
-  centers = 4,
+  centers = 3,
   nstart = 20
 )
 
@@ -62,3 +62,9 @@ kmeans_no <- kmeans(
 print(kmeans_no)
 
 fviz_cluster(kmeans_no, data = hz_no_outliers)
+
+
+
+# PCA to validate clustering results
+vars_no_PCA <- prcomp(hz_no_outliers, center = FALSE, scale. = FALSE)
+vars_no_PCA
