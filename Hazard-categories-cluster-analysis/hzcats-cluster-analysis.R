@@ -35,7 +35,7 @@ fviz_nbclust(hz_scaled, kmeans, method = "wss")
 
 kmeans_pre <- kmeans(
   hz_scaled,
-  centers = 3,
+  centers = 4,
   nstart = 20
 )
 
