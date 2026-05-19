@@ -19,12 +19,19 @@ IA_vars <- c(
   "allhazards_H9a_sev_exposure_30_IA",
   "allhazards_sev_exposure_30_IA"
 )
+# Keep IDs + variables before scaling
+IA_for_clust <- hz %>%
+  select(ID, all_of(IA_vars)) %>%
+  drop_na(all_of(IA_vars))
+
 
 IA_scaled <- hz %>%
   select(all_of(IA_vars)) %>%
   drop_na() %>%
   select(-ID) %>% 
   mutate(across(everything(), ~ as.numeric(scale(.))))
+
+
 ```
 
 ```{r}
@@ -38,13 +45,31 @@ kmeans_pre <- kmeans(
 
 print(kmeans_pre)
 
-
 fviz_cluster(kmeans_pre, data = IA_scaled)
 
+# Table with IDs, original values, and 4-cluster assignment
+cluster_table_pre <- IA_for_clust %>%
+  mutate(cluster_4 = kmeans_pre$cluster) %>%
+  arrange(cluster_4, ID)
 
+View(cluster_table_pre)
+```
 
+```{r}
 # 2 cases look like outliers
-hz_no_outliers <- IA_scaled %>%
+# Keep the cluster labels attached so IDs stay aligned
+outliers <- cluster_table_pre %>%
+  filter(cluster_4 == 3)
+
+IA_scaled_with_clusters <- IA_scaled %>%
+  mutate(cluster_4 = kmeans_pre$cluster)
+
+hz_no_outliers <- IA_scaled_with_clusters %>%
+  filter(cluster_4 != 3) %>%
+  select(-cluster_4)
+
+# Keep the matching original ID/value rows, but remove the old cluster label
+IA_for_clust_no_outliers <- IA_for_clust %>%
   mutate(cluster = kmeans_pre$cluster) %>%
   filter(cluster != 3) %>%
   select(-cluster)
@@ -61,15 +86,50 @@ print(kmeans_no)
 
 fviz_cluster(kmeans_no, data = hz_no_outliers)
 
+# Final table with IDs, original values, and ONLY the no-outlier cluster category
+cluster_table_no_outliers <- IA_for_clust_no_outliers %>%
+  mutate(cluster = kmeans_no$cluster) %>%
+  arrange(cluster, ID)
 
-
-# PCA to validate clustering results
-vars_no_PCA <- prcomp(hz_no_outliers, center = FALSE, scale. = FALSE)
-vars_no_PCA
+View(cluster_table_no_outliers)
+write.csv(cluster_table_no_outliers, "results/cluster_cats_no_outliers.csv")
 ```
 
 
+# boxplots
 
+```{r}
+hazard_vars <- c(
+  "allhazards_est_count_30_IA",
+  "disaster_est_count_30_IA",
+  "normative_est_count_30_IA",
+  "allhazards_H9a_sev_exposure_30_IA",
+  "allhazards_sev_exposure_30_IA"
+)
 
+cluster_boxplot_data <- cluster_table_no_outliers %>%
+  mutate(cluster = factor(cluster)) %>%
+  pivot_longer(
+    cols = all_of(hazard_vars),
+    names_to = "hazard_variable",
+    values_to = "value"
+  )
 
+ggplot(cluster_boxplot_data, aes(x = cluster, y = value, fill = cluster)) +
+  geom_boxplot(alpha = 0.6, outlier.shape = NA) +
+  geom_jitter(
+    aes(color = cluster),
+    width = 0.15,
+    alpha = 0.5,
+    show.legend = FALSE
+  ) +
+  facet_wrap(~ hazard_variable, scales = "free_y") +
+  labs(
+    x = "Cluster",
+    y = "Hazard variables",
+    title = "Distribution of Hazard Variables by Cluster Category",
+    fill = "Cluster"
+  ) +
+  theme_minimal()
+```
 

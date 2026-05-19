@@ -1,0 +1,85 @@
+---
+title: "hierarchical-analysis-IA"
+format: html
+---
+
+```{r}
+hz <- read_csv("../../minerva/Hazards/Datasets/DT-hzcats-society-level.csv")
+
+# remove outliers identified in cluster analysis  
+hz <- hz %>% filter(ID != 73 & ID != 218)
+
+IA_vars <- c(
+  "allhazards_est_count_30_IA",
+  "disaster_est_count_30_IA",
+  "normative_est_count_30_IA",
+  "allhazards_H9a_sev_exposure_30_IA",
+  "allhazards_sev_exposure_30_IA"
+)
+
+
+# Keep IDs + original variables
+IA_for_clust <- hz %>%
+  select(ID, all_of(IA_vars)) %>%
+  drop_na(all_of(IA_vars))
+
+IA_for_clust_scaled <- IA_for_clust %>%
+  select(all_of(IA_vars)) %>%
+  mutate(across(everything(), ~ as.numeric(scale(.))))
+```
+
+
+```{r}
+fviz_nbclust(
+  IA_for_clust_scaled,
+  FUNcluster = hcut,
+  method = "silhouette",
+  hc_method = "ward.D2"
+)
+
+fviz_nbclust(
+  IA_for_clust_scaled,
+  FUNcluster = hcut,
+  method = "gap_stat",
+  hc_method = "ward.D2"
+)
+```
+
+```{r}
+dist_IA <- dist(IA_for_clust_scaled, method = "euclidean")
+
+hc_final <- hclust(dist_IA, method = "ward.D2")
+
+fviz_dend(
+  hc_final,
+  k = 3,
+  rect = TRUE,
+  cex = 0.7,
+  main = "Hierarchical Clustering of IA Hazard Variables"
+)
+```
+```{r}
+plot(
+  hc_final,
+  labels = IA_for_clust$ID,
+  main = "Hierarchical Clustering of IA Hazard Variables",
+  xlab = "",
+  sub = "",
+  cex = 0.7,
+  lwd = 2
+)
+
+# make rectangle/category lines thicker
+par(lwd = 3)
+rect.hclust(
+  hc_final,
+  k = 3,
+  border = 2:5
+)
+
+# reset line width back to normal
+par(lwd = 1)
+```
+
+
+
