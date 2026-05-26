@@ -1,0 +1,133 @@
+"","ID","allhazards_est_count_30_IA","disaster_est_count_30_IA","normative_est_count_30_IA","allhazards_H9a_sev_exposure_30_IA","allhazards_sev_exposure_30_IA","cluster","eHRAF.Name","Region","DQ"
+"1",13,11,5,0,7,7.5,1,"Mbuti","Africa",2
+"2",16,6,0,0,1.5,1.5,1,"Tiv","Africa",2
+"3",19,3,2,0,0,4.25,1,"Akan","Africa",2
+"4",23,8,6,0,9.5,9.5,1,"Tallensi","Africa",2
+"5",30,4,4,0,4,4,1,"Nuba","Africa",2
+"6",32,0,0,0,0.25,0.25,1,"Mao","Middle East",2
+"7",34,3,3,0,6,6,1,"Maasai","Africa",1
+"8",36,9,8,0,11.25,11.25,1,"Somali","Middle East",2
+"9",40,6,6,0,8,8,1,"Teda","Middle East",1
+"10",46,3,2,0,3.5,3.5,1,"Rwala Bedouin","Middle East",1
+"11",47,4,4,0,3,5,1,"Turks","Middle East",1
+"12",58,4,3,0,3.25,3.25,1,"Basseri","Middle East",2
+"13",59,6,6,0,5.25,7,1,"West Punjabi","Asia",1
+"14",62,4,4,0,8,8,1,"Santal","Asia",2
+"15",70,1,1,0,2,2,1,"Mara","Asia",2
+"16",71,0,0,0,0,0,1,"Burmans","Asia",2
+"17",79,2,2,0,4,4,1,"Andamans","Asia",1
+"18",83,3,3,0,0,4,1,"Javanese","Oceania",2
+"19",85,4,2,0,2,2.5,1,"Iban","Oceania",1
+"20",91,2,2,0,2,2,1,"Aranda","Oceania",2
+"21",100,7,7,0,11,13,1,"Tikopia","Oceania",1
+"22",102,2,2,0,1,3,1,"Bau Fijians","Oceania",1
+"23",108,2,1,0,2.5,2.5,1,"Marshallese","Oceania",1
+"24",109,7,4,0,4.5,5.25,1,"Chuuk","Oceania",1
+"25",110,4,4,0,6,6,1,"Yapese","Oceania",2
+"26",119,0,0,0,2,2,1,"Nivkh","Russia",2
+"27",124,6,6,0,12,12,1,"Copper Inuit","North America",1
+"28",131,0,0,0,0,0,1,"Haida","North America",2
+"29",138,4,2,0,4.5,4.5,1,"Klamath","North America",1
+"30",144,11,9,0,12,12.5,1,"Huron/Wendat","North America",1
+"31",150,4,4,0,5,6,1,"Havasupai","North America",1
+"32",154,1,1,0,1,1,1,"Popoluca","North America",2
+"33",158,0,0,0,0,0,1,"Kuna","South America",1
+"34",159,5,5,0,6,6,1,"Goajiro","South America",1
+"35",163,0,0,0,0,0,1,"Yanoama","South America",1
+"36",172,13,13,0,18,18,1,"Aymara","South America",1
+"37",179,0,0,0,0,0,1,"Xavante","South America",1
+"38",182,8,6,0,6.5,6.5,1,"Enxet and Enlhet","South America",2
+"39",184,5,5,0,6,6,1,"Mapuche","South America",1
+"40",185,5,0,0,0.75,1.25,1,"Tehuelche","South America",1
+"41",205,4,4,0,6,6,1,"Highland Scots","Europe",1
+"42",208,3,3,0,5,5,1,"Libyan Bedouin","Middle East",1
+"43",209,2,2,0,4,4,1,"Shluh","Middle East",2
+"44",213,0,0,0,0,0,1,"Hopi","North America",2
+"45",219,0,0,0,0,0,1,"Kogi","South America",2
+"46",2,49,9,40,24,24.25,2,"San","Africa",1
+"47",12,40,0,40,11,16,2,"Ganda","Africa",1
+"48",25,34,8,20,12.75,16,2,"Fulani","Middle East",1
+"49",35,48,4,40,15,21,2,"Konso","Middle East",1
+"50",53,45,1,40,18,18,2,"Nenets","Russia",1
+"51",64,21,20,0,20,20.25,2,"Burusho","Asia",2
+"52",92,40,0,40,15,15,2,"Orokaiva","Oceania",2
+"53",93,27,7,20,21,21,2,"Kimam","Oceania",1
+"54",99,52,0,40,3,15,2,"Siwai","Oceania",2
+"55",116,33,9,20,12.25,18,2,"Korea","Asia",3
+"56",117,47,7,40,21.25,21.25,2,"Okayama","Asia",1
+"57",151,56,14,40,25,25,2,"O'odham","North America",3
+"58",201,33,10,20,21.25,26.5,2,"Taiwan Hokkien","Asia",1
+"59",206,40,0,40,17,17,2,"Dogon","Africa",2
+"60",210,52,7,40,5,20.25,2,"Tlingit","North America",3
+"61",214,46,2,40,15,15,2,"Tarahumara","North America",3
+"62",1,23,1,20,6.5,6.5,3,"Khoi","Africa",2
+"63",4,22,0,20,6,6,3,"Lozi","Africa",1
+"64",7,20,0,20,5.5,5.5,3,"Bemba","Africa",2
+"65",8,20,0,20,1,6,3,"Nyakyusa and Ngonde","Africa",2
+"66",21,22,2,20,7,7,3,"Wolof","Middle East",2
+"67",24,20,0,20,0,5,3,"Songhai","Middle East",2
+"68",26,26,4,20,4.5,9.5,3,"Hausa","Middle East",2
+"69",27,22,2,20,9,9,3,"Masa","Africa",2
+"70",28,22,2,20,9,9,3,"Azande","Africa",3
+"71",37,21,1,20,5,7,3,"Amhara","Middle East",2
+"72",43,24,4,20,10,11,3,"Fellahin","Middle East",3
+"73",51,22,1,20,1.5,6.5,3,"Rural Irish","Europe",3
+"74",52,31,2,20,3.25,15.75,3,"Saami","Europe",3
+"75",54,24,1,20,0.25,7.25,3,"Russians","Russia",2
+"76",60,21,1,20,2,7,3,"Gond","Asia",3
+"77",66,21,1,20,6,6,3,"Mongolia","Asia",3
+"78",72,20,0,20,5,5,3,"Rmeet","Asia",2
+"79",76,20,6,10,9.5,12.5,3,"Central Thai","Asia",1
+"80",87,26,5,20,5,12.5,3,"Eastern Toraja","Oceania",1
+"81",94,20,0,20,5,5,3,"Kapauku","Oceania",1
+"82",98,23,3,20,2,8,3,"Trobriands","Oceania",2
+"83",106,26,2,20,8,8,3,"Samoans","Oceania",3
+"84",112,24,4,20,9,9,3,"Ifugao","Oceania",1
+"85",118,24,0,20,2,8,3,"Ainu","Asia",1
+"86",121,21,1,20,7,7,3,"Chukchee","Russia",2
+"87",130,20,0,20,5,5,3,"Eyak","North America",2
+"88",136,20,0,20,0,5,3,"Yokuts","North America",1
+"89",156,20,0,20,0,5,3,"Miskito","South America",1
+"90",162,20,0,20,0,5,3,"Warao","South America",2
+"91",167,20,0,20,5,5,3,"Tukano","South America",2
+"92",168,20,0,20,0,5,3,"Chachi","South America",2
+"93",186,20,0,20,0,5,3,"Yahgan","South America",2
+"94",204,20,0,20,7,7,3,"Serbs","Europe",1
+"95",215,24,1,20,1,7,3,"Zapotec","North America",2
+"96",217,25,1,20,3,9,3,"Lau Fijians","Oceania",1
+"97",220,20,0,20,5,5,3,"Ona","South America",1
+"98",222,25,5,20,11,11,3,"Bahia Brazilians","South America",2
+"99",223,20,0,20,0,5,3,"Bororo","South America",2
+"100",5,NA,NA,NA,NA,NA,NA,"Ovimbundu","Africa",NA
+"101",22,NA,NA,NA,NA,NA,NA,"Bambara","Africa",NA
+"102",29,NA,NA,NA,NA,NA,NA,"Fur","Middle East",NA
+"103",42,NA,NA,NA,NA,NA,NA,"Berbers of Morocco","Middle East",NA
+"104",55,NA,NA,NA,NA,NA,NA,"Abkhazians","Russia",NA
+"105",57,NA,NA,NA,NA,NA,NA,"Kurds","Middle East",NA
+"106",63,NA,NA,NA,NA,NA,NA,"Uttar Pradesh","Asia",NA
+"107",65,NA,NA,NA,NA,NA,NA,"Kazakh","Russia",NA
+"108",68,NA,NA,NA,NA,NA,NA,"Lepcha","Asia",NA
+"109",69,NA,NA,NA,NA,NA,NA,"Garo","Asia",NA
+"110",73,NA,NA,NA,NA,NA,NA,"Vietnamese","Asia",NA
+"111",84,NA,NA,NA,NA,NA,NA,"Balinese","Oceania",NA
+"112",86,NA,NA,NA,NA,NA,NA,"Sama-Bajau","Oceania",NA
+"113",90,NA,NA,NA,NA,NA,NA,"Tiwi","Oceania",NA
+"114",96,NA,NA,NA,NA,NA,NA,"Manus","Oceania",NA
+"115",104,NA,NA,NA,NA,NA,NA,"Maori","Oceania",NA
+"116",127,NA,NA,NA,NA,NA,NA,"Ojibwa","North America",NA
+"117",132,NA,NA,NA,NA,NA,NA,"Nuxalk","North America",NA
+"118",135,NA,NA,NA,NA,NA,NA,"Pomo","North America",NA
+"119",141,NA,NA,NA,NA,NA,NA,"Hidatsa","North America",NA
+"120",142,NA,NA,NA,NA,NA,NA,"Pawnee","North America",NA
+"121",160,NA,NA,NA,NA,NA,NA,"Haitians","South America",NA
+"122",164,NA,NA,NA,NA,NA,NA,"Barama River Carib","South America",NA
+"123",165,NA,NA,NA,NA,NA,NA,"Saramaka","South America",NA
+"124",173,NA,NA,NA,NA,NA,NA,"Sirionó","South America",NA
+"125",181,NA,NA,NA,NA,NA,NA,"Guaraní","South America",NA
+"126",202,NA,NA,NA,NA,NA,NA,"Khasi","Asia",NA
+"127",203,NA,NA,NA,NA,NA,NA,"Sinhalese","Asia",NA
+"128",207,NA,NA,NA,NA,NA,NA,"Kanuri","Middle East",NA
+"129",211,NA,NA,NA,NA,NA,NA,"Blackfoot","North America",NA
+"130",212,NA,NA,NA,NA,NA,NA,"Iroquois","North America",NA
+"131",218,NA,NA,NA,NA,NA,NA,"Yakut","Russia",NA
+"132",221,NA,NA,NA,NA,NA,NA,"Mataco","South America",NA

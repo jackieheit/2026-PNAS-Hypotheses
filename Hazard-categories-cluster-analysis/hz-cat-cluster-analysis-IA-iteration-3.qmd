@@ -11,16 +11,25 @@ library(factoextra)
 library(cluster)
 
 hz <- read_csv("../../minerva/Hazards/Datasets/DT-hzcats-society-level.csv")
+
+sh <- read_csv("../../2026-Sharing-Analyses/sharing-dataset-for-analysis.csv")
+sh <- sh %>% select(ID, allhazards_nonfd_sev_exposure2_30, allhazards_nonfd_sev_exposure2_30_IA)
+
+hz <- full_join(hz, sh, by = c("ID"))
+
+  
 IA_vars <- c(
   "ID",
-  "allhazards_est_count_30_IA",
+  "disaster_onset_avg_30",
   "disaster_est_count_30_IA",
   "normative_est_count_30_IA",
   "allhazards_H9a_sev_exposure_30_IA",
-  "allhazards_sev_exposure_30_IA"
+  "allhazards_nonfd_sev_exposure2_30_IA"
 )
+
 # Keep IDs + variables before scaling
 IA_for_clust <- hz %>%
+   filter(ID != 73 & ID != 218) %>%
   select(ID, DQ, all_of(IA_vars)) %>%
   drop_na(all_of(IA_vars))
 
@@ -28,8 +37,10 @@ IA_for_clust <- hz %>%
 IA_scaled <- hz %>%
   select(all_of(IA_vars)) %>%
   drop_na() %>%
+  filter(ID != 73 & ID != 218) %>%
   select(-ID) %>% 
   mutate(across(everything(), ~ as.numeric(scale(.))))
+  
 
 
 ```
@@ -39,7 +50,7 @@ fviz_nbclust(IA_scaled, kmeans, method = "wss")
 
 kmeans_pre <- kmeans(
   IA_scaled,
-  centers = 4,
+  centers = 3,
   nstart = 20
 )
 
@@ -48,61 +59,23 @@ print(kmeans_pre)
 fviz_cluster(kmeans_pre, data = IA_scaled)
 
 # Table with IDs, original values, and 4-cluster assignment
-cluster_table_pre <- IA_for_clust %>%
-  mutate(cluster_4 = kmeans_pre$cluster) %>%
-  arrange(cluster_4, ID)
+cluster_table <- IA_for_clust %>%
+  mutate(cluster = kmeans_pre$cluster) %>%
+  arrange(cluster, ID)
 
-View(cluster_table_pre)
 ```
 
 ```{r}
-# 2 cases look like outliers
-# Keep the cluster labels attached so IDs stay aligned
-outliers <- cluster_table_pre %>%
-  filter(cluster_4 == 2)
-
-IA_scaled_with_clusters <- IA_scaled %>%
-  mutate(cluster_4 = kmeans_pre$cluster)
-
-hz_no_outliers <- IA_scaled_with_clusters %>%
-  filter(cluster_4 != 2) %>%
-  select(-cluster_4)
-
-# Keep the matching original ID/value rows, but remove the old cluster label
-IA_for_clust_no_outliers <- IA_for_clust %>%
-  mutate(cluster = kmeans_pre$cluster) %>%
-  filter(cluster != 2) %>%
-  select(-cluster)
-
-fviz_nbclust(hz_no_outliers, kmeans, method = "wss")
-
-kmeans_no <- kmeans(
-  hz_no_outliers,
-  centers = 3,
-  nstart = 20
-)
-
-print(kmeans_no)
-
-fviz_cluster(kmeans_no, data = hz_no_outliers)
-
-# Final table with IDs, original values, and ONLY the no-outlier cluster category
-cluster_table_no_outliers <- IA_for_clust_no_outliers %>%
-  mutate(cluster = kmeans_no$cluster) %>%
-  arrange(cluster, ID)
-
-View(cluster_table_no_outliers)
-
 id_cols <- read_csv("../../minerva/Sample/Minerva-Starting-Sample.csv") %>%
   rename("ID" = "Minerva ID (SCCS 1-186, non-SCCS 201-223)")
 
 id_cols <- id_cols %>%
-  select(ID, eHRAF.Name, Region)
+  select(ID, OWC, eHRAF.Name, Region)
 
-cluster_results_no_outliers <- full_join(cluster_table_no_outliers, id_cols, by = "ID") %>%
+cluster_results <- full_join(cluster_table, id_cols, by = "ID") %>%
   relocate(DQ, .after = last_col())
 
-write.csv(cluster_results_no_outliers, "results/cluster_cats_no_outliers_results.csv")
+write.csv(cluster_results, "results/cluster-analysis-ver-3-results.csv")
 ```
 
 
@@ -110,14 +83,14 @@ write.csv(cluster_results_no_outliers, "results/cluster_cats_no_outliers_results
 
 ```{r}
 hazard_vars <- c(
-  "allhazards_est_count_30_IA",
+  "disaster_onset_avg_30",
   "disaster_est_count_30_IA",
   "normative_est_count_30_IA",
   "allhazards_H9a_sev_exposure_30_IA",
-  "allhazards_sev_exposure_30_IA"
+  "allhazards_nonfd_sev_exposure2_30_IA"
 )
 
-cluster_boxplot_data <- cluster_table_no_outliers %>%
+cluster_boxplot_data <- cluster_results %>%
   mutate(cluster = factor(cluster)) %>%
   pivot_longer(
     cols = all_of(hazard_vars),
