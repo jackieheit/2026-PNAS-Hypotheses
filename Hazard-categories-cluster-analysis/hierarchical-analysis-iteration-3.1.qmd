@@ -4,11 +4,6 @@ format: html
 ---
 
 ```{r}
-library(tidyverse)
-library(factoextra)
-library(cluster)
-
-
 hz <- read_csv("../../minerva/Hazards/Datasets/DT-hzcats-society-level.csv")
 
 sh <- read_csv("../../2026-Sharing-Analyses/sharing-dataset-for-analysis.csv")
@@ -20,6 +15,7 @@ hz <- full_join(hz, sh, by = c("ID"))
 hz <- hz %>% filter(ID != 73 & ID != 218)
 
 IA_vars <- c(
+  "allhazards_onset_avg_30",
   "disaster_est_count_30_IA",
   "normative_est_count_30_IA",
   "allhazards_H9a_sev_exposure_30_IA",
@@ -39,6 +35,12 @@ IA_for_clust_scaled <- IA_for_clust %>%
 
 
 ```{r}
+dist_mat <- dist(IA_for_clust_scaled)
+
+hc <- hclust(dist_mat, method = "ward.D2")
+
+plot(hc)
+
 fviz_nbclust(
   IA_for_clust_scaled,
   FUNcluster = hcut,
@@ -46,21 +48,12 @@ fviz_nbclust(
   hc_method = "ward.D2"
 )
 
-fviz_nbclust(
-  IA_for_clust_scaled,
-  FUNcluster = hcut,
-  method = "gap_stat",
-  hc_method = "ward.D2"
-)
+
 ```
 
 ```{r}
-dist_IA <- dist(IA_for_clust_scaled, method = "euclidean")
-
-hc_final <- hclust(dist_IA, method = "ward.D2")
-
 fviz_dend(
-  hc_final,
+  hc,
   k = 3,
   rect = TRUE,
   cex = 0.7,
@@ -70,7 +63,7 @@ fviz_dend(
 
 ```{r}
 plot(
-  hc_final,
+  hc,
   labels = IA_for_clust$ID,
   main = "Hierarchical Clustering of IA Hazard Variables",
   xlab = "",
@@ -83,7 +76,7 @@ plot(
 par(lwd = 3)
 rect.hclust(
   hc_final,
-  k = 4,
+  k = 3,
   border = 2:5
 )
 

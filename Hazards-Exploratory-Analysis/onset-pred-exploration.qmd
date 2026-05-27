@@ -1,0 +1,31 @@
+---
+title: "onset-pred-exploration"
+format: html
+---
+
+```{r}
+library(tidyverse)
+ds <- read_csv("../../minerva/Hazards/Datasets/DT-hz-event-level-clean.csv") %>%
+  mutate(across(where(is.numeric), ~ na_if(., 99))) %>%
+  filter(H.3. %in% c("30", "30,60"))
+
+ds
+```
+
+## How many normative hazards have fast onset, NA, etc
+```{r}
+ds %>%
+  filter(H.13. == 2) %>%
+  summarise(
+    n_events = n(),
+    n_societies = n_distinct(ID),
+    n_fast_onset = sum(H.7. == 2, na.rm = TRUE),
+    n_slow_onset = sum(H.7. == 1, na.rm = TRUE),
+    n_onset_NA = sum(is.na(H.7.)), 
+    n_low_pred = sum(H.8. == 1, na.rm = TRUE),
+    n_med_pred = sum(H.8. == 2, na.rm = TRUE),
+    n_high_pred = sum(H.8. == 3, na.rm = TRUE)
+  )
+
+```
+

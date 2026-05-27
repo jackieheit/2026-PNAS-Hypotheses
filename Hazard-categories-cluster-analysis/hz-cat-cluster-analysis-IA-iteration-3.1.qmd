@@ -20,7 +20,7 @@ hz <- full_join(hz, sh, by = c("ID"))
   
 IA_vars <- c(
   "ID",
-  "disaster_onset_avg_30",
+  "allhazards_onset_avg_30",
   "disaster_est_count_30_IA",
   "normative_est_count_30_IA",
   "allhazards_H9a_sev_exposure_30_IA",
@@ -75,7 +75,7 @@ id_cols <- id_cols %>%
 cluster_results <- full_join(cluster_table, id_cols, by = "ID") %>%
   relocate(DQ, .after = last_col())
 
-write.csv(cluster_results, "results/cluster-analysis-ver-3-results.csv")
+write.csv(cluster_results, "results/cluster-analysis-ver-3.1-3-clusters-results.csv")
 ```
 
 
@@ -83,7 +83,7 @@ write.csv(cluster_results, "results/cluster-analysis-ver-3-results.csv")
 
 ```{r}
 hazard_vars <- c(
-  "disaster_onset_avg_30",
+  "allhazards_onset_avg_30",
   "disaster_est_count_30_IA",
   "normative_est_count_30_IA",
   "allhazards_H9a_sev_exposure_30_IA",
