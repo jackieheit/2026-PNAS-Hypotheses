@@ -17,7 +17,6 @@ sh <- sh %>% select(ID, allhazards_nonfd_sev_exposure2_30, allhazards_nonfd_sev_
 
 hz <- full_join(hz, sh, by = c("ID"))
 
-  
 IA_vars <- c(
   "ID",
   "disaster_est_count_30_IA",
@@ -33,12 +32,12 @@ IA_for_clust <- hz %>%
   drop_na(all_of(IA_vars))
 
 
-# Scale clustering variables and assign row names as IDs
-IA_scaled <- IA_for_clust %>%
-  select(ID, all_of(IA_vars)) %>%
-  column_to_rownames("ID") %>% 
-  scale() %>%
-  as.data.frame()
+IA_scaled <- hz %>%
+  select(all_of(IA_vars)) %>%
+  drop_na() %>%
+  filter(ID != 73 & ID != 218) %>%
+  select(-ID) %>% 
+  mutate(across(everything(), ~ as.numeric(scale(.))))
   
 
 

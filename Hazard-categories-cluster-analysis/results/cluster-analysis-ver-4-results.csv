@@ -1,98 +1,98 @@
 "","ID","disaster_est_count_30_IA","normative_est_count_30_IA","allhazards_H9a_sev_exposure_30_IA","allhazards_nonfd_sev_exposure2_30_IA","cluster","OWC","eHRAF.Name","Region","DQ"
-"1",13,5,0,7,0.5,1,"FO04","Mbuti","Africa",2
-"2",16,0,0,1.5,0,1,"FF57","Tiv","Africa",2
-"3",19,2,0,0,4.25,1,"FE12","Akan","Africa",2
-"4",23,6,0,9.5,0,1,"FE11","Tallensi","Africa",2
-"5",30,4,0,4,0,1,"FJ21","Nuba","Africa",2
-"6",32,0,0,0.25,0,1,"MP19","Mao","Middle East",2
-"7",34,3,0,6,0,1,"FL12","Maasai","Africa",1
-"8",40,6,0,8,0,1,"MS22","Teda","Middle East",1
-"9",46,2,0,3.5,0,1,"MD04","Rwala Bedouin","Middle East",1
-"10",47,4,0,3,2,1,"MB01","Turks","Middle East",1
-"11",58,3,0,3.25,0,1,"MA10","Basseri","Middle East",2
-"12",59,6,0,5.25,0,1,"AT03","West Punjabi","Asia",1
-"13",62,4,0,8,0,1,"AW42","Santal","Asia",2
-"14",70,1,0,2,0,1,"AR20","Mara","Asia",2
-"15",71,0,0,0,0,1,"AP04","Burmans","Asia",2
-"16",79,2,0,4,0,1,"AZ02","Andamans","Asia",1
-"17",83,3,0,0,2,1,"OE05","Javanese","Oceania",2
-"18",85,2,0,2,0.5,1,"OC06","Iban","Oceania",1
-"19",91,2,0,2,0,1,"OI08","Aranda","Oceania",2
-"20",102,2,0,1,2,1,"OQ12","Bau Fijians","Oceania",1
-"21",108,1,0,2.5,0,1,"OR11","Marshallese","Oceania",1
-"22",109,4,0,4.5,0.75,1,"OR19","Chuuk","Oceania",1
-"23",110,4,0,6,0,1,"OR22","Yapese","Oceania",2
-"24",119,0,0,2,0,1,"RX02","Nivkh","Russia",2
-"25",131,0,0,0,0,1,"NE09","Haida","North America",2
-"26",138,2,0,4.5,0,1,"NR10","Klamath","North America",1
-"27",150,4,0,5,0,1,"NT14","Havasupai","North America",1
-"28",154,1,0,1,0,1,"NU30","Popoluca","North America",2
-"29",158,0,0,0,0,1,"SB05","Kuna","South America",1
-"30",159,5,0,6,0,1,"SC13","Goajiro","South America",1
-"31",163,0,0,0,0,1,"SQ18","Yanoama","South America",1
-"32",179,0,0,0,0,1,"SP26","Xavante","South America",1
-"33",182,6,0,6.5,0,1,"SK15","Enxet and Enlhet","South America",2
-"34",184,5,0,6,0,1,"SG04","Mapuche","South America",1
-"35",185,0,0,0.75,0.5,1,"SH05","Tehuelche","South America",1
-"36",205,4,0,6,0,1,"ES10","Highland Scots","Europe",1
-"37",208,3,0,5,0,1,"MT09","Libyan Bedouin","Middle East",1
-"38",209,2,0,4,0,1,"MW11","Shluh","Middle East",2
-"39",213,0,0,0,0,1,"NT09","Hopi","North America",2
-"40",219,0,0,0,0,1,"SC07","Kogi","South America",2
-"41",2,9,40,24,0.25,2,"FX10","San","Africa",1
-"42",25,8,20,12.75,1,2,"MS11","Fulani","Middle East",1
-"43",36,8,0,11.25,0,2,"MO04","Somali","Middle East",2
-"44",64,20,0,20,0.25,2,"AV07","Burusho","Asia",2
-"45",76,6,10,9.5,0,2,"AO07","Central Thai","Asia",1
-"46",93,7,20,21,0,2,"OJ82","Kimam","Oceania",1
-"47",100,7,0,11,0,2,"OT11","Tikopia","Oceania",1
-"48",116,9,20,12.25,5.25,2,"AA01","Korea","Asia",3
-"49",117,7,40,21.25,0,2,"AB43","Okayama","Asia",1
-"50",124,6,0,12,0,2,"ND08","Copper Inuit","North America",1
-"51",144,9,0,12,0.5,2,"NG05","Huron/Wendat","North America",1
-"52",172,13,0,18,0,2,"SF05","Aymara","South America",1
-"53",201,10,20,21.25,5.25,2,"AD05","Taiwan Hokkien","Asia",1
-"54",8,0,20,1,5,3,"FN17","Nyakyusa and Ngonde","Africa",2
-"55",24,0,20,0,5,3,"MS20","Songhai","Middle East",2
-"56",26,4,20,4.5,5,3,"MS12","Hausa","Middle East",2
-"57",51,1,20,1.5,5,3,"ER06","Rural Irish","Europe",3
-"58",52,2,20,3.25,12,3,"EP04","Saami","Europe",3
-"59",54,1,20,0.25,7,3,"RF10","Russians","Russia",2
-"60",60,1,20,2,5,3,"AW32","Gond","Asia",3
-"61",87,5,20,5,7.5,3,"OG11","Eastern Toraja","Oceania",1
-"62",98,3,20,2,6,3,"OL06","Trobriands","Oceania",2
-"63",99,0,40,3,12,3,"ON19","Siwai","Oceania",2
-"64",118,0,20,2,6,3,"AB06","Ainu","Asia",1
-"65",136,0,20,0,5,3,"NS29","Yokuts","North America",1
-"66",156,0,20,0,5,3,"SA15","Miskito","South America",1
-"67",162,0,20,0,5,3,"SS18","Warao","South America",2
-"68",168,0,20,0,5,3,"SD06","Chachi","South America",2
-"69",186,0,20,0,5,3,"SH06","Yahgan","South America",2
-"70",210,7,40,5,15.25,3,"NA12","Tlingit","North America",3
-"71",215,1,20,1,6,3,"NU44","Zapotec","North America",2
-"72",217,1,20,3,6,3,"OQ06","Lau Fijians","Oceania",1
-"73",223,0,20,0,5,3,"SP08","Bororo","South America",2
-"74",1,1,20,6.5,0,4,"FX13","Khoi","Africa",2
-"75",4,0,20,6,0,4,"FQ09","Lozi","Africa",1
-"76",7,0,20,5.5,0,4,"FQ05","Bemba","Africa",2
-"77",12,0,40,11,0,4,"FK07","Ganda","Africa",1
-"78",21,2,20,7,0,4,"MS30","Wolof","Middle East",2
-"79",27,2,20,9,0,4,"FI21","Masa","Africa",2
-"80",35,4,40,15,6,4,"MP17","Konso","Middle East",1
-"81",37,1,20,5,2,4,"MP05","Amhara","Middle East",2
-"82",43,4,20,10,1,4,"MR13","Fellahin","Middle East",3
-"83",53,1,40,18,0,4,"RU41","Nenets","Russia",1
-"84",72,0,20,5,0,4,"AM28","Rmeet","Asia",2
-"85",92,0,40,15,0,4,"OJ23","Orokaiva","Oceania",2
-"86",94,0,20,5,0,4,"OJ29","Kapauku","Oceania",1
-"87",112,4,20,9,0,4,"OA19","Ifugao","Oceania",1
-"88",121,1,20,7,0,4,"RY02","Chukchee","Russia",2
-"89",130,0,20,5,0,4,"NA07","Eyak","North America",2
-"90",167,0,20,5,0,4,"SQ19","Tukano","South America",2
-"91",204,0,20,7,0,4,"EF06","Serbs","Europe",1
-"92",206,0,40,17,0,4,"FA16","Dogon","Africa",2
-"93",220,0,20,5,0,4,"SH04","Ona","South America",1
-"94",222,5,20,11,0,4,"SO11","Bahia Brazilians","South America",2
+"1",1,1,20,6.5,0,1,"FX13","Khoi","Africa",2
+"2",4,0,20,6,0,1,"FQ09","Lozi","Africa",1
+"3",7,0,20,5.5,0,1,"FQ05","Bemba","Africa",2
+"4",12,0,40,11,0,1,"FK07","Ganda","Africa",1
+"5",21,2,20,7,0,1,"MS30","Wolof","Middle East",2
+"6",27,2,20,9,0,1,"FI21","Masa","Africa",2
+"7",35,4,40,15,6,1,"MP17","Konso","Middle East",1
+"8",37,1,20,5,2,1,"MP05","Amhara","Middle East",2
+"9",43,4,20,10,1,1,"MR13","Fellahin","Middle East",3
+"10",53,1,40,18,0,1,"RU41","Nenets","Russia",1
+"11",72,0,20,5,0,1,"AM28","Rmeet","Asia",2
+"12",92,0,40,15,0,1,"OJ23","Orokaiva","Oceania",2
+"13",94,0,20,5,0,1,"OJ29","Kapauku","Oceania",1
+"14",112,4,20,9,0,1,"OA19","Ifugao","Oceania",1
+"15",121,1,20,7,0,1,"RY02","Chukchee","Russia",2
+"16",130,0,20,5,0,1,"NA07","Eyak","North America",2
+"17",167,0,20,5,0,1,"SQ19","Tukano","South America",2
+"18",204,0,20,7,0,1,"EF06","Serbs","Europe",1
+"19",206,0,40,17,0,1,"FA16","Dogon","Africa",2
+"20",220,0,20,5,0,1,"SH04","Ona","South America",1
+"21",222,5,20,11,0,1,"SO11","Bahia Brazilians","South America",2
+"22",13,5,0,7,0.5,2,"FO04","Mbuti","Africa",2
+"23",16,0,0,1.5,0,2,"FF57","Tiv","Africa",2
+"24",19,2,0,0,4.25,2,"FE12","Akan","Africa",2
+"25",23,6,0,9.5,0,2,"FE11","Tallensi","Africa",2
+"26",30,4,0,4,0,2,"FJ21","Nuba","Africa",2
+"27",32,0,0,0.25,0,2,"MP19","Mao","Middle East",2
+"28",34,3,0,6,0,2,"FL12","Maasai","Africa",1
+"29",40,6,0,8,0,2,"MS22","Teda","Middle East",1
+"30",46,2,0,3.5,0,2,"MD04","Rwala Bedouin","Middle East",1
+"31",47,4,0,3,2,2,"MB01","Turks","Middle East",1
+"32",58,3,0,3.25,0,2,"MA10","Basseri","Middle East",2
+"33",59,6,0,5.25,0,2,"AT03","West Punjabi","Asia",1
+"34",62,4,0,8,0,2,"AW42","Santal","Asia",2
+"35",70,1,0,2,0,2,"AR20","Mara","Asia",2
+"36",71,0,0,0,0,2,"AP04","Burmans","Asia",2
+"37",79,2,0,4,0,2,"AZ02","Andamans","Asia",1
+"38",83,3,0,0,2,2,"OE05","Javanese","Oceania",2
+"39",85,2,0,2,0.5,2,"OC06","Iban","Oceania",1
+"40",91,2,0,2,0,2,"OI08","Aranda","Oceania",2
+"41",102,2,0,1,2,2,"OQ12","Bau Fijians","Oceania",1
+"42",108,1,0,2.5,0,2,"OR11","Marshallese","Oceania",1
+"43",109,4,0,4.5,0.75,2,"OR19","Chuuk","Oceania",1
+"44",110,4,0,6,0,2,"OR22","Yapese","Oceania",2
+"45",119,0,0,2,0,2,"RX02","Nivkh","Russia",2
+"46",131,0,0,0,0,2,"NE09","Haida","North America",2
+"47",138,2,0,4.5,0,2,"NR10","Klamath","North America",1
+"48",150,4,0,5,0,2,"NT14","Havasupai","North America",1
+"49",154,1,0,1,0,2,"NU30","Popoluca","North America",2
+"50",158,0,0,0,0,2,"SB05","Kuna","South America",1
+"51",159,5,0,6,0,2,"SC13","Goajiro","South America",1
+"52",163,0,0,0,0,2,"SQ18","Yanoama","South America",1
+"53",179,0,0,0,0,2,"SP26","Xavante","South America",1
+"54",182,6,0,6.5,0,2,"SK15","Enxet and Enlhet","South America",2
+"55",184,5,0,6,0,2,"SG04","Mapuche","South America",1
+"56",185,0,0,0.75,0.5,2,"SH05","Tehuelche","South America",1
+"57",205,4,0,6,0,2,"ES10","Highland Scots","Europe",1
+"58",208,3,0,5,0,2,"MT09","Libyan Bedouin","Middle East",1
+"59",209,2,0,4,0,2,"MW11","Shluh","Middle East",2
+"60",213,0,0,0,0,2,"NT09","Hopi","North America",2
+"61",219,0,0,0,0,2,"SC07","Kogi","South America",2
+"62",8,0,20,1,5,3,"FN17","Nyakyusa and Ngonde","Africa",2
+"63",24,0,20,0,5,3,"MS20","Songhai","Middle East",2
+"64",26,4,20,4.5,5,3,"MS12","Hausa","Middle East",2
+"65",51,1,20,1.5,5,3,"ER06","Rural Irish","Europe",3
+"66",52,2,20,3.25,12,3,"EP04","Saami","Europe",3
+"67",54,1,20,0.25,7,3,"RF10","Russians","Russia",2
+"68",60,1,20,2,5,3,"AW32","Gond","Asia",3
+"69",87,5,20,5,7.5,3,"OG11","Eastern Toraja","Oceania",1
+"70",98,3,20,2,6,3,"OL06","Trobriands","Oceania",2
+"71",99,0,40,3,12,3,"ON19","Siwai","Oceania",2
+"72",118,0,20,2,6,3,"AB06","Ainu","Asia",1
+"73",136,0,20,0,5,3,"NS29","Yokuts","North America",1
+"74",156,0,20,0,5,3,"SA15","Miskito","South America",1
+"75",162,0,20,0,5,3,"SS18","Warao","South America",2
+"76",168,0,20,0,5,3,"SD06","Chachi","South America",2
+"77",186,0,20,0,5,3,"SH06","Yahgan","South America",2
+"78",210,7,40,5,15.25,3,"NA12","Tlingit","North America",3
+"79",215,1,20,1,6,3,"NU44","Zapotec","North America",2
+"80",217,1,20,3,6,3,"OQ06","Lau Fijians","Oceania",1
+"81",223,0,20,0,5,3,"SP08","Bororo","South America",2
+"82",2,9,40,24,0.25,4,"FX10","San","Africa",1
+"83",25,8,20,12.75,1,4,"MS11","Fulani","Middle East",1
+"84",36,8,0,11.25,0,4,"MO04","Somali","Middle East",2
+"85",64,20,0,20,0.25,4,"AV07","Burusho","Asia",2
+"86",76,6,10,9.5,0,4,"AO07","Central Thai","Asia",1
+"87",93,7,20,21,0,4,"OJ82","Kimam","Oceania",1
+"88",100,7,0,11,0,4,"OT11","Tikopia","Oceania",1
+"89",116,9,20,12.25,5.25,4,"AA01","Korea","Asia",3
+"90",117,7,40,21.25,0,4,"AB43","Okayama","Asia",1
+"91",124,6,0,12,0,4,"ND08","Copper Inuit","North America",1
+"92",144,9,0,12,0.5,4,"NG05","Huron/Wendat","North America",1
+"93",172,13,0,18,0,4,"SF05","Aymara","South America",1
+"94",201,10,20,21.25,5.25,4,"AD05","Taiwan Hokkien","Asia",1
 "95",5,NA,NA,NA,NA,NA,"FP13","Ovimbundu","Africa",NA
 "96",22,NA,NA,NA,NA,NA,"FA08","Bambara","Africa",NA
 "97",28,NA,NA,NA,NA,NA,"FO07","Azande","Africa",NA
