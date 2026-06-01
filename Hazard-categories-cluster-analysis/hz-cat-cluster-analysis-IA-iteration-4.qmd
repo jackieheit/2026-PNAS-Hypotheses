@@ -52,7 +52,7 @@ fviz_nbclust(IA_scaled, kmeans, method = "wss")
 ```{r}
 kmeans_pre <- kmeans(
   IA_scaled,
-  centers = 5,
+  centers = 4,
   nstart = 20
 )
 
