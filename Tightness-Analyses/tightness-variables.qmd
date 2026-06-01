@@ -1,0 +1,91 @@
+---
+title: "tightness-variables"
+format: html
+---
+
+```{r}
+library(tidyverse)
+
+ds_FA <- read_csv("../../2026-Sharing-Analyses/sharing-dataset-for-analysis.csv")
+
+tl <- read_csv("../../minerva/Tight-Loose/Datasets/DT-TL-FinalData.csv") %>%
+  mutate(
+    OWC = str_trim(OWC, side = c("both"))
+  )
+
+ds <- full_join(ds_FA, tl, by = c("OWC"))
+
+hz_cat <- read_csv("../../minerva/Hazards/Datasets/DT-hzcats-society-level.csv") %>%
+  select(ID, allhazards_est_count_30, disaster_est_count_30, disaster_est_count_30_IA)
+
+ds <- inner_join(ds, hz_cat, by = c("ID")) %>%
+  filter(ID != 73 & ID != 218)
+
+```
+
+# Evaluating the subdomains of cultural tightness as a means to be integrated within the 2026 PNAS project
+It was made known that in evaluating overall cultural tightness, norms and rules were both expressed within this one variable. However, there is a reasonable concern that just because there may be rules the norm may not be consistent in following those rules or vice versa. This idea is what is driving the exploration of cultural tightness subdomains. 
+
+There are 6 subdomains: Law and Ethics (General), Socialization, Gender, Marraige, Sexuality, and Funerals/Mourning
+
+```{r}
+tl_vars <- c(
+  "General_TL1_avg_final", "General_TL2_avg_final", "General_TL3_avg_final",
+  "General_TL4_avg_final", "General_TL5_avg_final", "General_TL5B_avg_final",
+  "Soc_TL1_avg_final", "Soc_TL2_avg_final", "Soc_TL3_avg_final",
+  "Soc_TL4_avg_final", "Soc_TL5_avg_final",
+  "Gender_TL1_avg_final", "Gender_TL2_avg_final", "Gender_TL3_avg_final",
+  "Gender_TL4_avg_final", "Gender_TL5_avg_final",
+  "Mar_TL1_avg_final", "Mar_TL2_avg_final", "Mar_TL3_avg_final",
+  "Mar_TL4_avg_final", "Mar_TL5_avg_final",
+  "Sex_TL1_avg_final", "Sex_TL2_avg_final", "Sex_TL3_avg_final",
+  "Sex_TL4_avg_final", "Sex_TL5_avg_final",
+  "FM_TL1_avg_final", "FM_TL2_avg_final", "FM_TL3_avg_final",
+  "FM_TL4_avg_final", "FM_TL5_avg_final",
+  "General_TL1_pref_final", "General_TL2_pref_final", "General_TL3_pref_final",
+  "General_TL4_pref_final", "General_TL5_pref_final", "General_TL5B_pref_final",
+  "Soc_TL1_pref_final", "Soc_TL2_pref_final", "Soc_TL3_pref_final",
+  "Soc_TL4_pref_final", "Soc_TL5_pref_final",
+  "Gender_TL1_pref_final", "Gender_TL2_pref_final", "Gender_TL3_pref_final",
+  "Gender_TL4_pref_final", "Gender_TL5_pref_final",
+  "Mar_TL1_pref_final", "Mar_TL2_pref_final", "Mar_TL3_pref_final",
+  "Mar_TL4_pref_final", "Mar_TL5_pref_final",
+  "Sex_TL1_pref_final", "Sex_TL2_pref_final", "Sex_TL3_pref_final",
+  "Sex_TL4_pref_final", "Sex_TL5_pref_final",
+  "FM_TL1_pref_final", "FM_TL2_pref_final", "FM_TL3_pref_final",
+  "FM_TL4_pref_final", "FM_TL5_pref_final",
+  "TL_Ov_Avg", "TL_Ov_Avg_Pref"
+)
+
+ds_tl_numeric <- ds %>%
+  mutate(across(all_of(tl_vars), ~ as.numeric(.)))
+
+tl_coverage <- ds_tl_numeric %>%
+  summarise(
+    across(
+      all_of(tl_vars),
+      list(
+        n_coverage = ~ sum(!is.na(.)),
+        n_na = ~ sum(is.na(.)),
+        min = ~ min(., na.rm = TRUE),
+        max = ~ max(., na.rm = TRUE)
+      ),
+      .names = "{.col}_{.fn}"
+    )
+  ) %>%
+  pivot_longer(
+    everything(),
+    names_to = c("variable", ".value"),
+    names_pattern = "(.+)_(n_coverage|n_na|min|max)$"
+  ) %>%
+  mutate(
+    range = paste0(min, "–", max)
+  ) %>%
+  select(variable, n_coverage, n_na, min, max, range)
+
+tl_coverage
+```
+
+
+
+
