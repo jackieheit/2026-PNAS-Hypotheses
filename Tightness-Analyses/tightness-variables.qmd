@@ -86,6 +86,90 @@ tl_coverage <- ds_tl_numeric %>%
 tl_coverage
 ```
 
+# TL1
+
+## food destroying severity
+```{r}
+tl1_fd <- ds[complete.cases(ds[, c("disaster_h9a_sev_exposure_30", "General_TL1_avg_final")]), ]
+ggplot(tl1_fd, aes(x = disaster_h9a_sev_exposure_30, y = as.numeric(General_TL1_avg_final) )) +
+  geom_jitter(height = 0.05, alpha = 0.6) +
+  geom_smooth(method = "loess", se = FALSE, color = "#66c2a4")
+```
+
+```{r}
+ggplot(tl1, aes(
+  x = factor(General_TL1_avg_final),
+  y = allhazards_H9a_sev_exposure_30
+)) +
+  geom_boxplot(outlier.shape = NA, alpha = 0.5) +
+  geom_jitter(width = 0.1, height = 0, alpha = 0.6) +
+  labs(
+    x = "General_TL1_avg_final",
+    y = "allhazards_H9a_sev_exposure_30"
+  )
+```
+
+## societies w/ no normative hazards
+```{r}
+tl1_2 <- tl1 %>%
+  filter(normative_est_count_30_IA == 0)
+
+ggplot(tl1_2, aes(x = as.numeric(General_TL1_avg_final), y = disaster_h9a_sev_exposure_30)) +
+  geom_jitter(height = 0.05, alpha = 0.6) +
+  geom_smooth(method = "loess", se = FALSE, color = "#66c2a4")
+
+test <- lm(General_TL1_avg_final ~ allhazards_H9a_sev_exposure_30_IA, data = tl1_2)
 
 
+# societies w/ 1 normative hazard
+tl1_3 <- tl1 %>%
+  filter(normative_est_count_30_IA > 0 & normative_est_count_30_IA <= 20)
+
+ggplot(tl1_3, aes(x = as.numeric(General_TL1_avg_final), y = allhazards_H9a_sev_exposure_30)) +
+  geom_jitter(height = 0.05, alpha = 0.6) +
+  geom_smooth(method = "loess", se = FALSE, color = "#66c2a4")
+
+test <- lm(General_TL1_avg_final ~ allhazards_H9a_sev_exposure_30, data = tl1_2)
+
+test2 <- tl1_2 %>%
+  select(ID, disaster_h9a_sev_exposure_30, General_TL1_avg_final, DQ)
+```
+
+
+```{r}
+tl1 <- ds[complete.cases(ds[, c("allhazards_H9a_sev_exposure_30_IA", "General_TL1_avg_final")]), ]
+
+ggplot(tl1, aes(x = allhazards_H9a_sev_exposure_30, y = as.numeric(General_TL1_avg_final) )) +
+  geom_jitter(height = 0.05, alpha = 0.6) +
+  geom_smooth(method = "loess", se = FALSE, color = "#66c2a4")
+```
+
+```{r}
+ggplot(tl1, aes(
+  x = factor(General_TL1_avg_final),
+  y = allhazards_H9a_sev_exposure_30
+)) +
+  geom_boxplot(outlier.shape = NA, alpha = 0.5) +
+  geom_jitter(width = 0.1, height = 0, alpha = 0.6) +
+  labs(
+    x = "General_TL1_avg_final",
+    y = "allhazards_H9a_sev_exposure_30"
+  )
+```
+
+
+# TL3
+## societies w/ no normative hazards
+```{r}
+tl3 <- ds[complete.cases(ds[, c("allhazards_H9a_sev_exposure_30", "General_TL3_avg_final")]), ]
+ggplot(tl3, aes(x = allhazards_H9a_sev_exposure_30, y = as.numeric(General_TL3_avg_final) )) +
+  geom_jitter(height = 0.05, alpha = 0.6) +
+  geom_smooth(method = "loess", se = FALSE, color = "#66c2a4")
+
+tl3_fd <- ds[complete.cases(ds[, c("disaster_h9a_sev_exposure_30_IA", "General_TL3_avg_final")]), ]
+ggplot(tl3_fd, aes(x = disaster_h9a_sev_exposure_30_IA, y = as.numeric(General_TL3_avg_final) )) +
+  geom_jitter(height = 0.05, alpha = 0.6) +
+  geom_smooth(method = "loess", se = FALSE, color = "#66c2a4")
+
+```
 
