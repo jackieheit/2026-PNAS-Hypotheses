@@ -190,8 +190,11 @@ new_ca <- ca %>%
     AH_practiced = ifelse(`AH-CAL1-R` == 77, 0, 1),
     AG_practiced = ifelse(`AG-CAL1-R` == 77, 0, 1),
     across(everything(), ~ ifelse(.x %in% 77, NA, .x)),
-    across(contains("CAL1b"), ~ 5 - .x) # reverse scale to be increasing
-    
+    across(contains("CAL1b"), ~ 5 - .x), # reverse scale to be increasing
+    across(
+      matches("CAL1A|CAL1B|CAL1"),
+      ~ ifelse(.x == 77, 0, .x)
+    )
   )
 ```
 
@@ -205,15 +208,17 @@ table(ca$`EA-FI`)
 table(ca$`EA-AH`)
 table(ca$`EA-AG`)
 ```
+
+
 # examine each society's coverage across EA and subsistence variable pairs
 ```{r}
 pair_indicators <- new_ca %>%
   mutate(
-    GA_pair = if_else(`EA-GA` != 0 & `GA-CAL1-R` >= 0, 1, 0),
-    HU_pair = if_else(`EA-HU` != 0 & `HU-CAL1-R` >= 0, 1, 0),
-    FI_pair = if_else(`EA-FI` != 0 & `FI-CAL1-R` >= 0, 1, 0),
-    AH_pair = if_else(`EA-AH` != 0 & `AH-CAL1-R` >= 0, 1, 0),
-    AG_pair = if_else(`EA-AG` != 0 & `AG-CAL1-R` >= 0, 1, 0)
+    GA_pair = if_else(`EA-GA` > 4 & `GA-CAL1-R` >= 0, 1, 0),
+    HU_pair = if_else(`EA-HU` > 4 & `HU-CAL1-R` >= 0, 1, 0),
+    FI_pair = if_else(`EA-FI` > 4 & `FI-CAL1-R` >= 0, 1, 0),
+    AH_pair = if_else(`EA-AH` > 4 & `AH-CAL1-R` >= 0, 1, 0),
+    AG_pair = if_else(`EA-AG` > 4 & `AG-CAL1-R` >= 0, 1, 0)
   ) %>%
   mutate(
     pair_coverage_count = rowSums(across(ends_with("_pair")), na.rm = TRUE)
@@ -227,7 +232,26 @@ table(pair_indicators$pair_coverage_count)
 # number of valid pairs per domain
 pair_indicators %>%
   summarise(across(ends_with("_pair"), ~ sum(. == 1, na.rm = TRUE)))
+
+pair_summary <- pair_indicators %>%
+  summarise(
+    across(
+      ends_with("_pair"),
+      list(
+        n = ~ sum(.x == 1, na.rm = TRUE),
+        prop = ~ mean(.x == 1, na.rm = TRUE)
+      )
+    )
+  ) %>%
+  pivot_longer(
+    everything(),
+    names_to = c("domain", ".value"),
+    names_pattern = "(.*)_pair_(n|prop)"
+  )
+
+pair_summary
 ```
+
 ```{r}
 pair_indicators %>%
   ggplot(aes(x = pair_coverage_count)) +
@@ -235,10 +259,46 @@ pair_indicators %>%
   labs(
     x = "Number of usable EA–CAL1 domain pairs",
     y = "Number of societies",
-    title = "Coverage of subsistence-domain pairs across societies"
+    title = "Coverage of subsistence-domain pairs (w/ EA > 4) across societies"
   ) +
   theme_minimal()
 ```
+```{r}
+ea_vars <- c("EA-GA", "EA-HU", "EA-FI", "EA-AH", "EA-AG")
+
+cal1_vars <- c(
+  "GA-CAL1-R",
+  "HU-CAL1-R",
+  "FI-CAL1-R",
+  "AH-CAL1-R",
+  "AG-CAL1-R"
+)
+
+ea_max_by_society <- new_ca %>%
+   filter(if_any(all_of(cal1_vars), ~ !is.na(.x))) %>%
+   mutate(
+    max_EA_subsistence = pmax(
+      `EA-GA`,
+      `EA-HU`,
+      `EA-FI`,
+      `EA-AH`,
+      `EA-AG`,
+      na.rm = TRUE
+    )
+   )
+
+ggplot(ea_max_by_society, aes(x = factor(max_EA_subsistence))) +
+  geom_bar() +
+  labs(
+    x = "Max EA subsistence score across subsistence types",
+    y = "Number of societies",
+    title = "Spread of Maximum Subsistence Type Scores Across Societies"
+  ) +
+  theme_minimal()
+```
+
+
+
 ```{r}
 # pairwise coverage matrix, for each pair of domains, count how many have both pair indicators = 1
 pair_vars <- pair_indicators %>%
