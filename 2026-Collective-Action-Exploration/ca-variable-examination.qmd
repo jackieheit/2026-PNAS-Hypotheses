@@ -6,12 +6,16 @@ format: html
 ```{r}
 library(tidyverse)
 
-ca <- read_csv("../../minerva/CollectiveAction/DT-CollectiveAction_raw2025.csv")
+ca <- read_csv("../../minerva/CollectiveAction/DT-CollectiveAction_raw2025.csv") %>%
+  mutate(
+    OWC = str_trim(OWC, side = c("both"))
+  )
 
 ca <- ca[, -c(30:44)]
 
 ca <- ca %>%
-  mutate(across(everything(), ~ ifelse(.x %in% c(88, 99), NA, .x)))
+  mutate(across(everything(), ~ ifelse(.x %in% c(88, 99), NA, .x))) %>%
+  rename(`GA-CAL1A-R` = `GA-CALA-R`)
 
 ```
 
@@ -184,16 +188,27 @@ table(ag$`AG-CAL1C-R`)
 ```{r}
 new_ca <- ca %>%
   mutate(
-    GA_practiced = ifelse(`GA-CAL1-R` == 77, 0, 1),
-    HU_practiced = ifelse(`HU-CAL1-R` == 77, 0, 1),
-    FI_practiced = ifelse(`FI-CAL1-R` == 77, 0, 1),
-    AH_practiced = ifelse(`AH-CAL1-R` == 77, 0, 1),
-    AG_practiced = ifelse(`AG-CAL1-R` == 77, 0, 1),
-    across(everything(), ~ ifelse(.x %in% 77, NA, .x)),
-    across(contains("CAL1b"), ~ 5 - .x), # reverse scale to be increasing
+    GA_practiced = if_else(`GA-CAL1-R` == 77, 0, 1),
+    HU_practiced = if_else(`HU-CAL1-R` == 77, 0, 1),
+    FI_practiced = if_else(`FI-CAL1-R` == 77, 0, 1),
+    AH_practiced = if_else(`AH-CAL1-R` == 77, 0, 1),
+    AG_practiced = if_else(`AG-CAL1-R` == 77, 0, 1),
+
     across(
       matches("CAL1A|CAL1B|CAL1"),
-      ~ ifelse(.x == 77, 0, .x)
+      ~ if_else(.x == 77, 0, as.numeric(.x))
+    ),
+    across(
+      contains("CAL1B"),
+      ~ case_when(
+        .x == 0 ~ 0,
+        .x == 4 ~ 1,
+        .x == 3 ~ 2,
+        .x == 2 ~ 3,
+        .x == 1 ~ 4,
+        TRUE ~ NA_real_
+      ),
+      .names = "{.col}_increasing"
     )
   )
 ```
@@ -210,7 +225,7 @@ table(ca$`EA-AG`)
 ```
 
 
-# examine each society's coverage across EA and subsistence variable pairs
+# examine each society's coverage across EA and CA variable pairs
 ```{r}
 pair_indicators <- new_ca %>%
   mutate(
@@ -218,20 +233,23 @@ pair_indicators <- new_ca %>%
     HU_pair = if_else(`EA-HU` > 4 & `HU-CAL1-R` >= 0, 1, 0),
     FI_pair = if_else(`EA-FI` > 4 & `FI-CAL1-R` >= 0, 1, 0),
     AH_pair = if_else(`EA-AH` > 4 & `AH-CAL1-R` >= 0, 1, 0),
-    AG_pair = if_else(`EA-AG` > 4 & `AG-CAL1-R` >= 0, 1, 0)
+    AG_pair = if_else(`EA-AG` > 4 & `AG-CAL1-R` >= 0, 1, 0),
+
+    GA_ca_gt0 = if_else(`EA-GA` > 4 & `GA-CAL1-R` > 0, 1, 0),
+    HU_ca_gt0 = if_else(`EA-HU` > 4 & `HU-CAL1-R` > 0, 1, 0),
+    FI_ca_gt0 = if_else(`EA-FI` > 4 & `FI-CAL1-R` > 0, 1, 0),
+    AH_ca_gt0 = if_else(`EA-AH` > 4 & `AH-CAL1-R` > 0, 1, 0),
+    AG_ca_gt0 = if_else(`EA-AG` > 4 & `AG-CAL1-R` > 0, 1, 0)
   ) %>%
   mutate(
-    pair_coverage_count = rowSums(across(ends_with("_pair")), na.rm = TRUE)
-  ) %>%
-  select(`SCCS ID`, OWC, GA_pair, `EA-GA`, HU_pair, `EA-HU`, FI_pair, `EA-FI`, AH_pair, `EA-AH`, AG_pair, `EA-AG`, pair_coverage_count)
-pair_indicators
+    pair_coverage_count = rowSums(across(ends_with("_pair")), na.rm = TRUE),
+    ca_gt0_count = rowSums(across(ends_with("_ca_gt0")), na.rm = TRUE),
+    any_domain_pair = if_else(pair_coverage_count > 0, 1, 0)
+  )
+
 
 
 table(pair_indicators$pair_coverage_count)
-
-# number of valid pairs per domain
-pair_indicators %>%
-  summarise(across(ends_with("_pair"), ~ sum(. == 1, na.rm = TRUE)))
 
 pair_summary <- pair_indicators %>%
   summarise(
@@ -250,6 +268,24 @@ pair_summary <- pair_indicators %>%
   )
 
 pair_summary
+
+ca_gt0_summary <- pair_indicators %>%
+  summarise(
+    across(
+      ends_with("_ca_gt0"),
+      ~ sum(.x == 1, na.rm = TRUE)
+    )
+  ) %>%
+  pivot_longer(
+    everything(),
+    names_to = "domain",
+    values_to = "n_pairs_w_collective_action"
+  ) %>%
+  mutate(
+    domain = str_remove(domain, "_ca_gt0")
+  )
+
+ca_gt0_summary
 ```
 
 ```{r}
@@ -262,6 +298,7 @@ pair_indicators %>%
     title = "Coverage of subsistence-domain pairs (w/ EA > 4) across societies"
   ) +
   theme_minimal()
+
 ```
 ```{r}
 ea_vars <- c("EA-GA", "EA-HU", "EA-FI", "EA-AH", "EA-AG")
@@ -297,69 +334,110 @@ ggplot(ea_max_by_society, aes(x = factor(max_EA_subsistence))) +
   theme_minimal()
 ```
 
-
+# make new variable: ca_ea_pair_score
 
 ```{r}
-# pairwise coverage matrix, for each pair of domains, count how many have both pair indicators = 1
-pair_vars <- pair_indicators %>%
-  select(ends_with("_pair")) %>%
-  mutate(across(everything(), ~ replace_na(.x, 0)))
+hz <- read_csv("../../minerva/Hazards/Datasets/DT-hzcats-society-level.csv")
 
-pair_matrix <- t(as.matrix(pair_vars)) %*% as.matrix(pair_vars)
+ds <- inner_join(hz, pair_indicators, by = c("ID" = "SCCS ID")) # something is wrong with the OWCs for the CA dataset since we're losing cases when we merge by it...will not be using to join
 
-pair_matrix
+owcs <- anti_join(hz, pair_indicators, by = c("OWC")) # discrepancies between OWCs listed here
+```
 
-pair_matrix_df <- as.data.frame(pair_matrix) %>%
-  rownames_to_column("domain1") %>%
-  pivot_longer(-domain1, names_to = "domain2", values_to = "n_societies")
+```{r}
+ca_hz <- ds %>%
+  filter(any_domain_pair == 1) %>%
+  pivot_longer(
+    cols = c(`EA-GA`, `EA-HU`, `EA-FI`, `EA-AH`, `EA-AG`),
+    names_to = "domain",
+    values_to = "EA_score"
+  ) %>%
+  mutate(
+    domain = str_remove(domain, "EA-"),
+    CAL1_score = case_when(
+      domain == "GA" ~ `GA-CAL1-R`,
+      domain == "HU" ~ `HU-CAL1-R`,
+      domain == "FI" ~ `FI-CAL1-R`,
+      domain == "AH" ~ `AH-CAL1-R`,
+      domain == "AG" ~ `AG-CAL1-R`,
+      TRUE ~ NA_real_
+    )
+  ) %>%
+  filter(EA_score > 4, CAL1_score >= 0) %>%
+  group_by(ID) %>%
+  # slice_max(EA_score, n = 1, with_ties = FALSE) %>%
+  arrange(desc(EA_score), desc(CAL1_score), domain, .by_group = TRUE) %>%
+  slice(1) %>%
+  ungroup() %>%
+  mutate(
+    ca_ea_pair_score = EA_score * CAL1_score,
+    pair_domain = factor(
+      domain,
+      levels = c("GA", "HU", "FI", "AH", "AG")
+    )
+  ) %>%
+  filter(ID != 218 & ID != 73)
 
-
-pair_matrix_df %>%
-  filter(domain1 < domain2)
 ```
 
 
+## make a little hist of this variable:
 ```{r}
-ea_long <- ca %>%
-  select(`SCCS ID`, starts_with("EA-"), -`EA-SUB-PER`) %>%
-  pivot_longer(
-    cols = starts_with("EA-"),
-    names_to = "domain",
-    values_to = "importance"
-  ) %>%
-  filter(!is.na(importance), !importance %in% c(77, 88, 99)) %>%
-  mutate(
-    domain = factor(
-      domain,
-      levels = c("EA-GA", "EA-HU", "EA-FI", "EA-AH", "EA-AG")
-    ),
-    importance = factor(importance, ordered = TRUE)
-  )
-
-ggplot(ea_long, aes(x = domain, fill = importance)) +
+ggplot(ca_hz, aes(x = ca_ea_pair_score, fill = pair_domain)) +
   geom_bar() +
+  scale_fill_brewer(palette = "Paired", direction = -1, type = "qual") +
   labs(
-    x = "Subsistence domain",
+    x = "Subsistence dependence × collective action score",
     y = "Number of societies",
-    fill = "Subsistence importance",
-    title = "Counts of societies by subsistence importance"
+    fill = "Dominant subsistence domain",
+    title = "Spread of Collective Action within Dominant Subsistence Types"
   ) +
   theme_minimal()
 ```
-```{r}
-ea_counts <- ea_long %>%
-  count(domain, importance)
 
-ggplot(ea_counts, aes(x = importance, y = n, group = domain, color = domain)) +
-  # geom_line(linewidth = 1) +
-  geom_smooth(method = "loess", se = FALSE) +
-  geom_point(size = 2) +
-  geom_jitter(width = 1, height = 1) +
+## dealing with societies that have more than one dominant subsistence domain:
+```{r}
+ca_hz %>%
+  filter(pair_coverage_count > 1) %>%
+  select(ID)
+```
+
+SCCS = 100, 109
+
+```{r}
+ca_hz %>%
+  filter(pair_coverage_count > 1) %>%
+  select(
+    ID,
+    ca_ea_pair_score,
+    pair_domain,
+    matches("CAL1-R"),
+    matches("^EA-")
+  )
+```
+
+
+```{r}
+ggplot(
+  ca_hz %>%
+    filter(pair_domain == "AG"),
+  aes(
+    x = ca_ea_pair_score,
+    y = allhazards_H9a_sev_exposure_30
+  )
+) +
+  geom_smooth(method = "loess",se = TRUE) +
+  geom_jitter(
+    aes(color = pair_domain),
+    width = 0.1,
+    height = 0,
+    alpha = 0.7
+  ) +
   labs(
-    x = "Subsistence importance",
-    y = "Number of societies",
-    color = "Domain",
-    title = "Distribution of societies across subsistence domains"
+    x = "Subsistence dependence × collective action score",
+    y = "Food-destroying hazard severity weighted by frequency",
+    color = "Dominant subsistence domain",
+    title = "Hazard Severity Exposure by Subsistence Dependence–Collective Action Score"
   ) +
   theme_minimal()
 ```
