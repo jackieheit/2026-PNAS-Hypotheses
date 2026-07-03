@@ -83,7 +83,7 @@ plot(
 par(lwd = 3)
 rect.hclust(
   hc_final,
-  k = 4,
+  k = 3,
   border = 2:5
 )
 
