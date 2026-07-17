@@ -1,0 +1,109 @@
+---
+title: "CA-long-format-analyses"
+format: html
+---
+
+```{r}
+library(tidyverse)
+
+ca <- read_csv("collective-action-long-format.csv")
+
+hz <- read_csv("../../minerva/Hazards/Datasets/DT-hzcats-society-level.csv")
+
+sh <- read_csv("../../2026-Sharing-Analyses/sharing-dataset-for-analysis.csv")
+sh <- sh %>% select(ID, allhazards_nonfd_sev_exposure2.5_30, allhazards_nonfd_sev_exposure2.5_30_IA, allhazards_nonfd_sev_exposure2_30, allhazards_nonfd_sev_exposure2_30_IA)
+
+hz <- inner_join(hz, sh, by = c("ID"))
+# remove outliers identified in cluster analysis  
+
+hz <- hz %>% filter(ID != 73 & ID != 218)
+
+hz_vars <- c(
+  "normative_est_count_30",
+  "normative_est_count_30_IA",
+  "disaster_est_count_30",
+  "disaster_est_count_30_IA",
+  "allhazards_sev_exposure_30",
+  "allhazards_sev_exposure_30_IA",
+  "allhazards_H9a_sev_exposure_30",
+  "allhazards_H9a_sev_exposure_30_IA",
+  "allhazards_nonfd_sev_exposure2_30",
+  "allhazards_nonfd_sev_exposure2_30_IA",
+  "allhazards_nonfd_sev_exposure2.5_30",
+  "allhazards_nonfd_sev_exposure2.5_30_IA"
+)
+
+hz_dat <- hz %>%
+  select(ID, OWC, all_of(hz_vars)) %>%
+  mutate(
+    normative_ind = case_when(
+      is.na(normative_est_count_30) ~ NA_integer_,
+      normative_est_count_30 > 0 ~ 1L,
+      TRUE ~ 0L
+    ),
+    normative_ind_IA = case_when(
+      is.na(normative_est_count_30_IA) ~ NA_integer_,
+      normative_est_count_30_IA > 0 ~ 1L,
+      TRUE ~ 0L
+    ),
+    across(
+      all_of(hz_vars),
+      ~ as.numeric(scale(.x)),
+      .names = "Z_{.col}"
+    )
+  )
+
+
+```
+```{r}
+ca_hz <- ca %>%
+  left_join(
+    hz_dat,
+    by = "OWC",
+    relationship = "many-to-one"
+  )
+```
+
+# Does the presence of collective action vary based on differing hazard environments?
+mixed effects logistic model or ordinal mixed effects model (if wanting to use CAL1 directly)
+cooperation_present ~ environmental_variation +
+                      EA_dependence +
+                      subsistence_domain +
+                      (1 | society)
+                      
+Among subsistence types practiced by a society, is hazard exposure associated with whether cooperative subsistence activity occurs?
+```{r}
+library(lme4)
+
+ca_presence <- ca_hz %>%
+  filter(
+    practiced == 1,
+    !is.na(cooperation_present)
+  ) %>%
+  mutate(
+     Z_EA_dependence = as.numeric(scale(EA_dependence))
+  )
+
+# all hazards severity
+m_presence <- glmer(
+  cooperation_present ~
+    Z_allhazards_sev_exposure_30 +
+    normative_ind_IA +
+    Z_EA_dependence +
+    factor(subsistence_domain) +
+    (1 | OWC),
+  data = ca_presence,
+  family = binomial()
+)
+
+summary(m_presence)
+
+
+```
+
+                      
+
+# when cooperation occurs, is there a connection between environmental impact and specific features of collective action
+
+CAL1a ~ environmental_variation + EA_dependence + ...
+CAL1b ~ environmental_variation + EA_dependence + ...
