@@ -14,7 +14,7 @@ hz <- read_csv("../../minerva/Hazards/Datasets/DT-hzcats-society-level.csv")
 sh <- read_csv("../../2026-Sharing-Analyses/sharing-dataset-for-analysis.csv")
 sh <- sh %>% select(ID, allhazards_nonfd_sev_exposure2_30, allhazards_nonfd_sev_exposure2_30_IA)
 
-hz <- full_join(hz, sh, by = c("ID"))
+hz <- inner_join(hz, sh, by = c("ID"))
 # remove outliers identified in cluster analysis  
 
 hz <- hz %>% filter(ID != 73 & ID != 218)
@@ -27,14 +27,16 @@ IA_vars <- c(
 )
 
 
-# Keep IDs + original variables
 IA_for_clust <- hz %>%
-  select(ID, all_of(IA_vars)) %>%
+  select(ID, DQ, all_of(IA_vars)) %>%
   drop_na(all_of(IA_vars))
 
+# Scale only the clustering variables
 IA_for_clust_scaled <- IA_for_clust %>%
   select(all_of(IA_vars)) %>%
-  mutate(across(everything(), ~ as.numeric(scale(.))))
+  scale()
+
+rownames(IA_for_clust_scaled) <- IA_for_clust$ID
 ```
 
 
@@ -52,6 +54,8 @@ fviz_nbclust(
   method = "gap_stat",
   hc_method = "ward.D2"
 )
+
+
 ```
 
 ```{r}
@@ -59,20 +63,13 @@ dist_IA <- dist(IA_for_clust_scaled, method = "euclidean")
 
 hc_final <- hclust(dist_IA, method = "ward.D2")
 
-fviz_dend(
-  hc_final,
-  k = 3,
-  rect = TRUE,
-  cex = 0.7,
-  main = "Hierarchical Clustering of IA Hazard Variables"
-)
 ```
 
 ```{r}
 plot(
   hc_final,
   labels = IA_for_clust$ID,
-  main = "Hierarchical Clustering of IA Hazard Variables",
+  # main = "Hierarchical Clustering of IA Hazard Variables",
   xlab = "",
   sub = "",
   cex = 0.7,
@@ -90,6 +87,87 @@ rect.hclust(
 # reset line width back to normal
 par(lwd = 1)
 ```
+```{r}
+# Distance matrix
+IA_dist <- dist(IA_for_clust_scaled, method = "euclidean")
+
+# Hierarchical clustering
+IA_hclust <- hclust(IA_dist, method = "ward.D2")
+
+# Plot dendrogram with IDs
+plot(
+  IA_hclust,
+  labels = IA_for_clust$ID,
+  main = "Hierarchical Clustering of Societies",
+  xlab = "Society ID",
+  sub = "",
+  cex = 0.7
+)
+
+
+IA_clusters <- cutree(IA_hclust, k = 4)
+
+
+# Add cluster assignments back to IDs and original variables
+IA_cluster_results <- IA_for_clust %>%
+  mutate(cluster = IA_clusters)
+
+# View results
+IA_cluster_results
+
+id_cols <- read_csv("../../minerva/Sample/Minerva-Starting-Sample.csv") %>%
+  rename("ID" = "Minerva ID (SCCS 1-186, non-SCCS 201-223)")
+
+id_cols <- id_cols %>%
+  select(ID, eHRAF.Name, Region)
+
+cluster_results <- full_join(IA_cluster_results, id_cols, by = "ID") %>%
+  relocate(DQ, .after = last_col())
+
+write.csv(cluster_results, "results/hier_cluster_results_ver_4.csv")
+```
+
+```{r}
+fviz_dend(
+  hc_final,
+  k = 4,
+  rect = TRUE,
+  show_labels = TRUE,
+  cex = 0.6,
+  k_colors = c("red", "blue", "darkgreen", "purple"),
+  main = "Hierarchical Clustering of Societies",
+  xlab = "Society ID"
+) +
+  labs(color = "Cluster")
+```
+
+```{r}
+cluster_boxplot_data <- cluster_results %>%
+  mutate(cluster = factor(cluster)) %>%
+  pivot_longer(
+    cols = all_of(IA_vars),
+    names_to = "hazard_variable",
+    values_to = "value"
+  )
+
+ggplot(cluster_boxplot_data, aes(x = cluster, y = value, fill = cluster)) +
+  geom_boxplot(alpha = 0.6, outlier.shape = NA) +
+  geom_jitter(
+    aes(color = cluster),
+    width = 0.15,
+    alpha = 0.5,
+    show.legend = FALSE
+  ) +
+  facet_wrap(~ hazard_variable, scales = "free_y") +
+  labs(
+    x = "Cluster",
+    y = "Hazard variables",
+    title = "Distribution of Hazard Variables by Hierarchical Cluster Category",
+    fill = "Cluster"
+  ) +
+  theme_minimal()
+```
+
 
 
 
