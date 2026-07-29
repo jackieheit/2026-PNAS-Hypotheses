@@ -30,7 +30,11 @@ hz_vars <- c(
   "allhazards_nonfd_sev_exposure2_30",
   "allhazards_nonfd_sev_exposure2_30_IA",
   "allhazards_nonfd_sev_exposure2.5_30",
-  "allhazards_nonfd_sev_exposure2.5_30_IA"
+  "allhazards_nonfd_sev_exposure2.5_30_IA",
+  "disaster_h9a_sev_exposure_30",
+  "disaster_h9a_sev_exposure_30_IA",
+  "fd3_est_count_30",
+  "fd3_est_count_30_IA"
 )
 
 hz_dat <- hz %>%
@@ -55,6 +59,8 @@ hz_dat <- hz %>%
 
 
 ```
+
+
 ```{r}
 ca_hz <- ca %>%
   left_join(
@@ -84,10 +90,11 @@ ca_presence <- ca_hz %>%
      Z_EA_dependence = as.numeric(scale(EA_dependence))
   )
 
+
 # all hazards severity
 m_presence <- glmer(
   cooperation_present ~
-    Z_allhazards_sev_exposure_30 +
+    Z_allhazards_sev_exposure_30_IA +
     normative_ind_IA +
     Z_EA_dependence +
     factor(subsistence_domain) +
@@ -97,6 +104,20 @@ m_presence <- glmer(
 )
 
 summary(m_presence)
+
+# disasters
+m_presence_fd <- glmer(
+  cooperation_present ~
+    Z_disaster_est_count_30 +
+    normative_ind_IA +
+    Z_EA_dependence +
+    factor(subsistence_domain) +
+    (1 | OWC),
+  data = ca_presence,
+  family = binomial()
+)
+
+summary(m_presence_fd)
 
 
 ```

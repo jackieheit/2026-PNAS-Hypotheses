@@ -67,5 +67,21 @@ eligible_societies <- ds %>%
 ```
 
 
+## how many normative hazards have frequencies < 6
+```{r}
+ds %>%
+  filter(H.13. == 2) %>%
+  filter(H.11. < 6) %>%
+  summarise(
+    n_events = n(),
+    n_societies = n_distinct(ID)
+  )
+
+```
+TODO: there doesn't seem to be any any...however, perform analysis on hazards that have frequencies of 5 to understand what kind of hazards these seem to be?
+
+
+
+
 
 
