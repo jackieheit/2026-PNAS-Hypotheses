@@ -81,7 +81,107 @@ ds %>%
 TODO: there doesn't seem to be any any...however, perform analysis on hazards that have frequencies of 5 to understand what kind of hazards these seem to be?
 
 
+# normative "droughts"
+```{r}
+normative_type_ds <- ds %>%
+  mutate(
+    H.5. = str_trim(H.5., side = "both"),
+    H.5. = toupper(H.5.)
+    )
+normative_type_ds %>%
+  filter(H.13. == 2 & H.5. == "DR") %>%
+  group_by(ID, eHRAF.Name, OWC) %>%
+  summarise(
+    n_events = n(),
+    n_societies = n_distinct(ID),
+  ) 
+```
+
+# normative "cattle plagues"
+```{r}
+normative_type_ds %>%
+  filter(H.13. == 2 & H.5. == "CP") %>%
+  group_by(ID, eHRAF.Name) %>%
+  summarise(
+    n_events = n(),
+    n_societies = n_distinct(ID),
+  )
+```
+
+# normative "earthquakes"
+```{r}
+normative_type_ds %>%
+  filter(H.13. == 2 & H.5. == "EA") %>%
+  group_by(OWC, eHRAF.Name) %>%
+  summarise(
+    ID = mean(ID),
+    n_events = n(),
+    n_societies = n_distinct(ID),
+  )
+```
+# normative "erratic rains"
+```{r}
+normative_type_ds %>%
+  filter(H.13. == 2 & H.5. == "ER") %>%
+  group_by(ID, eHRAF.Name) %>%
+  summarise(
+    n_events = n(),
+    n_societies = n_distinct(ID),
+  )
+```
+
+# normative "glacial advance"
+```{r}
+normative_type_ds %>%
+  filter(H.13. == 2 & H.5. == "GAC") %>%
+  group_by(ID) %>%
+  summarise(
+    n_events = n(),
+    n_societies = n_distinct(ID),
+  )
+```
+
+# normative Locusts
+```{r}
+normative_type_ds %>%
+  filter(H.13. == 2 & H.5. == "LO") %>%
+  group_by(ID, eHRAF.Name) %>%
+  summarise(
+    n_events = n(),
+    n_societies = n_distinct(ID),
+  )
+```
+
+# normative "land slides"
+```{r}
+normative_type_ds %>%
+  filter(H.13. == 2 & H.5. == "LS") %>%
+  group_by(ID) %>%
+  summarise(
+    n_events = n(),
+    n_societies = n_distinct(ID),
+  )
+```
+
+# normative "river course changes"
+```{r}
+normative_type_ds %>%
+  filter(H.13. == 2 & H.5. == "RC") %>%
+  group_by(ID) %>%
+  summarise(
+    n_events = n(),
+    n_societies = n_distinct(ID),
+  )
+```
 
 
-
-
+# normative severe or early/long winter
+```{r}
+normative_type_ds %>%
+  filter(H.13. == 2 & H.5. == "SEW") %>%
+  group_by(ID, eHRAF.Name, OWC) %>%
+  summarise(
+    n_events = n(),
+    n_societies = n_distinct(ID),
+  )
+```
