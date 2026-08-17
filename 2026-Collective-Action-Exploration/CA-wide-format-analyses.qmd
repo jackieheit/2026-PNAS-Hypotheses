@@ -1,0 +1,124 @@
+---
+title: "CA-wide-format-analyses"
+format: html
+---
+
+```{r}
+library(tidyverse)
+
+ca_hz <- read.csv("collective-action-wide-format.csv") %>%
+  select(-c(OWC.x, OWC.y))
+
+sh <- read_csv("../../2026-Sharing-Analyses/sharing-dataset-for-analysis.csv")
+
+ca_hz <- inner_join(ca_hz, sh, by = c("ID", "DQ"))
+```
+
+
+```{r}
+ggplot(
+  ca_hz %>%
+    filter(pair_domain == "AG"),
+  aes(
+    x = ca_ea_pair_score,
+    y = allhazards_H9a_sev_exposure_30.x
+  )
+) +
+  geom_smooth(method = "loess",se = TRUE) +
+  geom_jitter(
+    aes(color = pair_domain),
+    width = 0.1,
+    height = 0,
+    alpha = 0.7
+  ) +
+  labs(
+    x = "Subsistence dependence × collective action score",
+    y = "Food-destroying hazard severity weighted by frequency",
+    color = "Dominant subsistence domain",
+    title = "Hazard Severity Exposure by Subsistence Dependence–Collective Action Score"
+  ) +
+  theme_minimal()
+```
+## analyzing CA pair score with hazard vars
+
+```{r}
+# which complexity controls are most highly correlated with collective action
+cor.test(
+  ca_hz$ca_ea_pair_score,
+  ca_hz$ea033,
+  method = "spearman",
+  exact = FALSE
+)
+
+cor.test(
+  ca_hz$ca_ea_pair_score,
+  ca_hz$community_size,
+  method = "spearman",
+  exact = FALSE
+)
+
+cor.test(
+  ca_hz$ca_ea_pair_score,
+  ca_hz$intensity_agricult,
+  method = "spearman",
+  exact = FALSE
+)
+
+cor.test(
+  ca_hz$ca_ea_pair_score,
+  ca_hz$class_strat,
+  method = "spearman",
+  exact = FALSE
+)
+```
+
+```{r}
+data_clean <- ca_hz %>% filter(!is.na(ca_ea_pair_score), !is.na(allhazards_sev_exposure_30))  %>%
+  mutate(
+    AG_ind = ifelse(pair_domain == "AG", 1, 0),
+    CA_ind = ifelse(!is.na(ca_ea_pair_score) & ca_ea_pair_score > 0, 1, 0)
+  )
+
+ca_lm <- lm(allhazards_sev_exposure_30 ~ ca_ea_pair_score*AG_ind, data = data_clean)
+
+ca_ind_lm <- lm(allhazards_sev_exposure_30 ~ CA_ind*AG_ind, data = data_clean)
+
+summary(ca_lm)
+summary(ca_ind_lm)
+
+ca_lm_fd <- lm(disaster_h9a_sev_exposure_30.x ~ ca_ea_pair_score*AG_ind, data = data_clean)
+summary(ca_ind_lm_fd)
+plot(ca_lm_fd)
+```
+The association between collective-action/subsistence pair score and hazard severity exposure differed by whether agriculture was the dominant subsistence domain. Among non-agriculturally dominant societies, higher pair scores were associated with lower hazard severity exposure, whereas among agricultural societies, higher pair scores were associated with higher hazard severity exposure. The interaction was statistically significant, suggesting that agricultural subsistence moderates this relationship.
+
+```{r}
+library(emmeans)
+
+emtrends(
+  ca_lm,
+  ~ AG_ind,
+  var = "ca_ea_pair_score"
+)
+```
+
+Simple slopes showed that the association between collective-action/subsistence pair score and hazard severity exposure was positive among agricultural societies, b = 0.46, 95% CI [0.06, 0.87], but negative and not statistically significant among non-agricultural societies, b = -0.50, 95% CI [-1.20, 0.20].
+
+
+
+Distribution of EA*CA score across agriculturally dominant societies
+```{r}
+d_ag_dist <- ca_hz %>%
+  filter(pair_domain == "AG")
+
+ggplot(d_ag_dist, aes(x = ca_ea_pair_score)) +
+  geom_histogram(binwidth = 1, color = "white") +
+  labs(
+    x = "CA × EA pair score",
+    y = "Count",
+    title = "Distribution of CA–EA Pair Scores for Agriculture Societies"
+  ) +
+  theme_minimal()
+
+```
+
