@@ -300,6 +300,8 @@ pair_indicators %>%
   theme_minimal()
 
 ```
+
+
 ```{r}
 ea_vars <- c("EA-GA", "EA-HU", "EA-FI", "EA-AH", "EA-AG")
 
@@ -456,6 +458,7 @@ ca_ind_lm <- lm(allhazards_sev_exposure_30 ~ CA_ind*AG_ind, data = data_clean)
 summary(ca_lm)
 summary(ca_ind_lm)
 ```
+
 The association between collective-action/subsistence pair score and hazard severity exposure differed by whether agriculture was the dominant subsistence domain. Among non-agriculturally dominant societies, higher pair scores were associated with lower hazard severity exposure, whereas among agricultural societies, higher pair scores were associated with higher hazard severity exposure. The interaction was statistically significant, suggesting that agricultural subsistence moderates this relationship.
 
 ```{r}
