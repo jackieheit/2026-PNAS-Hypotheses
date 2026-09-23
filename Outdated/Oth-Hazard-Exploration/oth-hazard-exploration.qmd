@@ -1,0 +1,191 @@
+---
+title: "oth-hazard-exploration"
+format: html
+---
+
+```{r}
+library(tidyverse)
+
+oth <- read_csv("../../minerva/ResourceStress/Upstream/DT-resource-stress-combined.csv") %>%
+  select(ID, OTH_30) %>%
+  mutate(
+    OTH_30 = if_else(OTH_30 == 99, NA, OTH_30)
+  )
+
+hzcats <- read_csv("../../minerva/Hazards/Datasets/DT-hzcats-society-level.csv")
+
+# there are roughly 10 cases coded NA for OTH_30
+inner_join(oth, hzcats, by = "ID") %>%
+  filter(!is.na(OTH_30))
+```
+
+```{r}
+# create combined dataset
+ds_hz <- full_join(oth, hzcats, by = "ID")
+
+sh <- read_csv("../../2026-Sharing-Analyses/sharing-dataset-for-analysis.csv") %>%
+  select(ID, OWC, ea033, fd_freq_30, nonfd_2_freq_30, nonfd_2.5_freq_30)
+
+tl_long <- read_csv("../../2026-Tightness-Analyses/2026-updates/data/tl_long.csv")
+
+ds_sharing_tl <- inner_join(sh, tl_long, by = c("OWC"))
+
+ds_FA <- full_join(ds_hz, ds_sharing_tl, by = c("ID", "OWC"))
+```
+
+```{r}
+# inferred absence based on OTH_30 value
+ds_FA_OTH <- ds_FA %>%
+  mutate(
+    disaster_h9a_sev_exposure_30_OTH = if_else(is.na(disaster_h9a_sev_exposure_30) & OTH_30 == 1, 0, disaster_h9a_sev_exposure_30),
+    fd3_est_count_30_OTH = if_else(is.na(fd3_est_count_30) & OTH_30 == 1, 0, fd3_est_count_30),
+    fd_freq_30_OTH = if_else(is.na(fd_freq_30) & OTH_30 == 1, 1, fd_freq_30),
+    # nonfd_2_freq_30 = if_else(is.na(nonfd_2_freq_30) & OTH_30 == 1, 1, NA),
+    # nonfd_2.5_freq_30 = if_else(is.na(nonfd_2.5_freq_30) & OTH_30 == 1, 1, NA)
+     normative_ind_IA = factor(if_else(normative_est_count_30_IA > 0, 1, 0)),
+  )
+```
+
+# TL5 Analyses: Overall gestalt level of TL in a society
+
+```{r}
+library(lme4)
+library(lmerTest) # gives p-values
+```
+
+## Food-destroying Freq
+
+```{r}
+tl5_mixed_fd_freq <- lmer(
+  TL5 ~ fd_freq_30_OTH + ea033 +
+    (1 | ID),
+  data = ds_FA_OTH
+)
+
+summary(tl5_mixed_fd_freq)
+```
+
+Food-destroying hazard frequency was negatively associated with TL5 scores ($\beta_{fdfreq} = −0.082$ , SE = 0.038, p = 0.033), such that greater food destroying hazard frequency was associated with lower TL5 scores after controlling for political hierarchy. Political hierarchy was positively associated with TL5 (β = 0.150, SE = 0.049, p = .003, N = 452 observations; n = 85 societies).
+
+```{r}
+domain_nums <- sort(unique(ds_FA_OTH$Domain_name))
+
+for (d in domain_nums) {
+  cat("\n\n============================\n")
+  cat("Domain:", d, "\n")
+  cat("============================\n\n")
+  
+  domain_data <- ds_FA_OTH %>%
+    filter(Domain_name == d)
+  
+  model <- lm(
+  TL5 ~ fd_freq_30_OTH + ea033,
+  data = domain_data
+)
+  
+  print(summary(model))
+}
+```
+
+```{r}
+data_gender <- ds_FA_OTH %>%
+    filter(Domain_name == "gender")
+
+plot(data_gender$fd_freq_30_OTH, data_gender$TL5, )
+
+ggplot(
+  data_gender,
+  aes(
+    x = TL5,
+    y =fd_freq_30_OTH 
+  )
+) +
+  geom_smooth(method = "loess",se = TRUE) +
+  geom_jitter(
+    width = 0.1,
+    height = 0,
+    alpha = 0.7
+  )
+```
+
+## Food destroying disasters
+
+```{r}
+tl5_mixed_fd_dis <- lmer(
+  TL5 ~ fd3_est_count_30_OTH + ea033 +
+    (1 | ID),
+  data = ds_FA_OTH
+)
+
+summary(tl5_mixed_fd_dis)
+```
+
+# TL1 Analyses: Emphasis of strong rules for appropriate behavior across domains
+
+## Food-destroying frequency
+
+```{r}
+tl1_mixed <- lmer(
+  TL1 ~ fd_freq_30_OTH + ea033 +
+    (1 | ID),
+  data = ds_FA_OTH
+)
+
+summary(tl1_mixed)
+```
+
+Food-destroying hazard frequency was negatively associated with emphasis on strong rules for appropriate behavior, $\beta_{fdfreq} = −0.102$, SE = 0.038, p = .010, controlling for political hierarchy. The model included 458 domain-level observations nested within 85 societies.
+
+```{r}
+domain_nums <- sort(unique(ds_FA_OTH$Domain_name))
+
+for (d in domain_nums) {
+  cat("\n\n============================\n")
+  cat("Domain:", d, "\n")
+  cat("============================\n\n")
+  
+  domain_data <- ds_FA_OTH %>%
+    filter(Domain_name == d)
+  
+  model <- lm(
+  TL1 ~ fd_freq_30_OTH + ea033,
+  data = domain_data
+)
+  
+  print(summary(model))
+}
+```
+
+# TL3 Analyses: Punishment in violation of norms across domains
+
+## Food-destroying frequency
+
+```{r}
+tl3_mixed <- lmer(
+  TL3 ~ fd_freq_30_OTH + ea033 +
+    (1 | ID),
+  data = ds_FA_OTH
+)
+
+summary(tl3_mixed)
+```
+
+```{r}
+domain_nums <- sort(unique(ds_FA_OTH$Domain_name))
+
+for (d in domain_nums) {
+  cat("\n\n============================\n")
+  cat("Domain:", d, "\n")
+  cat("============================\n\n")
+  
+  domain_data <- ds_FA_OTH %>%
+    filter(Domain_name == d)
+  
+  model <- lm(
+  TL3 ~ fd_freq_30_OTH + ea033,
+  data = domain_data
+)
+  
+  print(summary(model))
+}
+```
