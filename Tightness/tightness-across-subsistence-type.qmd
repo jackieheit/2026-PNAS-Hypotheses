@@ -1,0 +1,121 @@
+---
+title: "tightness-across-subsistence-type"
+format: html
+---
+
+```{r}
+library(tidyverse)
+
+# data came directly from eHRAF in 9/2026
+ehraf_sub <- read_csv("data/ehraf-subsistence.csv") %>%
+  mutate(
+    across(where(is.character), ~ str_remove_all(.x, "\\s+")),
+    OWC = str_to_upper(id),
+    sub_type_factor = factor(
+      case_when(
+      subsistence_type == "hunter-gatherers" ~ 1,
+      subsistence_type == "primarilyhunter-gatherers" ~ 2,
+      subsistence_type == "pastoralists" ~ 3,
+      subsistence_type == "horticulturalists" ~ 4,
+      subsistence_type == "intensiveagriculturalists" ~ 5,
+      subsistence_type == "agro-pastoralists" ~ 6,
+      subsistence_type == "othersubsistencecombinations" ~ 7,
+      subsistence_type == "commercialeconomy" ~ 8,
+      subsistence_type == "notassigned" ~ NA_real_,
+      TRUE ~ NA_real_
+      )
+    )
+  ) %>%
+  select(-id)
+
+tl_long <- read_csv("2026-tightness-dataset-updates/data/tl_long.csv")
+
+ds <- inner_join(ehraf_sub, tl_long, by = c("OWC"))
+ds <- ds %>%
+  mutate(ea_id = str_trim(EA.ID, "both"))
+```
+
+```{r}
+# adjust ea data for variable ea028
+ea <- read_csv("data/dplace-ea-data.csv") %>%
+  filter(var_id == "EA028") %>%
+  pivot_wider(names_from = "var_id", values_from = "code") %>%
+  select(soc_id, EA028) %>%
+  mutate(
+    ea_id = str_trim(soc_id, "both")
+  )
+
+ds <- left_join(ds, ea, by = c("ea_id"))
+
+# how much data coverage do we have for ea028
+ea028_summary <- ds %>%
+  distinct(ea_id, EA028) %>%
+  summarise(
+    total_societies = n(),
+    non_na_ea028 = sum(!is.na(EA028)),
+    missing_ea028 = sum(is.na(EA028))
+  )
+```
+
+# Subsistence Type Tightness Analyses
+datasets:
+```{r}
+ds_law <- ds %>%
+  filter(Domain_name == "law")
+
+ds_soc <- ds %>%
+  filter(Domain_name == "social")
+
+ds_gender <- ds %>%
+  filter(Domain_name == "gender")
+
+ds_marraige <- ds %>%
+  filter(Domain_name == "marraige")
+
+ds_funeral <- ds %>%
+  filter(Domain_name == "funeral")
+```
+
+### Law
+TL5:
+```{r}
+ggplot(ds_law, aes(x = sub_type_factor, y = TL5)) +
+  stat_summary(fun = mean, geom = "bar") +
+  labs(
+    x = "Subsistence Type",
+    y = "Mean TL5",
+    title = "Law"
+  ) +
+  theme_minimal()
+
+ds_law_test <- ds_law %>%
+  filter(sub_type_factor == 7)
+```
+
+
+TL1:
+
+### social
+TL5:
+
+TL1:
+
+### gender
+TL5:
+
+TL1:
+
+### marraige
+TL5:
+
+TL1:
+
+### sex
+TL5:
+
+TL1:
+
+### funeral
+TL5:
+
+TL1:

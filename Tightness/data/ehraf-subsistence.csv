@@ -1,0 +1,368 @@
+id,term,subsistence_type
+aa01,Korea,intensive agriculturalists
+ab06,Ainu,hunter-gatherers
+ab43,Okayama,intensive agriculturalists
+ac07,Okinawans,intensive agriculturalists
+ad05,Taiwan Hokkien,intensive agriculturalists
+ad08,Atayal,horticulturalists
+ae04,Yi,intensive agriculturalists
+ae05,Miao,intensive agriculturalists
+ae09,Monguor,intensive agriculturalists
+ae15,Han Chinese,intensive agriculturalists
+ag04,Manchu,intensive agriculturalists
+ah01,Mongolia,pastoralists
+ah06,Inner Mongolia,agro-pastoralists
+ai01,Xinjiang Uygur Autonomous Region,not assigned
+ai04,Uyghur,other subsistence combinations
+aj01,Tibetans,intensive agriculturalists
+ak05,Lepcha,intensive agriculturalists
+ak06,Sherpa,agro-pastoralists
+am04,Cambodians,intensive agriculturalists
+am11,Vietnamese,intensive agriculturalists
+am28,Rmeet,horticulturalists
+am35,Rhade,intensive agriculturalists
+an05,Malays,intensive agriculturalists
+an06,Semai,horticulturalists
+an07,Semang,hunter-gatherers
+ao07,Central Thai,intensive agriculturalists
+ap04,Burmans,intensive agriculturalists
+ap06,Kachin,horticulturalists
+ap07,Karen,other subsistence combinations
+ar05,Garo,horticulturalists
+ar07,Khasi,agro-pastoralists
+ar20,Mara,horticulturalists
+at02,Baluchi,pastoralists
+at03,West Punjabi,intensive agriculturalists
+au04,Pashtun,intensive agriculturalists
+au05,Hazara,intensive agriculturalists
+au07,Ghorbat,commercial economy
+av04,Kashmiri,commercial economy
+av07,Burusho,intensive agriculturalists
+aw11,Kerala,intensive agriculturalists
+aw16,Tamil,intensive agriculturalists
+aw17,Telugu,intensive agriculturalists
+aw19,Uttar Pradesh,intensive agriculturalists
+aw25,Bhil,agro-pastoralists
+aw32,Gond,other subsistence combinations
+aw37,Kol,intensive agriculturalists
+aw42,Santal,intensive agriculturalists
+aw50,Badaga,intensive agriculturalists
+aw60,Toda,pastoralists
+aw69,Bengali,intensive agriculturalists
+ax04,Sinhalese,intensive agriculturalists
+ax05,Vedda,hunter-gatherers
+az02,Andamans,hunter-gatherers
+az07,Nicobarese,other subsistence combinations
+ef04,Croats,commercial economy
+ef05,Montenegrins,agro-pastoralists
+ef06,Serbs,intensive agriculturalists
+ef07,Slovenes,intensive agriculturalists
+ef09,Bosnian Muslims,commercial economy
+eg01,Albanians,intensive agriculturalists
+eh01,Greeks,intensive agriculturalists
+ei09,Imperial Romans,intensive agriculturalists
+ep04,Saami,pastoralists
+eq01,Icelanders,other subsistence combinations
+eq02,Early Icelanders,other subsistence combinations
+er06,Rural Irish,agro-pastoralists
+es03,British (1714-1815),intensive agriculturalists
+es10,Highland Scots,other subsistence combinations
+es14,British (1485-1603),agro-pastoralists
+ex08,Basques,agro-pastoralists
+fa08,Bambara,agro-pastoralists
+fa16,Dogon,intensive agriculturalists
+fa18,Fon,horticulturalists
+fa28,Mossi,intensive agriculturalists
+fc07,Mende,horticulturalists
+fd06,Kpelle,horticulturalists
+fe11,Tallensi,intensive agriculturalists
+fe12,Akan,horticulturalists
+ff26,Igbo,horticulturalists
+ff38,Katab,other subsistence combinations
+ff52,Nupe,horticulturalists
+ff57,Tiv,horticulturalists
+ff62,Yoruba,horticulturalists
+fh26,Banen,intensive agriculturalists
+fi21,Masa,agro-pastoralists
+fj21,Nuba,intensive agriculturalists
+fj22,Nuer,agro-pastoralists
+fj23,Shilluk,agro-pastoralists
+fk07,Ganda,intensive agriculturalists
+fk11,Banyoro,horticulturalists
+fk13,Bagisu,horticulturalists
+fl08,Gusii,horticulturalists
+fl10,Gikuyu,intensive agriculturalists
+fl11,Luo,intensive agriculturalists
+fl12,Maasai,pastoralists
+fl17,Turkana,pastoralists
+fl20,Okiek,hunter-gatherers
+fn04,Chagga,intensive agriculturalists
+fn11,Hadza,hunter-gatherers
+fn17,Nyakyusa and Ngonde,intensive agriculturalists
+fn31,Bena,horticulturalists
+fn32,Luguru,horticulturalists
+fo04,Mbuti,hunter-gatherers
+fo07,Azande,horticulturalists
+fo32,Mongo,horticulturalists
+fo46,Suku,horticulturalists
+fo57,Rwandans,agro-pastoralists
+fo58,Barundi,horticulturalists
+fp13,Ovimbundu,horticulturalists
+fq05,Bemba,horticulturalists
+fq06,Ila,horticulturalists
+fq09,Lozi,other subsistence combinations
+fq12,Tonga,horticulturalists
+fr07,Lakeshore Tonga,other subsistence combinations
+fs05,Shona,agro-pastoralists
+ft06,Tsonga,agro-pastoralists
+fx08,Ovambo,agro-pastoralists
+fx10,San,hunter-gatherers
+fx13,Khoi,other subsistence combinations
+fx20,Zulu,agro-pastoralists
+fy08,Tanala,intensive agriculturalists
+fy11,Betsileo,intensive agriculturalists
+m013,Palestinians,commercial economy
+ma01,Iran,intensive agriculturalists
+ma10,Basseri,pastoralists
+ma11,Kurds,pastoralists
+ma12,Lur,agro-pastoralists
+mb01,Turks,commercial economy
+md04,Rwala Bedouin,pastoralists
+mf01,Israelis,commercial economy
+mf07,Israelites,intensive agriculturalists
+mh07,Babylonians,intensive agriculturalists
+mj04,Bedouin,pastoralists
+ml01,Yemenis,not assigned
+mn06,Bilen,pastoralists
+mo04,Somali,pastoralists
+mp05,Amhara,intensive agriculturalists
+mp14,Kaffa,intensive agriculturalists
+mp17,Konso,intensive agriculturalists
+mp19,Mao,horticulturalists
+mq08,Fur,intensive agriculturalists
+mr08,Nubians,horticulturalists
+mr13,Fellahin,intensive agriculturalists
+ms11,Fulani,pastoralists
+ms12,Hausa,other subsistence combinations
+ms14,Kanuri,intensive agriculturalists
+ms20,Songhai,intensive agriculturalists
+ms22,Teda,agro-pastoralists
+ms25,Tuareg,agro-pastoralists
+ms30,Wolof,horticulturalists
+mt09,Libyan Bedouin,pastoralists
+mw11,Shluh,intensive agriculturalists
+mx03,Berbers of Morocco,agro-pastoralists
+n007,Chicanos,commercial economy
+n009,North American Hmong,commercial economy
+n010,Italian Americans,commercial economy
+n011,North American Hasidic Jews,commercial economy
+n016,North American Armenians,commercial economy
+n017,Serbian Americans,commercial economy
+n018,Basque Americans,pastoralists
+n019,Korean Americans,commercial economy
+na06,Aleut,hunter-gatherers
+na07,Eyak,hunter-gatherers
+na08,Ingalik,hunter-gatherers
+na10,Alutiiq,hunter-gatherers
+na12,Tlingit,hunter-gatherers
+nc04,Chinese Canadians,commercial economy
+nc05,Arab Canadians,commercial economy
+nc06,Italian Canadians,commercial economy
+nd07,Chipewyans,hunter-gatherers
+nd08,Copper Inuit,hunter-gatherers
+nd12,Kaska,hunter-gatherers
+nd14,Slavey,hunter-gatherers
+ne06,Nuxalk,hunter-gatherers
+ne09,Haida,hunter-gatherers
+ne11,Nuu-chah-nulth,hunter-gatherers
+nf04,Assiniboine,hunter-gatherers
+nf06,Blackfoot,hunter-gatherers
+nf08,Kutenai,hunter-gatherers
+nf12,Stoney,hunter-gatherers
+ng05,Huron/Wendat,other subsistence combinations
+ng06,Ojibwa,hunter-gatherers
+ng08,Western Woods Cree,hunter-gatherers
+nh06,Innu,hunter-gatherers
+nj05,Mi'kmaq,hunter-gatherers
+nk04,African Americans,commercial economy
+nk05,Puerto Ricans (Mainland),commercial economy
+nk06,Chinese Americans,commercial economy
+nk07,Haitian Americans,commercial economy
+nk08,Cuban Americans,commercial economy
+nk09,Arab Americans,commercial economy
+nm06,Amish,intensive agriculturalists
+nm07,Delaware,primarily hunter-gatherers
+nm09,Iroquois,horticulturalists
+nn08,Cherokee,other subsistence combinations
+nn11,Creek,primarily hunter-gatherers
+nn16,Seminole,horticulturalists
+nn23,Gullah Geechee,commercial economy
+no06,Comanche,hunter-gatherers
+no08,Natchez,other subsistence combinations
+no12,Cajuns,other subsistence combinations
+np05,Fox,other subsistence combinations
+np12,Winnebago/Ho-Chunk,primarily hunter-gatherers
+nq06,Arapaho,hunter-gatherers
+nq10,Crow,hunter-gatherers
+nq13,Gros Ventre,hunter-gatherers
+nq14,Hidatsa,intensive agriculturalists
+nq18,Pawnee,other subsistence combinations
+nq21,Omaha,primarily hunter-gatherers
+nq22,Osage,primarily hunter-gatherers
+nr06,Chinookans of the Lower Columbia River,hunter-gatherers
+nr10,Klamath,hunter-gatherers
+nr13,Northern Paiute,hunter-gatherers
+nr17,Quinault,hunter-gatherers
+nr21,Tillamook,hunter-gatherers
+nr26,Southern Coast Salish,hunter-gatherers
+ns18,Pomo,hunter-gatherers
+ns22,Tubatulabal,hunter-gatherers
+ns29,Yokuts,hunter-gatherers
+ns30,Yuki,hunter-gatherers
+ns31,Yurok,hunter-gatherers
+nt08,Chiricahua Apache,hunter-gatherers
+nt09,Hopi,intensive agriculturalists
+nt13,Navajo,agro-pastoralists
+nt14,Havasupai,other subsistence combinations
+nt18,Tewa Pueblos,intensive agriculturalists
+nt19,Ute,hunter-gatherers
+nt21,Western Apache,primarily hunter-gatherers
+nt23,Zuni,intensive agriculturalists
+nt24,Mormons,commercial economy
+nt25,Mescalero Apache,hunter-gatherers
+nt26,Jicarilla Apache,primarily hunter-gatherers
+nt38,Zia Pueblo,intensive agriculturalists
+nt43,Maricopa,primarily hunter-gatherers
+nu07,Aztecs,intensive agriculturalists
+nu19,Huichol,other subsistence combinations
+nu30,Popoluca,horticulturalists
+nu31,Seri,hunter-gatherers
+nu33,Tarahumara,agro-pastoralists
+nu34,Tarascans,intensive agriculturalists
+nu44,Zapotec,horticulturalists
+nu46,Nahua,other subsistence combinations
+nu79,O'odham,other subsistence combinations
+nv09,Tzeltal,horticulturalists
+nv10,Maya (Yucatán Peninsula),horticulturalists
+nw08,Mam Maya,horticulturalists
+nw10,Quiché Maya,intensive agriculturalists
+oa08,Sama-Bajau,primarily hunter-gatherers
+oa19,Ifugao,intensive agriculturalists
+oc06,Iban,horticulturalists
+oc13,Rungus Dusun,horticulturalists
+od09,Mentawaians,horticulturalists
+oe05,Javanese,intensive agriculturalists
+of05,Alorese,horticulturalists
+of07,Balinese,intensive agriculturalists
+of09,Flores,horticulturalists
+og11,Eastern Toraja,horticulturalists
+og13,Southern Toraja,intensive agriculturalists
+oh18,Tobelo,horticulturalists
+oi08,Aranda,hunter-gatherers
+oi20,Tiwi,hunter-gatherers
+oj13,Kwoma,other subsistence combinations
+oj23,Orokaiva,other subsistence combinations
+oj27,Wogeo,other subsistence combinations
+oj29,Kapauku,intensive agriculturalists
+oj82,Kimam,intensive agriculturalists
+ol06,Trobriands,other subsistence combinations
+ol07,Northeastern Massim,other subsistence combinations
+om06,Manus,hunter-gatherers
+om24,Lesu,other subsistence combinations
+on13,Santa Cruz Islanders,horticulturalists
+on19,Siwai,agro-pastoralists
+on26,Tinputz,other subsistence combinations
+oo12,Malekula,horticulturalists
+oo17,Sa,horticulturalists
+op04,Kanak,intensive agriculturalists
+oq06,Lau Fijians,other subsistence combinations
+oq12,Bau Fijians,primarily hunter-gatherers
+or06,Kiribati,primarily hunter-gatherers
+or11,Marshallese,other subsistence combinations
+or15,Belau,other subsistence combinations
+or19,Chuuk,other subsistence combinations
+or20,Ulithi,other subsistence combinations
+or21,Woleai Region,other subsistence combinations
+or22,Yapese,other subsistence combinations
+ot11,Tikopia,other subsistence combinations
+ou08,Samoans,horticulturalists
+ou09,Tongans,horticulturalists
+ov05,Hawaiians,other subsistence combinations
+ox06,Marquesas,other subsistence combinations
+oy02,Rapa Nui,horticulturalists
+oz04,Maori,primarily hunter-gatherers
+rf10,Russians,commercial economy
+ri03,Abkhazians,pastoralists
+rj01,Armenia,intensive agriculturalists
+rm02,Turkmens,agro-pastoralists
+rn02,Karakalpak,intensive agriculturalists
+rn05,Uzbeks,not assigned
+ro02,Tajiks,not assigned
+ro03,Pamir Peoples,agro-pastoralists
+rp02,Kyrgyz,pastoralists
+rq02,Kazakh,pastoralists
+ru04,Samoyed,primarily hunter-gatherers
+ru41,Nenets,primarily hunter-gatherers
+rv02,Yakut,other subsistence combinations
+rv03,Yukaghir,primarily hunter-gatherers
+rx02,Nivkh,primarily hunter-gatherers
+ry02,Chukchee,pastoralists
+ry04,Koryaks,primarily hunter-gatherers
+sa12,Garifuna,horticulturalists
+sa15,Miskito,primarily hunter-gatherers
+sa19,Talamancans,other subsistence combinations
+sb05,Kuna,horticulturalists
+sc07,Kogi,horticulturalists
+sc13,Goajiro,pastoralists
+sd06,Chachi,other subsistence combinations
+sd09,Jivaro,horticulturalists
+sd15,Quito Quichua,agro-pastoralists
+sd16,Otavalo Quichua,horticulturalists
+sd17,Saraguro Quichua,agro-pastoralists
+sd18,Canelos Quichua,horticulturalists
+se06,Amahuaca,other subsistence combinations
+se13,Inka,intensive agriculturalists
+se26,Shipibo,horticulturalists
+sf05,Aymara,horticulturalists
+sf10,Chiriguano,other subsistence combinations
+sf21,Sirionó,hunter-gatherers
+sf24,Uru-Chipaya,other subsistence combinations
+sg04,Mapuche,intensive agriculturalists
+sh04,Ona,hunter-gatherers
+sh05,Tehuelche,hunter-gatherers
+sh06,Yahgan,hunter-gatherers
+si04,Abipón,hunter-gatherers
+si07,Mataco,primarily hunter-gatherers
+sk04,Gran Chaco,primarily hunter-gatherers
+sk06,Chorote,hunter-gatherers
+sk15,Enxet and Enlhet,hunter-gatherers
+sk16,Ayoreo,other subsistence combinations
+sm03,Xokleng,hunter-gatherers
+sm04,Guaraní,other subsistence combinations
+sm05,Terena,primarily hunter-gatherers
+sn02,Botocudo,hunter-gatherers
+so08,Canela,primarily hunter-gatherers
+so09,Tupinamba,primarily hunter-gatherers
+so11,Bahia Brazilians,intensive agriculturalists
+sp07,Bakairi,other subsistence combinations
+sp08,Bororo,hunter-gatherers
+sp09,Karajá,primarily hunter-gatherers
+sp17,Nambicuara,primarily hunter-gatherers
+sp22,Tapirapé,other subsistence combinations
+sp23,Trumai,primarily hunter-gatherers
+sp26,Xavante,primarily hunter-gatherers
+sq13,Mundurucu,primarily hunter-gatherers
+sq18,Yanoama,horticulturalists
+sq19,Tukano,other subsistence combinations
+sq20,Ticuna,primarily hunter-gatherers
+sr09,Barama River Carib,primarily hunter-gatherers
+sr14,Ndyuka,horticulturalists
+sr15,Saramaka,other subsistence combinations
+ss18,Warao,hunter-gatherers
+ss19,Pumé,other subsistence combinations
+st13,Kalinago,primarily hunter-gatherers
+su01,Puerto Ricans (Island),commercial economy
+sv02,Dominican Republic,
+sv03,Haitians,commercial economy
+sx01,Cubans,not assigned
+sy01,Jamaicans,commercial economy

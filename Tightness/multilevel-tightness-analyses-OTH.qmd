@@ -138,6 +138,7 @@ for (d in domain_nums) {
 
 Nothing...
 
+
 # TL1 Analyses: Emphasis of strong rules for appropriate behavior across domains
 
 ## Food-destroying frequency
@@ -208,7 +209,9 @@ for (d in domain_nums) {
 
 
 
+
 # Controlling for Irrigation
+Following discussion at the 9/16 Minerva meeting, Denis suggested the need to control for the presence or absence of irrigation.
 
 
-Following discussion at the 9/16 Minerva meeting
+

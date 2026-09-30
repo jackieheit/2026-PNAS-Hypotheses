@@ -1,0 +1,1057 @@
+"OWC","SCCS.ID","minerva_id","eHRAF.Name","PSF.Cluster","EA.ID","Domain_var","TL1","Domain_name","Domain_num"
+"FX13",1,1,"Khoi",NA,"Aa03","General_TL1_avg_final",3,"law",1
+"FX13",1,1,"Khoi",NA,"Aa03","Soc_TL1_avg_final",NA,"social",2
+"FX13",1,1,"Khoi",NA,"Aa03","Gender_TL1_avg_final",3,"gender",3
+"FX13",1,1,"Khoi",NA,"Aa03","Mar_TL1_avg_final",2.25,"marriage",4
+"FX13",1,1,"Khoi",NA,"Aa03","Sex_TL1_avg_final",3,"sex",5
+"FX13",1,1,"Khoi",NA,"Aa03","FM_TL1_avg_final",3.25,"funeral",6
+"FX13",1,1,"Khoi",NA,"Aa03","Ov_tl_avg",2.9,"overall",7
+"FX13",1,1,"Khoi",NA,"Aa03","General_TL5B_avg_final",3,"gestalt",8
+"FX10",2,2,"San",NA,"Aa01","General_TL1_avg_final",2.25,"law",1
+"FX10",2,2,"San",NA,"Aa01","Soc_TL1_avg_final",1.75,"social",2
+"FX10",2,2,"San",NA,"Aa01","Gender_TL1_avg_final",2.75,"gender",3
+"FX10",2,2,"San",NA,"Aa01","Mar_TL1_avg_final",2,"marriage",4
+"FX10",2,2,"San",NA,"Aa01","Sex_TL1_avg_final",3,"sex",5
+"FX10",2,2,"San",NA,"Aa01","FM_TL1_avg_final",1,"funeral",6
+"FX10",2,2,"San",NA,"Aa01","Ov_tl_avg",2.125,"overall",7
+"FX10",2,2,"San",NA,"Aa01","General_TL5B_avg_final",2,"gestalt",8
+"FQ09",4,4,"Lozi","2","Ab03","General_TL1_avg_final",3.125,"law",1
+"FQ09",4,4,"Lozi","2","Ab03","Soc_TL1_avg_final",2.5,"social",2
+"FQ09",4,4,"Lozi","2","Ab03","Gender_TL1_avg_final",3.5,"gender",3
+"FQ09",4,4,"Lozi","2","Ab03","Mar_TL1_avg_final",2.75,"marriage",4
+"FQ09",4,4,"Lozi","2","Ab03","Sex_TL1_avg_final",2.75,"sex",5
+"FQ09",4,4,"Lozi","2","Ab03","FM_TL1_avg_final",3,"funeral",6
+"FQ09",4,4,"Lozi","2","Ab03","Ov_tl_avg",2.9375,"overall",7
+"FQ09",4,4,"Lozi","2","Ab03","General_TL5B_avg_final",3,"gestalt",8
+"FP13",5,5,"Ovimbundu",NA,"Ab05","General_TL1_avg_final",3.875,"law",1
+"FP13",5,5,"Ovimbundu",NA,"Ab05","Soc_TL1_avg_final",3.875,"social",2
+"FP13",5,5,"Ovimbundu",NA,"Ab05","Gender_TL1_avg_final",4,"gender",3
+"FP13",5,5,"Ovimbundu",NA,"Ab05","Mar_TL1_avg_final",3.75,"marriage",4
+"FP13",5,5,"Ovimbundu",NA,"Ab05","Sex_TL1_avg_final",3.875,"sex",5
+"FP13",5,5,"Ovimbundu",NA,"Ab05","FM_TL1_avg_final",3.75,"funeral",6
+"FP13",5,5,"Ovimbundu",NA,"Ab05","Ov_tl_avg",3.85416666666667,"overall",7
+"FP13",5,5,"Ovimbundu",NA,"Ab05","General_TL5B_avg_final",3.75,"gestalt",8
+"FQ05",7,7,"Bemba","3","Ac03","General_TL1_avg_final",3.875,"law",1
+"FQ05",7,7,"Bemba","3","Ac03","Soc_TL1_avg_final",2.125,"social",2
+"FQ05",7,7,"Bemba","3","Ac03","Gender_TL1_avg_final",3.125,"gender",3
+"FQ05",7,7,"Bemba","3","Ac03","Mar_TL1_avg_final",3.75,"marriage",4
+"FQ05",7,7,"Bemba","3","Ac03","Sex_TL1_avg_final",4,"sex",5
+"FQ05",7,7,"Bemba","3","Ac03","FM_TL1_avg_final",3,"funeral",6
+"FQ05",7,7,"Bemba","3","Ac03","Ov_tl_avg",3.3125,"overall",7
+"FQ05",7,7,"Bemba","3","Ac03","General_TL5B_avg_final",4,"gestalt",8
+"FN17",8,8,"Nyakyusa and Ngonde",NA,"Ad06","General_TL1_avg_final",3.125,"law",1
+"FN17",8,8,"Nyakyusa and Ngonde",NA,"Ad06","Soc_TL1_avg_final",3,"social",2
+"FN17",8,8,"Nyakyusa and Ngonde",NA,"Ad06","Gender_TL1_avg_final",3.375,"gender",3
+"FN17",8,8,"Nyakyusa and Ngonde",NA,"Ad06","Mar_TL1_avg_final",2.5,"marriage",4
+"FN17",8,8,"Nyakyusa and Ngonde",NA,"Ad06","Sex_TL1_avg_final",3.5,"sex",5
+"FN17",8,8,"Nyakyusa and Ngonde",NA,"Ad06","FM_TL1_avg_final",4,"funeral",6
+"FN17",8,8,"Nyakyusa and Ngonde",NA,"Ad06","Ov_tl_avg",3.25,"overall",7
+"FN17",8,8,"Nyakyusa and Ngonde",NA,"Ad06","General_TL5B_avg_final",3.125,"gestalt",8
+"FK07",12,12,"Ganda","4","Ad07","General_TL1_avg_final",4,"law",1
+"FK07",12,12,"Ganda","4","Ad07","Soc_TL1_avg_final",3.125,"social",2
+"FK07",12,12,"Ganda","4","Ad07","Gender_TL1_avg_final",4,"gender",3
+"FK07",12,12,"Ganda","4","Ad07","Mar_TL1_avg_final",3.125,"marriage",4
+"FK07",12,12,"Ganda","4","Ad07","Sex_TL1_avg_final",4,"sex",5
+"FK07",12,12,"Ganda","4","Ad07","FM_TL1_avg_final",4,"funeral",6
+"FK07",12,12,"Ganda","4","Ad07","Ov_tl_avg",3.70833333333333,"overall",7
+"FK07",12,12,"Ganda","4","Ad07","General_TL5B_avg_final",4,"gestalt",8
+"FO04",13,13,"Mbuti","1","Aa05","General_TL1_avg_final",1,"law",1
+"FO04",13,13,"Mbuti","1","Aa05","Soc_TL1_avg_final",1,"social",2
+"FO04",13,13,"Mbuti","1","Aa05","Gender_TL1_avg_final",1,"gender",3
+"FO04",13,13,"Mbuti","1","Aa05","Mar_TL1_avg_final",2,"marriage",4
+"FO04",13,13,"Mbuti","1","Aa05","Sex_TL1_avg_final",1.25,"sex",5
+"FO04",13,13,"Mbuti","1","Aa05","FM_TL1_avg_final",1.75,"funeral",6
+"FO04",13,13,"Mbuti","1","Aa05","Ov_tl_avg",1.33333333333333,"overall",7
+"FO04",13,13,"Mbuti","1","Aa05","General_TL5B_avg_final",1,"gestalt",8
+"FF57",16,16,"Tiv","9","Ah03","General_TL1_avg_final",3.125,"law",1
+"FF57",16,16,"Tiv","9","Ah03","Soc_TL1_avg_final",2.75,"social",2
+"FF57",16,16,"Tiv","9","Ah03","Gender_TL1_avg_final",3.125,"gender",3
+"FF57",16,16,"Tiv","9","Ah03","Mar_TL1_avg_final",3,"marriage",4
+"FF57",16,16,"Tiv","9","Ah03","Sex_TL1_avg_final",3.375,"sex",5
+"FF57",16,16,"Tiv","9","Ah03","FM_TL1_avg_final",3.125,"funeral",6
+"FF57",16,16,"Tiv","9","Ah03","Ov_tl_avg",3.08333333333333,"overall",7
+"FF57",16,16,"Tiv","9","Ah03","General_TL5B_avg_final",3,"gestalt",8
+"FE12",19,19,"Akan","6","Af03","General_TL1_avg_final",4,"law",1
+"FE12",19,19,"Akan","6","Af03","Soc_TL1_avg_final",3.75,"social",2
+"FE12",19,19,"Akan","6","Af03","Gender_TL1_avg_final",4,"gender",3
+"FE12",19,19,"Akan","6","Af03","Mar_TL1_avg_final",4,"marriage",4
+"FE12",19,19,"Akan","6","Af03","Sex_TL1_avg_final",4,"sex",5
+"FE12",19,19,"Akan","6","Af03","FM_TL1_avg_final",4,"funeral",6
+"FE12",19,19,"Akan","6","Af03","Ov_tl_avg",3.95833333333333,"overall",7
+"FE12",19,19,"Akan","6","Af03","General_TL5B_avg_final",4,"gestalt",8
+"MS30",21,21,"Wolof","7","Cb02","General_TL1_avg_final",1,"law",1
+"MS30",21,21,"Wolof","7","Cb02","Soc_TL1_avg_final",NA,"social",2
+"MS30",21,21,"Wolof","7","Cb02","Gender_TL1_avg_final",NA,"gender",3
+"MS30",21,21,"Wolof","7","Cb02","Mar_TL1_avg_final",3,"marriage",4
+"MS30",21,21,"Wolof","7","Cb02","Sex_TL1_avg_final",3,"sex",5
+"MS30",21,21,"Wolof","7","Cb02","FM_TL1_avg_final",3,"funeral",6
+"MS30",21,21,"Wolof","7","Cb02","Ov_tl_avg",2.5,"overall",7
+"MS30",21,21,"Wolof","7","Cb02","General_TL5B_avg_final",3,"gestalt",8
+"FA08",22,22,"Bambara",NA,"Ag01","General_TL1_avg_final",2.75,"law",1
+"FA08",22,22,"Bambara",NA,"Ag01","Soc_TL1_avg_final",4,"social",2
+"FA08",22,22,"Bambara",NA,"Ag01","Gender_TL1_avg_final",3.75,"gender",3
+"FA08",22,22,"Bambara",NA,"Ag01","Mar_TL1_avg_final",3,"marriage",4
+"FA08",22,22,"Bambara",NA,"Ag01","Sex_TL1_avg_final",2.25,"sex",5
+"FA08",22,22,"Bambara",NA,"Ag01","FM_TL1_avg_final",4,"funeral",6
+"FA08",22,22,"Bambara",NA,"Ag01","Ov_tl_avg",3.29166666666667,"overall",7
+"FA08",22,22,"Bambara",NA,"Ag01","General_TL5B_avg_final",3.25,"gestalt",8
+"FE11",23,23,"Tallensi",NA,"Ag04","General_TL1_avg_final",3,"law",1
+"FE11",23,23,"Tallensi",NA,"Ag04","Soc_TL1_avg_final",2.75,"social",2
+"FE11",23,23,"Tallensi",NA,"Ag04","Gender_TL1_avg_final",2.75,"gender",3
+"FE11",23,23,"Tallensi",NA,"Ag04","Mar_TL1_avg_final",3.25,"marriage",4
+"FE11",23,23,"Tallensi",NA,"Ag04","Sex_TL1_avg_final",3.25,"sex",5
+"FE11",23,23,"Tallensi",NA,"Ag04","FM_TL1_avg_final",3.75,"funeral",6
+"FE11",23,23,"Tallensi",NA,"Ag04","Ov_tl_avg",3.125,"overall",7
+"FE11",23,23,"Tallensi",NA,"Ag04","General_TL5B_avg_final",3,"gestalt",8
+"MS20",24,24,"Songhai",NA,"Cb03","General_TL1_avg_final",3.25,"law",1
+"MS20",24,24,"Songhai",NA,"Cb03","Soc_TL1_avg_final",3.25,"social",2
+"MS20",24,24,"Songhai",NA,"Cb03","Gender_TL1_avg_final",3.25,"gender",3
+"MS20",24,24,"Songhai",NA,"Cb03","Mar_TL1_avg_final",3.75,"marriage",4
+"MS20",24,24,"Songhai",NA,"Cb03","Sex_TL1_avg_final",NA,"sex",5
+"MS20",24,24,"Songhai",NA,"Cb03","FM_TL1_avg_final",NA,"funeral",6
+"MS20",24,24,"Songhai",NA,"Cb03","Ov_tl_avg",3.375,"overall",7
+"MS20",24,24,"Songhai",NA,"Cb03","General_TL5B_avg_final",NA,"gestalt",8
+"MS11",25,25,"Fulani",NA,"Cb24","General_TL1_avg_final",NA,"law",1
+"MS11",25,25,"Fulani",NA,"Cb24","Soc_TL1_avg_final",NA,"social",2
+"MS11",25,25,"Fulani",NA,"Cb24","Gender_TL1_avg_final",NA,"gender",3
+"MS11",25,25,"Fulani",NA,"Cb24","Mar_TL1_avg_final",NA,"marriage",4
+"MS11",25,25,"Fulani",NA,"Cb24","Sex_TL1_avg_final",NA,"sex",5
+"MS11",25,25,"Fulani",NA,"Cb24","FM_TL1_avg_final",NA,"funeral",6
+"MS11",25,25,"Fulani",NA,"Cb24","Ov_tl_avg",NA,"overall",7
+"MS11",25,25,"Fulani",NA,"Cb24","General_TL5B_avg_final",NA,"gestalt",8
+"MS12",26,26,"Hausa","10","Cb26","General_TL1_avg_final",3.875,"law",1
+"MS12",26,26,"Hausa","10","Cb26","Soc_TL1_avg_final",3,"social",2
+"MS12",26,26,"Hausa","10","Cb26","Gender_TL1_avg_final",3.875,"gender",3
+"MS12",26,26,"Hausa","10","Cb26","Mar_TL1_avg_final",3,"marriage",4
+"MS12",26,26,"Hausa","10","Cb26","Sex_TL1_avg_final",3.625,"sex",5
+"MS12",26,26,"Hausa","10","Cb26","FM_TL1_avg_final",NA,"funeral",6
+"MS12",26,26,"Hausa","10","Cb26","Ov_tl_avg",3.475,"overall",7
+"MS12",26,26,"Hausa","10","Cb26","General_TL5B_avg_final",4,"gestalt",8
+"FI21",27,27,"Masa",NA,"Ai09","General_TL1_avg_final",NA,"law",1
+"FI21",27,27,"Masa",NA,"Ai09","Soc_TL1_avg_final",NA,"social",2
+"FI21",27,27,"Masa",NA,"Ai09","Gender_TL1_avg_final",NA,"gender",3
+"FI21",27,27,"Masa",NA,"Ai09","Mar_TL1_avg_final",NA,"marriage",4
+"FI21",27,27,"Masa",NA,"Ai09","Sex_TL1_avg_final",NA,"sex",5
+"FI21",27,27,"Masa",NA,"Ai09","FM_TL1_avg_final",NA,"funeral",6
+"FI21",27,27,"Masa",NA,"Ai09","Ov_tl_avg",NA,"overall",7
+"FI21",27,27,"Masa",NA,"Ai09","General_TL5B_avg_final",NA,"gestalt",8
+"FO07",28,28,"Azande","5","Ai03","General_TL1_avg_final",3.875,"law",1
+"FO07",28,28,"Azande","5","Ai03","Soc_TL1_avg_final",3.125,"social",2
+"FO07",28,28,"Azande","5","Ai03","Gender_TL1_avg_final",4,"gender",3
+"FO07",28,28,"Azande","5","Ai03","Mar_TL1_avg_final",4,"marriage",4
+"FO07",28,28,"Azande","5","Ai03","Sex_TL1_avg_final",3.5,"sex",5
+"FO07",28,28,"Azande","5","Ai03","FM_TL1_avg_final",3.875,"funeral",6
+"FO07",28,28,"Azande","5","Ai03","Ov_tl_avg",3.72916666666667,"overall",7
+"FO07",28,28,"Azande","5","Ai03","General_TL5B_avg_final",4,"gestalt",8
+"MQ08",29,29,"Fur",NA,"Cb17","General_TL1_avg_final",3.25,"law",1
+"MQ08",29,29,"Fur",NA,"Cb17","Soc_TL1_avg_final",4,"social",2
+"MQ08",29,29,"Fur",NA,"Cb17","Gender_TL1_avg_final",3.25,"gender",3
+"MQ08",29,29,"Fur",NA,"Cb17","Mar_TL1_avg_final",2.75,"marriage",4
+"MQ08",29,29,"Fur",NA,"Cb17","Sex_TL1_avg_final",2.25,"sex",5
+"MQ08",29,29,"Fur",NA,"Cb17","FM_TL1_avg_final",2.25,"funeral",6
+"MQ08",29,29,"Fur",NA,"Cb17","Ov_tl_avg",2.95833333333333,"overall",7
+"MQ08",29,29,"Fur",NA,"Cb17","General_TL5B_avg_final",3.25,"gestalt",8
+"FJ21",30,30,"Nuba",NA,"Ai10","General_TL1_avg_final",3,"law",1
+"FJ21",30,30,"Nuba",NA,"Ai10","Soc_TL1_avg_final",3.25,"social",2
+"FJ21",30,30,"Nuba",NA,"Ai10","Gender_TL1_avg_final",NA,"gender",3
+"FJ21",30,30,"Nuba",NA,"Ai10","Mar_TL1_avg_final",2.25,"marriage",4
+"FJ21",30,30,"Nuba",NA,"Ai10","Sex_TL1_avg_final",1.75,"sex",5
+"FJ21",30,30,"Nuba",NA,"Ai10","FM_TL1_avg_final",NA,"funeral",6
+"FJ21",30,30,"Nuba",NA,"Ai10","Ov_tl_avg",2.5625,"overall",7
+"FJ21",30,30,"Nuba",NA,"Ai10","General_TL5B_avg_final",2.75,"gestalt",8
+"MP19",32,32,"Mao",NA,"Ai47","General_TL1_avg_final",3,"law",1
+"MP19",32,32,"Mao",NA,"Ai47","Soc_TL1_avg_final",3,"social",2
+"MP19",32,32,"Mao",NA,"Ai47","Gender_TL1_avg_final",2,"gender",3
+"MP19",32,32,"Mao",NA,"Ai47","Mar_TL1_avg_final",3,"marriage",4
+"MP19",32,32,"Mao",NA,"Ai47","Sex_TL1_avg_final",3.25,"sex",5
+"MP19",32,32,"Mao",NA,"Ai47","FM_TL1_avg_final",4,"funeral",6
+"MP19",32,32,"Mao",NA,"Ai47","Ov_tl_avg",3.04166666666667,"overall",7
+"MP19",32,32,"Mao",NA,"Ai47","General_TL5B_avg_final",3,"gestalt",8
+"FL12",34,34,"Maasai","11","Aj02","General_TL1_avg_final",NA,"law",1
+"FL12",34,34,"Maasai","11","Aj02","Soc_TL1_avg_final",NA,"social",2
+"FL12",34,34,"Maasai","11","Aj02","Gender_TL1_avg_final",NA,"gender",3
+"FL12",34,34,"Maasai","11","Aj02","Mar_TL1_avg_final",NA,"marriage",4
+"FL12",34,34,"Maasai","11","Aj02","Sex_TL1_avg_final",NA,"sex",5
+"FL12",34,34,"Maasai","11","Aj02","FM_TL1_avg_final",NA,"funeral",6
+"FL12",34,34,"Maasai","11","Aj02","Ov_tl_avg",NA,"overall",7
+"FL12",34,34,"Maasai","11","Aj02","General_TL5B_avg_final",NA,"gestalt",8
+"MP17",35,35,"Konso",NA,"Ca01","General_TL1_avg_final",NA,"law",1
+"MP17",35,35,"Konso",NA,"Ca01","Soc_TL1_avg_final",NA,"social",2
+"MP17",35,35,"Konso",NA,"Ca01","Gender_TL1_avg_final",NA,"gender",3
+"MP17",35,35,"Konso",NA,"Ca01","Mar_TL1_avg_final",NA,"marriage",4
+"MP17",35,35,"Konso",NA,"Ca01","Sex_TL1_avg_final",NA,"sex",5
+"MP17",35,35,"Konso",NA,"Ca01","FM_TL1_avg_final",NA,"funeral",6
+"MP17",35,35,"Konso",NA,"Ca01","Ov_tl_avg",NA,"overall",7
+"MP17",35,35,"Konso",NA,"Ca01","General_TL5B_avg_final",NA,"gestalt",8
+"MO04",36,36,"Somali","12","Ca02","General_TL1_avg_final",3,"law",1
+"MO04",36,36,"Somali","12","Ca02","Soc_TL1_avg_final",3,"social",2
+"MO04",36,36,"Somali","12","Ca02","Gender_TL1_avg_final",4,"gender",3
+"MO04",36,36,"Somali","12","Ca02","Mar_TL1_avg_final",3,"marriage",4
+"MO04",36,36,"Somali","12","Ca02","Sex_TL1_avg_final",NA,"sex",5
+"MO04",36,36,"Somali","12","Ca02","FM_TL1_avg_final",3,"funeral",6
+"MO04",36,36,"Somali","12","Ca02","Ov_tl_avg",3.2,"overall",7
+"MO04",36,36,"Somali","12","Ca02","General_TL5B_avg_final",3.25,"gestalt",8
+"MP05",37,37,"Amhara","17","Ca07","General_TL1_avg_final",4,"law",1
+"MP05",37,37,"Amhara","17","Ca07","Soc_TL1_avg_final",3,"social",2
+"MP05",37,37,"Amhara","17","Ca07","Gender_TL1_avg_final",4,"gender",3
+"MP05",37,37,"Amhara","17","Ca07","Mar_TL1_avg_final",2.75,"marriage",4
+"MP05",37,37,"Amhara","17","Ca07","Sex_TL1_avg_final",3,"sex",5
+"MP05",37,37,"Amhara","17","Ca07","FM_TL1_avg_final",4,"funeral",6
+"MP05",37,37,"Amhara","17","Ca07","Ov_tl_avg",3.45833333333333,"overall",7
+"MP05",37,37,"Amhara","17","Ca07","General_TL5B_avg_final",3,"gestalt",8
+"MS22",40,40,"Teda",NA,"Cc02","General_TL1_avg_final",2.75,"law",1
+"MS22",40,40,"Teda",NA,"Cc02","Soc_TL1_avg_final",3,"social",2
+"MS22",40,40,"Teda",NA,"Cc02","Gender_TL1_avg_final",2.25,"gender",3
+"MS22",40,40,"Teda",NA,"Cc02","Mar_TL1_avg_final",3,"marriage",4
+"MS22",40,40,"Teda",NA,"Cc02","Sex_TL1_avg_final",3,"sex",5
+"MS22",40,40,"Teda",NA,"Cc02","FM_TL1_avg_final",3.25,"funeral",6
+"MS22",40,40,"Teda",NA,"Cc02","Ov_tl_avg",2.875,"overall",7
+"MS22",40,40,"Teda",NA,"Cc02","General_TL5B_avg_final",3,"gestalt",8
+"MX03",42,42,"Berbers of Morocco",NA,"Cd03","General_TL1_avg_final",4,"law",1
+"MX03",42,42,"Berbers of Morocco",NA,"Cd03","Soc_TL1_avg_final",NA,"social",2
+"MX03",42,42,"Berbers of Morocco",NA,"Cd03","Gender_TL1_avg_final",3.75,"gender",3
+"MX03",42,42,"Berbers of Morocco",NA,"Cd03","Mar_TL1_avg_final",2.875,"marriage",4
+"MX03",42,42,"Berbers of Morocco",NA,"Cd03","Sex_TL1_avg_final",3.5,"sex",5
+"MX03",42,42,"Berbers of Morocco",NA,"Cd03","FM_TL1_avg_final",4,"funeral",6
+"MX03",42,42,"Berbers of Morocco",NA,"Cd03","Ov_tl_avg",3.625,"overall",7
+"MX03",42,42,"Berbers of Morocco",NA,"Cd03","General_TL5B_avg_final",3.125,"gestalt",8
+"MR13",43,43,"Fellahin",NA,"Cd02","General_TL1_avg_final",4,"law",1
+"MR13",43,43,"Fellahin",NA,"Cd02","Soc_TL1_avg_final",4,"social",2
+"MR13",43,43,"Fellahin",NA,"Cd02","Gender_TL1_avg_final",4,"gender",3
+"MR13",43,43,"Fellahin",NA,"Cd02","Mar_TL1_avg_final",3.75,"marriage",4
+"MR13",43,43,"Fellahin",NA,"Cd02","Sex_TL1_avg_final",4,"sex",5
+"MR13",43,43,"Fellahin",NA,"Cd02","FM_TL1_avg_final",NA,"funeral",6
+"MR13",43,43,"Fellahin",NA,"Cd02","Ov_tl_avg",3.95,"overall",7
+"MR13",43,43,"Fellahin",NA,"Cd02","General_TL5B_avg_final",4,"gestalt",8
+"MD04",46,46,"Rwala Bedouin",NA,"Cj02","General_TL1_avg_final",3.5,"law",1
+"MD04",46,46,"Rwala Bedouin",NA,"Cj02","Soc_TL1_avg_final",NA,"social",2
+"MD04",46,46,"Rwala Bedouin",NA,"Cj02","Gender_TL1_avg_final",NA,"gender",3
+"MD04",46,46,"Rwala Bedouin",NA,"Cj02","Mar_TL1_avg_final",2.125,"marriage",4
+"MD04",46,46,"Rwala Bedouin",NA,"Cj02","Sex_TL1_avg_final",4,"sex",5
+"MD04",46,46,"Rwala Bedouin",NA,"Cj02","FM_TL1_avg_final",1.375,"funeral",6
+"MD04",46,46,"Rwala Bedouin",NA,"Cj02","Ov_tl_avg",2.75,"overall",7
+"MD04",46,46,"Rwala Bedouin",NA,"Cj02","General_TL5B_avg_final",2.875,"gestalt",8
+"MB01",47,47,"Turks",NA,"Ci05","General_TL1_avg_final",3,"law",1
+"MB01",47,47,"Turks",NA,"Ci05","Soc_TL1_avg_final",2.125,"social",2
+"MB01",47,47,"Turks",NA,"Ci05","Gender_TL1_avg_final",4,"gender",3
+"MB01",47,47,"Turks",NA,"Ci05","Mar_TL1_avg_final",2.875,"marriage",4
+"MB01",47,47,"Turks",NA,"Ci05","Sex_TL1_avg_final",3.625,"sex",5
+"MB01",47,47,"Turks",NA,"Ci05","FM_TL1_avg_final",NA,"funeral",6
+"MB01",47,47,"Turks",NA,"Ci05","Ov_tl_avg",3.125,"overall",7
+"MB01",47,47,"Turks",NA,"Ci05","General_TL5B_avg_final",3,"gestalt",8
+"ER06",51,51,"Rural Irish",NA,"Cg03","General_TL1_avg_final",3.75,"law",1
+"ER06",51,51,"Rural Irish",NA,"Cg03","Soc_TL1_avg_final",4,"social",2
+"ER06",51,51,"Rural Irish",NA,"Cg03","Gender_TL1_avg_final",3.75,"gender",3
+"ER06",51,51,"Rural Irish",NA,"Cg03","Mar_TL1_avg_final",3.25,"marriage",4
+"ER06",51,51,"Rural Irish",NA,"Cg03","Sex_TL1_avg_final",4,"sex",5
+"ER06",51,51,"Rural Irish",NA,"Cg03","FM_TL1_avg_final",4,"funeral",6
+"ER06",51,51,"Rural Irish",NA,"Cg03","Ov_tl_avg",3.79166666666667,"overall",7
+"ER06",51,51,"Rural Irish",NA,"Cg03","General_TL5B_avg_final",3.75,"gestalt",8
+"EP04",52,52,"Saami","20","Cg04","General_TL1_avg_final",2.25,"law",1
+"EP04",52,52,"Saami","20","Cg04","Soc_TL1_avg_final",NA,"social",2
+"EP04",52,52,"Saami","20","Cg04","Gender_TL1_avg_final",1.75,"gender",3
+"EP04",52,52,"Saami","20","Cg04","Mar_TL1_avg_final",2,"marriage",4
+"EP04",52,52,"Saami","20","Cg04","Sex_TL1_avg_final",2.25,"sex",5
+"EP04",52,52,"Saami","20","Cg04","FM_TL1_avg_final",NA,"funeral",6
+"EP04",52,52,"Saami","20","Cg04","Ov_tl_avg",2.0625,"overall",7
+"EP04",52,52,"Saami","20","Cg04","General_TL5B_avg_final",2,"gestalt",8
+"RU41",53,53,"Nenets",NA,"Ec04","General_TL1_avg_final",2,"law",1
+"RU41",53,53,"Nenets",NA,"Ec04","Soc_TL1_avg_final",NA,"social",2
+"RU41",53,53,"Nenets",NA,"Ec04","Gender_TL1_avg_final",3.25,"gender",3
+"RU41",53,53,"Nenets",NA,"Ec04","Mar_TL1_avg_final",3.25,"marriage",4
+"RU41",53,53,"Nenets",NA,"Ec04","Sex_TL1_avg_final",NA,"sex",5
+"RU41",53,53,"Nenets",NA,"Ec04","FM_TL1_avg_final",2.75,"funeral",6
+"RU41",53,53,"Nenets",NA,"Ec04","Ov_tl_avg",2.8125,"overall",7
+"RU41",53,53,"Nenets",NA,"Ec04","General_TL5B_avg_final",3,"gestalt",8
+"RF10",54,54,"Russians",NA,"Ch11","General_TL1_avg_final",4,"law",1
+"RF10",54,54,"Russians",NA,"Ch11","Soc_TL1_avg_final",4,"social",2
+"RF10",54,54,"Russians",NA,"Ch11","Gender_TL1_avg_final",3.75,"gender",3
+"RF10",54,54,"Russians",NA,"Ch11","Mar_TL1_avg_final",4,"marriage",4
+"RF10",54,54,"Russians",NA,"Ch11","Sex_TL1_avg_final",NA,"sex",5
+"RF10",54,54,"Russians",NA,"Ch11","FM_TL1_avg_final",4,"funeral",6
+"RF10",54,54,"Russians",NA,"Ch11","Ov_tl_avg",3.95,"overall",7
+"RF10",54,54,"Russians",NA,"Ch11","General_TL5B_avg_final",4,"gestalt",8
+"RI03",55,55,"Abkhazians",NA,"Ci12","General_TL1_avg_final",3,"law",1
+"RI03",55,55,"Abkhazians",NA,"Ci12","Soc_TL1_avg_final",NA,"social",2
+"RI03",55,55,"Abkhazians",NA,"Ci12","Gender_TL1_avg_final",1.875,"gender",3
+"RI03",55,55,"Abkhazians",NA,"Ci12","Mar_TL1_avg_final",3.375,"marriage",4
+"RI03",55,55,"Abkhazians",NA,"Ci12","Sex_TL1_avg_final",NA,"sex",5
+"RI03",55,55,"Abkhazians",NA,"Ci12","FM_TL1_avg_final",3.625,"funeral",6
+"RI03",55,55,"Abkhazians",NA,"Ci12","Ov_tl_avg",2.96875,"overall",7
+"RI03",55,55,"Abkhazians",NA,"Ci12","General_TL5B_avg_final",3.5,"gestalt",8
+"MA11",57,57,"Kurds","21","Ci11","General_TL1_avg_final",3,"law",1
+"MA11",57,57,"Kurds","21","Ci11","Soc_TL1_avg_final",2.75,"social",2
+"MA11",57,57,"Kurds","21","Ci11","Gender_TL1_avg_final",3.25,"gender",3
+"MA11",57,57,"Kurds","21","Ci11","Mar_TL1_avg_final",3.25,"marriage",4
+"MA11",57,57,"Kurds","21","Ci11","Sex_TL1_avg_final",3.75,"sex",5
+"MA11",57,57,"Kurds","21","Ci11","FM_TL1_avg_final",3.25,"funeral",6
+"MA11",57,57,"Kurds","21","Ci11","Ov_tl_avg",3.20833333333333,"overall",7
+"MA11",57,57,"Kurds","21","Ci11","General_TL5B_avg_final",3.25,"gestalt",8
+"MA10",58,58,"Basseri",NA,"Ea06","General_TL1_avg_final",2.125,"law",1
+"MA10",58,58,"Basseri",NA,"Ea06","Soc_TL1_avg_final",2.25,"social",2
+"MA10",58,58,"Basseri",NA,"Ea06","Gender_TL1_avg_final",2.375,"gender",3
+"MA10",58,58,"Basseri",NA,"Ea06","Mar_TL1_avg_final",3.875,"marriage",4
+"MA10",58,58,"Basseri",NA,"Ea06","Sex_TL1_avg_final",3.5,"sex",5
+"MA10",58,58,"Basseri",NA,"Ea06","FM_TL1_avg_final",2.875,"funeral",6
+"MA10",58,58,"Basseri",NA,"Ea06","Ov_tl_avg",2.83333333333333,"overall",7
+"MA10",58,58,"Basseri",NA,"Ea06","General_TL5B_avg_final",3,"gestalt",8
+"AT03",59,59,"West Punjabi",NA,"Ea13","General_TL1_avg_final",NA,"law",1
+"AT03",59,59,"West Punjabi",NA,"Ea13","Soc_TL1_avg_final",NA,"social",2
+"AT03",59,59,"West Punjabi",NA,"Ea13","Gender_TL1_avg_final",NA,"gender",3
+"AT03",59,59,"West Punjabi",NA,"Ea13","Mar_TL1_avg_final",NA,"marriage",4
+"AT03",59,59,"West Punjabi",NA,"Ea13","Sex_TL1_avg_final",NA,"sex",5
+"AT03",59,59,"West Punjabi",NA,"Ea13","FM_TL1_avg_final",NA,"funeral",6
+"AT03",59,59,"West Punjabi",NA,"Ea13","Ov_tl_avg",NA,"overall",7
+"AT03",59,59,"West Punjabi",NA,"Ea13","General_TL5B_avg_final",NA,"gestalt",8
+"AW32",60,60,"Gond",NA,"Eg13","General_TL1_avg_final",2.125,"law",1
+"AW32",60,60,"Gond",NA,"Eg13","Soc_TL1_avg_final",3,"social",2
+"AW32",60,60,"Gond",NA,"Eg13","Gender_TL1_avg_final",3.125,"gender",3
+"AW32",60,60,"Gond",NA,"Eg13","Mar_TL1_avg_final",1.5,"marriage",4
+"AW32",60,60,"Gond",NA,"Eg13","Sex_TL1_avg_final",3.125,"sex",5
+"AW32",60,60,"Gond",NA,"Eg13","FM_TL1_avg_final",3,"funeral",6
+"AW32",60,60,"Gond",NA,"Eg13","Ov_tl_avg",2.64583333333333,"overall",7
+"AW32",60,60,"Gond",NA,"Eg13","General_TL5B_avg_final",3,"gestalt",8
+"AW42",62,62,"Santal","28","Ef01","General_TL1_avg_final",3.875,"law",1
+"AW42",62,62,"Santal","28","Ef01","Soc_TL1_avg_final",2.875,"social",2
+"AW42",62,62,"Santal","28","Ef01","Gender_TL1_avg_final",3.25,"gender",3
+"AW42",62,62,"Santal","28","Ef01","Mar_TL1_avg_final",3.75,"marriage",4
+"AW42",62,62,"Santal","28","Ef01","Sex_TL1_avg_final",2.875,"sex",5
+"AW42",62,62,"Santal","28","Ef01","FM_TL1_avg_final",4,"funeral",6
+"AW42",62,62,"Santal","28","Ef01","Ov_tl_avg",3.4375,"overall",7
+"AW42",62,62,"Santal","28","Ef01","General_TL5B_avg_final",3.75,"gestalt",8
+"AW19",63,63,"Uttar Pradesh",NA,"Ef11","General_TL1_avg_final",3.75,"law",1
+"AW19",63,63,"Uttar Pradesh",NA,"Ef11","Soc_TL1_avg_final",NA,"social",2
+"AW19",63,63,"Uttar Pradesh",NA,"Ef11","Gender_TL1_avg_final",3.125,"gender",3
+"AW19",63,63,"Uttar Pradesh",NA,"Ef11","Mar_TL1_avg_final",4,"marriage",4
+"AW19",63,63,"Uttar Pradesh",NA,"Ef11","Sex_TL1_avg_final",NA,"sex",5
+"AW19",63,63,"Uttar Pradesh",NA,"Ef11","FM_TL1_avg_final",4,"funeral",6
+"AW19",63,63,"Uttar Pradesh",NA,"Ef11","Ov_tl_avg",3.71875,"overall",7
+"AW19",63,63,"Uttar Pradesh",NA,"Ef11","General_TL5B_avg_final",3.875,"gestalt",8
+"AV07",64,64,"Burusho",NA,"Ee02","General_TL1_avg_final",2,"law",1
+"AV07",64,64,"Burusho",NA,"Ee02","Soc_TL1_avg_final",1.75,"social",2
+"AV07",64,64,"Burusho",NA,"Ee02","Gender_TL1_avg_final",1.5,"gender",3
+"AV07",64,64,"Burusho",NA,"Ee02","Mar_TL1_avg_final",2.125,"marriage",4
+"AV07",64,64,"Burusho",NA,"Ee02","Sex_TL1_avg_final",2.375,"sex",5
+"AV07",64,64,"Burusho",NA,"Ee02","FM_TL1_avg_final",NA,"funeral",6
+"AV07",64,64,"Burusho",NA,"Ee02","Ov_tl_avg",1.95,"overall",7
+"AV07",64,64,"Burusho",NA,"Ee02","General_TL5B_avg_final",1.75,"gestalt",8
+"RQ02",65,65,"Kazakh",NA,"Eb01","General_TL1_avg_final",3.75,"law",1
+"RQ02",65,65,"Kazakh",NA,"Eb01","Soc_TL1_avg_final",NA,"social",2
+"RQ02",65,65,"Kazakh",NA,"Eb01","Gender_TL1_avg_final",3.75,"gender",3
+"RQ02",65,65,"Kazakh",NA,"Eb01","Mar_TL1_avg_final",3.25,"marriage",4
+"RQ02",65,65,"Kazakh",NA,"Eb01","Sex_TL1_avg_final",3.25,"sex",5
+"RQ02",65,65,"Kazakh",NA,"Eb01","FM_TL1_avg_final",3.25,"funeral",6
+"RQ02",65,65,"Kazakh",NA,"Eb01","Ov_tl_avg",3.45,"overall",7
+"RQ02",65,65,"Kazakh",NA,"Eb01","General_TL5B_avg_final",3.25,"gestalt",8
+"AH01",66,66,"Mongolia",NA,"Eb03","General_TL1_avg_final",3,"law",1
+"AH01",66,66,"Mongolia",NA,"Eb03","Soc_TL1_avg_final",NA,"social",2
+"AH01",66,66,"Mongolia",NA,"Eb03","Gender_TL1_avg_final",1,"gender",3
+"AH01",66,66,"Mongolia",NA,"Eb03","Mar_TL1_avg_final",2.25,"marriage",4
+"AH01",66,66,"Mongolia",NA,"Eb03","Sex_TL1_avg_final",NA,"sex",5
+"AH01",66,66,"Mongolia",NA,"Eb03","FM_TL1_avg_final",2.25,"funeral",6
+"AH01",66,66,"Mongolia",NA,"Eb03","Ov_tl_avg",2.125,"overall",7
+"AH01",66,66,"Mongolia",NA,"Eb03","General_TL5B_avg_final",2.75,"gestalt",8
+"AK05",68,68,"Lepcha",NA,"Ee03","General_TL1_avg_final",2.25,"law",1
+"AK05",68,68,"Lepcha",NA,"Ee03","Soc_TL1_avg_final",3,"social",2
+"AK05",68,68,"Lepcha",NA,"Ee03","Gender_TL1_avg_final",1.25,"gender",3
+"AK05",68,68,"Lepcha",NA,"Ee03","Mar_TL1_avg_final",3.25,"marriage",4
+"AK05",68,68,"Lepcha",NA,"Ee03","Sex_TL1_avg_final",2.25,"sex",5
+"AK05",68,68,"Lepcha",NA,"Ee03","FM_TL1_avg_final",3.75,"funeral",6
+"AK05",68,68,"Lepcha",NA,"Ee03","Ov_tl_avg",2.625,"overall",7
+"AK05",68,68,"Lepcha",NA,"Ee03","General_TL5B_avg_final",3,"gestalt",8
+"AR05",69,69,"Garo","27","Ei01","General_TL1_avg_final",3.125,"law",1
+"AR05",69,69,"Garo","27","Ei01","Soc_TL1_avg_final",3.125,"social",2
+"AR05",69,69,"Garo","27","Ei01","Gender_TL1_avg_final",3,"gender",3
+"AR05",69,69,"Garo","27","Ei01","Mar_TL1_avg_final",3.25,"marriage",4
+"AR05",69,69,"Garo","27","Ei01","Sex_TL1_avg_final",2.125,"sex",5
+"AR05",69,69,"Garo","27","Ei01","FM_TL1_avg_final",4,"funeral",6
+"AR05",69,69,"Garo","27","Ei01","Ov_tl_avg",3.10416666666667,"overall",7
+"AR05",69,69,"Garo","27","Ei01","General_TL5B_avg_final",3,"gestalt",8
+"AR20",70,70,"Mara",NA,"Ei04","General_TL1_avg_final",2.25,"law",1
+"AR20",70,70,"Mara",NA,"Ei04","Soc_TL1_avg_final",1.25,"social",2
+"AR20",70,70,"Mara",NA,"Ei04","Gender_TL1_avg_final",2.75,"gender",3
+"AR20",70,70,"Mara",NA,"Ei04","Mar_TL1_avg_final",2.75,"marriage",4
+"AR20",70,70,"Mara",NA,"Ei04","Sex_TL1_avg_final",1.25,"sex",5
+"AR20",70,70,"Mara",NA,"Ei04","FM_TL1_avg_final",NA,"funeral",6
+"AR20",70,70,"Mara",NA,"Ei04","Ov_tl_avg",2.05,"overall",7
+"AR20",70,70,"Mara",NA,"Ei04","General_TL5B_avg_final",2.25,"gestalt",8
+"AP04",71,71,"Burmans",NA,"Ei03","General_TL1_avg_final",1.75,"law",1
+"AP04",71,71,"Burmans",NA,"Ei03","Soc_TL1_avg_final",2,"social",2
+"AP04",71,71,"Burmans",NA,"Ei03","Gender_TL1_avg_final",1.75,"gender",3
+"AP04",71,71,"Burmans",NA,"Ei03","Mar_TL1_avg_final",1.75,"marriage",4
+"AP04",71,71,"Burmans",NA,"Ei03","Sex_TL1_avg_final",2.75,"sex",5
+"AP04",71,71,"Burmans",NA,"Ei03","FM_TL1_avg_final",3,"funeral",6
+"AP04",71,71,"Burmans",NA,"Ei03","Ov_tl_avg",2.16666666666667,"overall",7
+"AP04",71,71,"Burmans",NA,"Ei03","General_TL5B_avg_final",2,"gestalt",8
+"AM28",72,72,"Rmeet",NA,"Ej01","General_TL1_avg_final",NA,"law",1
+"AM28",72,72,"Rmeet",NA,"Ej01","Soc_TL1_avg_final",NA,"social",2
+"AM28",72,72,"Rmeet",NA,"Ej01","Gender_TL1_avg_final",NA,"gender",3
+"AM28",72,72,"Rmeet",NA,"Ej01","Mar_TL1_avg_final",NA,"marriage",4
+"AM28",72,72,"Rmeet",NA,"Ej01","Sex_TL1_avg_final",NA,"sex",5
+"AM28",72,72,"Rmeet",NA,"Ej01","FM_TL1_avg_final",NA,"funeral",6
+"AM28",72,72,"Rmeet",NA,"Ej01","Ov_tl_avg",NA,"overall",7
+"AM28",72,72,"Rmeet",NA,"Ej01","General_TL5B_avg_final",NA,"gestalt",8
+"AM11",73,73,"Vietnamese",NA,"Ej04","General_TL1_avg_final",2.75,"law",1
+"AM11",73,73,"Vietnamese",NA,"Ej04","Soc_TL1_avg_final",NA,"social",2
+"AM11",73,73,"Vietnamese",NA,"Ej04","Gender_TL1_avg_final",3,"gender",3
+"AM11",73,73,"Vietnamese",NA,"Ej04","Mar_TL1_avg_final",NA,"marriage",4
+"AM11",73,73,"Vietnamese",NA,"Ej04","Sex_TL1_avg_final",NA,"sex",5
+"AM11",73,73,"Vietnamese",NA,"Ej04","FM_TL1_avg_final",3.75,"funeral",6
+"AM11",73,73,"Vietnamese",NA,"Ej04","Ov_tl_avg",3.16666666666667,"overall",7
+"AM11",73,73,"Vietnamese",NA,"Ej04","General_TL5B_avg_final",3,"gestalt",8
+"AO07",76,76,"Central Thai","30","Ej09","General_TL1_avg_final",2,"law",1
+"AO07",76,76,"Central Thai","30","Ej09","Soc_TL1_avg_final",2.5,"social",2
+"AO07",76,76,"Central Thai","30","Ej09","Gender_TL1_avg_final",1,"gender",3
+"AO07",76,76,"Central Thai","30","Ej09","Mar_TL1_avg_final",1.125,"marriage",4
+"AO07",76,76,"Central Thai","30","Ej09","Sex_TL1_avg_final",2.125,"sex",5
+"AO07",76,76,"Central Thai","30","Ej09","FM_TL1_avg_final",3.5,"funeral",6
+"AO07",76,76,"Central Thai","30","Ej09","Ov_tl_avg",2.04166666666667,"overall",7
+"AO07",76,76,"Central Thai","30","Ej09","General_TL5B_avg_final",2.125,"gestalt",8
+"AZ02",79,79,"Andamans","31","Eh01","General_TL1_avg_final",3.25,"law",1
+"AZ02",79,79,"Andamans","31","Eh01","Soc_TL1_avg_final",2.25,"social",2
+"AZ02",79,79,"Andamans","31","Eh01","Gender_TL1_avg_final",2.875,"gender",3
+"AZ02",79,79,"Andamans","31","Eh01","Mar_TL1_avg_final",2.5,"marriage",4
+"AZ02",79,79,"Andamans","31","Eh01","Sex_TL1_avg_final",2,"sex",5
+"AZ02",79,79,"Andamans","31","Eh01","FM_TL1_avg_final",3,"funeral",6
+"AZ02",79,79,"Andamans","31","Eh01","Ov_tl_avg",2.64583333333333,"overall",7
+"AZ02",79,79,"Andamans","31","Eh01","General_TL5B_avg_final",2.75,"gestalt",8
+"OE05",83,83,"Javanese",NA,"Ib02","General_TL1_avg_final",2,"law",1
+"OE05",83,83,"Javanese",NA,"Ib02","Soc_TL1_avg_final",2.25,"social",2
+"OE05",83,83,"Javanese",NA,"Ib02","Gender_TL1_avg_final",2,"gender",3
+"OE05",83,83,"Javanese",NA,"Ib02","Mar_TL1_avg_final",2.25,"marriage",4
+"OE05",83,83,"Javanese",NA,"Ib02","Sex_TL1_avg_final",1.75,"sex",5
+"OE05",83,83,"Javanese",NA,"Ib02","FM_TL1_avg_final",3,"funeral",6
+"OE05",83,83,"Javanese",NA,"Ib02","Ov_tl_avg",2.20833333333333,"overall",7
+"OE05",83,83,"Javanese",NA,"Ib02","General_TL5B_avg_final",1.75,"gestalt",8
+"OF07",84,84,"Balinese",NA,"Ib03","General_TL1_avg_final",3,"law",1
+"OF07",84,84,"Balinese",NA,"Ib03","Soc_TL1_avg_final",3,"social",2
+"OF07",84,84,"Balinese",NA,"Ib03","Gender_TL1_avg_final",2.375,"gender",3
+"OF07",84,84,"Balinese",NA,"Ib03","Mar_TL1_avg_final",3.125,"marriage",4
+"OF07",84,84,"Balinese",NA,"Ib03","Sex_TL1_avg_final",2.5,"sex",5
+"OF07",84,84,"Balinese",NA,"Ib03","FM_TL1_avg_final",4,"funeral",6
+"OF07",84,84,"Balinese",NA,"Ib03","Ov_tl_avg",3,"overall",7
+"OF07",84,84,"Balinese",NA,"Ib03","General_TL5B_avg_final",3,"gestalt",8
+"OC06",85,85,"Iban","33","Ib01","General_TL1_avg_final",3.25,"law",1
+"OC06",85,85,"Iban","33","Ib01","Soc_TL1_avg_final",NA,"social",2
+"OC06",85,85,"Iban","33","Ib01","Gender_TL1_avg_final",2.25,"gender",3
+"OC06",85,85,"Iban","33","Ib01","Mar_TL1_avg_final",2,"marriage",4
+"OC06",85,85,"Iban","33","Ib01","Sex_TL1_avg_final",3.25,"sex",5
+"OC06",85,85,"Iban","33","Ib01","FM_TL1_avg_final",4,"funeral",6
+"OC06",85,85,"Iban","33","Ib01","Ov_tl_avg",2.95,"overall",7
+"OC06",85,85,"Iban","33","Ib01","General_TL5B_avg_final",NA,"gestalt",8
+"OA08",86,86,"Sama-Bajau",NA,"Ia13","General_TL1_avg_final",NA,"law",1
+"OA08",86,86,"Sama-Bajau",NA,"Ia13","Soc_TL1_avg_final",NA,"social",2
+"OA08",86,86,"Sama-Bajau",NA,"Ia13","Gender_TL1_avg_final",NA,"gender",3
+"OA08",86,86,"Sama-Bajau",NA,"Ia13","Mar_TL1_avg_final",NA,"marriage",4
+"OA08",86,86,"Sama-Bajau",NA,"Ia13","Sex_TL1_avg_final",NA,"sex",5
+"OA08",86,86,"Sama-Bajau",NA,"Ia13","FM_TL1_avg_final",NA,"funeral",6
+"OA08",86,86,"Sama-Bajau",NA,"Ia13","Ov_tl_avg",NA,"overall",7
+"OA08",86,86,"Sama-Bajau",NA,"Ia13","General_TL5B_avg_final",NA,"gestalt",8
+"OG11",87,87,"Eastern Toraja","34","Ic05","General_TL1_avg_final",4,"law",1
+"OG11",87,87,"Eastern Toraja","34","Ic05","Soc_TL1_avg_final",3,"social",2
+"OG11",87,87,"Eastern Toraja","34","Ic05","Gender_TL1_avg_final",3.75,"gender",3
+"OG11",87,87,"Eastern Toraja","34","Ic05","Mar_TL1_avg_final",3,"marriage",4
+"OG11",87,87,"Eastern Toraja","34","Ic05","Sex_TL1_avg_final",2.5,"sex",5
+"OG11",87,87,"Eastern Toraja","34","Ic05","FM_TL1_avg_final",4,"funeral",6
+"OG11",87,87,"Eastern Toraja","34","Ic05","Ov_tl_avg",3.375,"overall",7
+"OG11",87,87,"Eastern Toraja","34","Ic05","General_TL5B_avg_final",3.25,"gestalt",8
+"OI20",90,90,"Tiwi",NA,"Id03","General_TL1_avg_final",3,"law",1
+"OI20",90,90,"Tiwi",NA,"Id03","Soc_TL1_avg_final",2.125,"social",2
+"OI20",90,90,"Tiwi",NA,"Id03","Gender_TL1_avg_final",3.875,"gender",3
+"OI20",90,90,"Tiwi",NA,"Id03","Mar_TL1_avg_final",2.75,"marriage",4
+"OI20",90,90,"Tiwi",NA,"Id03","Sex_TL1_avg_final",2.875,"sex",5
+"OI20",90,90,"Tiwi",NA,"Id03","FM_TL1_avg_final",3.375,"funeral",6
+"OI20",90,90,"Tiwi",NA,"Id03","Ov_tl_avg",3,"overall",7
+"OI20",90,90,"Tiwi",NA,"Id03","General_TL5B_avg_final",3,"gestalt",8
+"OI08",91,91,"Aranda","35","Id01","General_TL1_avg_final",4,"law",1
+"OI08",91,91,"Aranda","35","Id01","Soc_TL1_avg_final",3.25,"social",2
+"OI08",91,91,"Aranda","35","Id01","Gender_TL1_avg_final",3.5,"gender",3
+"OI08",91,91,"Aranda","35","Id01","Mar_TL1_avg_final",3.875,"marriage",4
+"OI08",91,91,"Aranda","35","Id01","Sex_TL1_avg_final",3.5,"sex",5
+"OI08",91,91,"Aranda","35","Id01","FM_TL1_avg_final",4,"funeral",6
+"OI08",91,91,"Aranda","35","Id01","Ov_tl_avg",3.6875,"overall",7
+"OI08",91,91,"Aranda","35","Id01","General_TL5B_avg_final",3.875,"gestalt",8
+"OJ23",92,92,"Orokaiva",NA,"Ie09","General_TL1_avg_final",2.25,"law",1
+"OJ23",92,92,"Orokaiva",NA,"Ie09","Soc_TL1_avg_final",1.25,"social",2
+"OJ23",92,92,"Orokaiva",NA,"Ie09","Gender_TL1_avg_final",3.75,"gender",3
+"OJ23",92,92,"Orokaiva",NA,"Ie09","Mar_TL1_avg_final",1.25,"marriage",4
+"OJ23",92,92,"Orokaiva",NA,"Ie09","Sex_TL1_avg_final",2.25,"sex",5
+"OJ23",92,92,"Orokaiva",NA,"Ie09","FM_TL1_avg_final",3,"funeral",6
+"OJ23",92,92,"Orokaiva",NA,"Ie09","Ov_tl_avg",2.29166666666667,"overall",7
+"OJ23",92,92,"Orokaiva",NA,"Ie09","General_TL5B_avg_final",2,"gestalt",8
+"OJ82",93,93,"Kimam",NA,"Ie18","General_TL1_avg_final",3.25,"law",1
+"OJ82",93,93,"Kimam",NA,"Ie18","Soc_TL1_avg_final",2,"social",2
+"OJ82",93,93,"Kimam",NA,"Ie18","Gender_TL1_avg_final",3,"gender",3
+"OJ82",93,93,"Kimam",NA,"Ie18","Mar_TL1_avg_final",2.25,"marriage",4
+"OJ82",93,93,"Kimam",NA,"Ie18","Sex_TL1_avg_final",3,"sex",5
+"OJ82",93,93,"Kimam",NA,"Ie18","FM_TL1_avg_final",4,"funeral",6
+"OJ82",93,93,"Kimam",NA,"Ie18","Ov_tl_avg",2.91666666666667,"overall",7
+"OJ82",93,93,"Kimam",NA,"Ie18","General_TL5B_avg_final",3,"gestalt",8
+"OJ29",94,94,"Kapauku","36","Ie01","General_TL1_avg_final",3.5,"law",1
+"OJ29",94,94,"Kapauku","36","Ie01","Soc_TL1_avg_final",2.125,"social",2
+"OJ29",94,94,"Kapauku","36","Ie01","Gender_TL1_avg_final",3.25,"gender",3
+"OJ29",94,94,"Kapauku","36","Ie01","Mar_TL1_avg_final",3.125,"marriage",4
+"OJ29",94,94,"Kapauku","36","Ie01","Sex_TL1_avg_final",2.875,"sex",5
+"OJ29",94,94,"Kapauku","36","Ie01","FM_TL1_avg_final",2.875,"funeral",6
+"OJ29",94,94,"Kapauku","36","Ie01","Ov_tl_avg",2.95833333333333,"overall",7
+"OJ29",94,94,"Kapauku","36","Ie01","General_TL5B_avg_final",3,"gestalt",8
+"OM06",96,96,"Manus",NA,"Ig09","General_TL1_avg_final",3.625,"law",1
+"OM06",96,96,"Manus",NA,"Ig09","Soc_TL1_avg_final",2.5,"social",2
+"OM06",96,96,"Manus",NA,"Ig09","Gender_TL1_avg_final",3.125,"gender",3
+"OM06",96,96,"Manus",NA,"Ig09","Mar_TL1_avg_final",3,"marriage",4
+"OM06",96,96,"Manus",NA,"Ig09","Sex_TL1_avg_final",3.875,"sex",5
+"OM06",96,96,"Manus",NA,"Ig09","FM_TL1_avg_final",4,"funeral",6
+"OM06",96,96,"Manus",NA,"Ig09","Ov_tl_avg",3.35416666666667,"overall",7
+"OM06",96,96,"Manus",NA,"Ig09","General_TL5B_avg_final",3.75,"gestalt",8
+"OL06",98,98,"Trobriands","38","Ig02","General_TL1_avg_final",2.5,"law",1
+"OL06",98,98,"Trobriands","38","Ig02","Soc_TL1_avg_final",2.75,"social",2
+"OL06",98,98,"Trobriands","38","Ig02","Gender_TL1_avg_final",2.75,"gender",3
+"OL06",98,98,"Trobriands","38","Ig02","Mar_TL1_avg_final",2.375,"marriage",4
+"OL06",98,98,"Trobriands","38","Ig02","Sex_TL1_avg_final",1.875,"sex",5
+"OL06",98,98,"Trobriands","38","Ig02","FM_TL1_avg_final",4,"funeral",6
+"OL06",98,98,"Trobriands","38","Ig02","Ov_tl_avg",2.70833333333333,"overall",7
+"OL06",98,98,"Trobriands","38","Ig02","General_TL5B_avg_final",2,"gestalt",8
+"ON19",99,99,"Siwai",NA,"Ig01","General_TL1_avg_final",3.25,"law",1
+"ON19",99,99,"Siwai",NA,"Ig01","Soc_TL1_avg_final",1.25,"social",2
+"ON19",99,99,"Siwai",NA,"Ig01","Gender_TL1_avg_final",3.25,"gender",3
+"ON19",99,99,"Siwai",NA,"Ig01","Mar_TL1_avg_final",3.25,"marriage",4
+"ON19",99,99,"Siwai",NA,"Ig01","Sex_TL1_avg_final",2.75,"sex",5
+"ON19",99,99,"Siwai",NA,"Ig01","FM_TL1_avg_final",3.75,"funeral",6
+"ON19",99,99,"Siwai",NA,"Ig01","Ov_tl_avg",2.91666666666667,"overall",7
+"ON19",99,99,"Siwai",NA,"Ig01","General_TL5B_avg_final",3,"gestalt",8
+"OT11",100,100,"Tikopia","40","Ii02","General_TL1_avg_final",2.75,"law",1
+"OT11",100,100,"Tikopia","40","Ii02","Soc_TL1_avg_final",2.75,"social",2
+"OT11",100,100,"Tikopia","40","Ii02","Gender_TL1_avg_final",3,"gender",3
+"OT11",100,100,"Tikopia","40","Ii02","Mar_TL1_avg_final",2.25,"marriage",4
+"OT11",100,100,"Tikopia","40","Ii02","Sex_TL1_avg_final",2.75,"sex",5
+"OT11",100,100,"Tikopia","40","Ii02","FM_TL1_avg_final",3,"funeral",6
+"OT11",100,100,"Tikopia","40","Ii02","Ov_tl_avg",2.75,"overall",7
+"OT11",100,100,"Tikopia","40","Ii02","General_TL5B_avg_final",2.75,"gestalt",8
+"OQ12",102,102,"Bau Fijians",NA,"Ih14","General_TL1_avg_final",NA,"law",1
+"OQ12",102,102,"Bau Fijians",NA,"Ih14","Soc_TL1_avg_final",NA,"social",2
+"OQ12",102,102,"Bau Fijians",NA,"Ih14","Gender_TL1_avg_final",NA,"gender",3
+"OQ12",102,102,"Bau Fijians",NA,"Ih14","Mar_TL1_avg_final",NA,"marriage",4
+"OQ12",102,102,"Bau Fijians",NA,"Ih14","Sex_TL1_avg_final",NA,"sex",5
+"OQ12",102,102,"Bau Fijians",NA,"Ih14","FM_TL1_avg_final",NA,"funeral",6
+"OQ12",102,102,"Bau Fijians",NA,"Ih14","Ov_tl_avg",NA,"overall",7
+"OQ12",102,102,"Bau Fijians",NA,"Ih14","General_TL5B_avg_final",NA,"gestalt",8
+"OZ04",104,104,"Maori",NA,"Ij02","General_TL1_avg_final",3.75,"law",1
+"OZ04",104,104,"Maori",NA,"Ij02","Soc_TL1_avg_final",4,"social",2
+"OZ04",104,104,"Maori",NA,"Ij02","Gender_TL1_avg_final",3.75,"gender",3
+"OZ04",104,104,"Maori",NA,"Ij02","Mar_TL1_avg_final",3.25,"marriage",4
+"OZ04",104,104,"Maori",NA,"Ij02","Sex_TL1_avg_final",4,"sex",5
+"OZ04",104,104,"Maori",NA,"Ij02","FM_TL1_avg_final",3.875,"funeral",6
+"OZ04",104,104,"Maori",NA,"Ij02","Ov_tl_avg",3.77083333333333,"overall",7
+"OZ04",104,104,"Maori",NA,"Ij02","General_TL5B_avg_final",3.75,"gestalt",8
+"OU08",106,106,"Samoans",NA,"Ii14","General_TL1_avg_final",2.625,"law",1
+"OU08",106,106,"Samoans",NA,"Ii14","Soc_TL1_avg_final",2.75,"social",2
+"OU08",106,106,"Samoans",NA,"Ii14","Gender_TL1_avg_final",NA,"gender",3
+"OU08",106,106,"Samoans",NA,"Ii14","Mar_TL1_avg_final",3.5,"marriage",4
+"OU08",106,106,"Samoans",NA,"Ii14","Sex_TL1_avg_final",3.375,"sex",5
+"OU08",106,106,"Samoans",NA,"Ii14","FM_TL1_avg_final",3.375,"funeral",6
+"OU08",106,106,"Samoans",NA,"Ii14","Ov_tl_avg",3.125,"overall",7
+"OU08",106,106,"Samoans",NA,"Ii14","General_TL5B_avg_final",4,"gestalt",8
+"OR11",108,108,"Marshallese",NA,"If17","General_TL1_avg_final",3.75,"law",1
+"OR11",108,108,"Marshallese",NA,"If17","Soc_TL1_avg_final",2.25,"social",2
+"OR11",108,108,"Marshallese",NA,"If17","Gender_TL1_avg_final",3,"gender",3
+"OR11",108,108,"Marshallese",NA,"If17","Mar_TL1_avg_final",2,"marriage",4
+"OR11",108,108,"Marshallese",NA,"If17","Sex_TL1_avg_final",2.25,"sex",5
+"OR11",108,108,"Marshallese",NA,"If17","FM_TL1_avg_final",2.75,"funeral",6
+"OR11",108,108,"Marshallese",NA,"If17","Ov_tl_avg",2.66666666666667,"overall",7
+"OR11",108,108,"Marshallese",NA,"If17","General_TL5B_avg_final",3,"gestalt",8
+"OR19",109,109,"Chuuk","37","If02","General_TL1_avg_final",3.75,"law",1
+"OR19",109,109,"Chuuk","37","If02","Soc_TL1_avg_final",2.125,"social",2
+"OR19",109,109,"Chuuk","37","If02","Gender_TL1_avg_final",3.5,"gender",3
+"OR19",109,109,"Chuuk","37","If02","Mar_TL1_avg_final",2.75,"marriage",4
+"OR19",109,109,"Chuuk","37","If02","Sex_TL1_avg_final",2.75,"sex",5
+"OR19",109,109,"Chuuk","37","If02","FM_TL1_avg_final",2.875,"funeral",6
+"OR19",109,109,"Chuuk","37","If02","Ov_tl_avg",2.95833333333333,"overall",7
+"OR19",109,109,"Chuuk","37","If02","General_TL5B_avg_final",3.125,"gestalt",8
+"OR22",110,110,"Yapese",NA,"If06","General_TL1_avg_final",3.25,"law",1
+"OR22",110,110,"Yapese",NA,"If06","Soc_TL1_avg_final",NA,"social",2
+"OR22",110,110,"Yapese",NA,"If06","Gender_TL1_avg_final",3,"gender",3
+"OR22",110,110,"Yapese",NA,"If06","Mar_TL1_avg_final",1.75,"marriage",4
+"OR22",110,110,"Yapese",NA,"If06","Sex_TL1_avg_final",2.25,"sex",5
+"OR22",110,110,"Yapese",NA,"If06","FM_TL1_avg_final",2.75,"funeral",6
+"OR22",110,110,"Yapese",NA,"If06","Ov_tl_avg",2.6,"overall",7
+"OR22",110,110,"Yapese",NA,"If06","General_TL5B_avg_final",3,"gestalt",8
+"OA19",112,112,"Ifugao","32","Ia03","General_TL1_avg_final",2.125,"law",1
+"OA19",112,112,"Ifugao","32","Ia03","Soc_TL1_avg_final",NA,"social",2
+"OA19",112,112,"Ifugao","32","Ia03","Gender_TL1_avg_final",1.125,"gender",3
+"OA19",112,112,"Ifugao","32","Ia03","Mar_TL1_avg_final",1.125,"marriage",4
+"OA19",112,112,"Ifugao","32","Ia03","Sex_TL1_avg_final",2.5,"sex",5
+"OA19",112,112,"Ifugao","32","Ia03","FM_TL1_avg_final",3.375,"funeral",6
+"OA19",112,112,"Ifugao","32","Ia03","Ov_tl_avg",2.05,"overall",7
+"OA19",112,112,"Ifugao","32","Ia03","General_TL5B_avg_final",2,"gestalt",8
+"AA01",116,116,"Korea","25","Ed01","General_TL1_avg_final",3.875,"law",1
+"AA01",116,116,"Korea","25","Ed01","Soc_TL1_avg_final",3.125,"social",2
+"AA01",116,116,"Korea","25","Ed01","Gender_TL1_avg_final",3.875,"gender",3
+"AA01",116,116,"Korea","25","Ed01","Mar_TL1_avg_final",3.875,"marriage",4
+"AA01",116,116,"Korea","25","Ed01","Sex_TL1_avg_final",4,"sex",5
+"AA01",116,116,"Korea","25","Ed01","FM_TL1_avg_final",3.875,"funeral",6
+"AA01",116,116,"Korea","25","Ed01","Ov_tl_avg",3.77083333333333,"overall",7
+"AA01",116,116,"Korea","25","Ed01","General_TL5B_avg_final",3.875,"gestalt",8
+"AB43",117,117,"Okayama",NA,"Ed05","General_TL1_avg_final",3.75,"law",1
+"AB43",117,117,"Okayama",NA,"Ed05","Soc_TL1_avg_final",3.25,"social",2
+"AB43",117,117,"Okayama",NA,"Ed05","Gender_TL1_avg_final",3.75,"gender",3
+"AB43",117,117,"Okayama",NA,"Ed05","Mar_TL1_avg_final",NA,"marriage",4
+"AB43",117,117,"Okayama",NA,"Ed05","Sex_TL1_avg_final",3.25,"sex",5
+"AB43",117,117,"Okayama",NA,"Ed05","FM_TL1_avg_final",3.75,"funeral",6
+"AB43",117,117,"Okayama",NA,"Ed05","Ov_tl_avg",3.55,"overall",7
+"AB43",117,117,"Okayama",NA,"Ed05","General_TL5B_avg_final",NA,"gestalt",8
+"AB06",118,118,"Ainu",NA,"Ec07","General_TL1_avg_final",1.75,"law",1
+"AB06",118,118,"Ainu",NA,"Ec07","Soc_TL1_avg_final",NA,"social",2
+"AB06",118,118,"Ainu",NA,"Ec07","Gender_TL1_avg_final",2.25,"gender",3
+"AB06",118,118,"Ainu",NA,"Ec07","Mar_TL1_avg_final",1,"marriage",4
+"AB06",118,118,"Ainu",NA,"Ec07","Sex_TL1_avg_final",NA,"sex",5
+"AB06",118,118,"Ainu",NA,"Ec07","FM_TL1_avg_final",2.75,"funeral",6
+"AB06",118,118,"Ainu",NA,"Ec07","Ov_tl_avg",1.9375,"overall",7
+"AB06",118,118,"Ainu",NA,"Ec07","General_TL5B_avg_final",2.25,"gestalt",8
+"RX02",119,119,"Nivkh",NA,"Ec01","General_TL1_avg_final",3.75,"law",1
+"RX02",119,119,"Nivkh",NA,"Ec01","Soc_TL1_avg_final",3,"social",2
+"RX02",119,119,"Nivkh",NA,"Ec01","Gender_TL1_avg_final",2.25,"gender",3
+"RX02",119,119,"Nivkh",NA,"Ec01","Mar_TL1_avg_final",3.25,"marriage",4
+"RX02",119,119,"Nivkh",NA,"Ec01","Sex_TL1_avg_final",2,"sex",5
+"RX02",119,119,"Nivkh",NA,"Ec01","FM_TL1_avg_final",3.25,"funeral",6
+"RX02",119,119,"Nivkh",NA,"Ec01","Ov_tl_avg",2.91666666666667,"overall",7
+"RX02",119,119,"Nivkh",NA,"Ec01","General_TL5B_avg_final",3,"gestalt",8
+"RY02",121,121,"Chukchee","24","Ec03","General_TL1_avg_final",1,"law",1
+"RY02",121,121,"Chukchee","24","Ec03","Soc_TL1_avg_final",1.25,"social",2
+"RY02",121,121,"Chukchee","24","Ec03","Gender_TL1_avg_final",2.25,"gender",3
+"RY02",121,121,"Chukchee","24","Ec03","Mar_TL1_avg_final",1,"marriage",4
+"RY02",121,121,"Chukchee","24","Ec03","Sex_TL1_avg_final",NA,"sex",5
+"RY02",121,121,"Chukchee","24","Ec03","FM_TL1_avg_final",2.75,"funeral",6
+"RY02",121,121,"Chukchee","24","Ec03","Ov_tl_avg",1.65,"overall",7
+"RY02",121,121,"Chukchee","24","Ec03","General_TL5B_avg_final",1.25,"gestalt",8
+"ND08",124,124,"Copper Inuit","41","Na03","General_TL1_avg_final",1.25,"law",1
+"ND08",124,124,"Copper Inuit","41","Na03","Soc_TL1_avg_final",1,"social",2
+"ND08",124,124,"Copper Inuit","41","Na03","Gender_TL1_avg_final",1,"gender",3
+"ND08",124,124,"Copper Inuit","41","Na03","Mar_TL1_avg_final",1.25,"marriage",4
+"ND08",124,124,"Copper Inuit","41","Na03","Sex_TL1_avg_final",NA,"sex",5
+"ND08",124,124,"Copper Inuit","41","Na03","FM_TL1_avg_final",2.25,"funeral",6
+"ND08",124,124,"Copper Inuit","41","Na03","Ov_tl_avg",1.35,"overall",7
+"ND08",124,124,"Copper Inuit","41","Na03","General_TL5B_avg_final",1.25,"gestalt",8
+"NG06",127,127,"Ojibwa","42","Na33","General_TL1_avg_final",NA,"law",1
+"NG06",127,127,"Ojibwa","42","Na33","Soc_TL1_avg_final",NA,"social",2
+"NG06",127,127,"Ojibwa","42","Na33","Gender_TL1_avg_final",NA,"gender",3
+"NG06",127,127,"Ojibwa","42","Na33","Mar_TL1_avg_final",NA,"marriage",4
+"NG06",127,127,"Ojibwa","42","Na33","Sex_TL1_avg_final",NA,"sex",5
+"NG06",127,127,"Ojibwa","42","Na33","FM_TL1_avg_final",NA,"funeral",6
+"NG06",127,127,"Ojibwa","42","Na33","Ov_tl_avg",NA,"overall",7
+"NG06",127,127,"Ojibwa","42","Na33","General_TL5B_avg_final",NA,"gestalt",8
+"NA07",130,130,"Eyak",NA,"Nb05","General_TL1_avg_final",3,"law",1
+"NA07",130,130,"Eyak",NA,"Nb05","Soc_TL1_avg_final",3,"social",2
+"NA07",130,130,"Eyak",NA,"Nb05","Gender_TL1_avg_final",3,"gender",3
+"NA07",130,130,"Eyak",NA,"Nb05","Mar_TL1_avg_final",NA,"marriage",4
+"NA07",130,130,"Eyak",NA,"Nb05","Sex_TL1_avg_final",4,"sex",5
+"NA07",130,130,"Eyak",NA,"Nb05","FM_TL1_avg_final",NA,"funeral",6
+"NA07",130,130,"Eyak",NA,"Nb05","Ov_tl_avg",3.25,"overall",7
+"NA07",130,130,"Eyak",NA,"Nb05","General_TL5B_avg_final",2.5,"gestalt",8
+"NE09",131,131,"Haida",NA,"Nb01","General_TL1_avg_final",3.5,"law",1
+"NE09",131,131,"Haida",NA,"Nb01","Soc_TL1_avg_final",3.125,"social",2
+"NE09",131,131,"Haida",NA,"Nb01","Gender_TL1_avg_final",2.125,"gender",3
+"NE09",131,131,"Haida",NA,"Nb01","Mar_TL1_avg_final",3.125,"marriage",4
+"NE09",131,131,"Haida",NA,"Nb01","Sex_TL1_avg_final",3,"sex",5
+"NE09",131,131,"Haida",NA,"Nb01","FM_TL1_avg_final",4,"funeral",6
+"NE09",131,131,"Haida",NA,"Nb01","Ov_tl_avg",3.14583333333333,"overall",7
+"NE09",131,131,"Haida",NA,"Nb01","General_TL5B_avg_final",3.125,"gestalt",8
+"NE06",132,132,"Nuxalk",NA,"Nb09","General_TL1_avg_final",3.25,"law",1
+"NE06",132,132,"Nuxalk",NA,"Nb09","Soc_TL1_avg_final",3.25,"social",2
+"NE06",132,132,"Nuxalk",NA,"Nb09","Gender_TL1_avg_final",2.75,"gender",3
+"NE06",132,132,"Nuxalk",NA,"Nb09","Mar_TL1_avg_final",2.75,"marriage",4
+"NE06",132,132,"Nuxalk",NA,"Nb09","Sex_TL1_avg_final",3.75,"sex",5
+"NE06",132,132,"Nuxalk",NA,"Nb09","FM_TL1_avg_final",3.25,"funeral",6
+"NE06",132,132,"Nuxalk",NA,"Nb09","Ov_tl_avg",3.16666666666667,"overall",7
+"NE06",132,132,"Nuxalk",NA,"Nb09","General_TL5B_avg_final",3,"gestalt",8
+"NS18",135,135,"Pomo",NA,"Nc18","General_TL1_avg_final",3.125,"law",1
+"NS18",135,135,"Pomo",NA,"Nc18","Soc_TL1_avg_final",3.75,"social",2
+"NS18",135,135,"Pomo",NA,"Nc18","Gender_TL1_avg_final",3.25,"gender",3
+"NS18",135,135,"Pomo",NA,"Nc18","Mar_TL1_avg_final",2.5,"marriage",4
+"NS18",135,135,"Pomo",NA,"Nc18","Sex_TL1_avg_final",2.875,"sex",5
+"NS18",135,135,"Pomo",NA,"Nc18","FM_TL1_avg_final",3.875,"funeral",6
+"NS18",135,135,"Pomo",NA,"Nc18","Ov_tl_avg",3.22916666666667,"overall",7
+"NS18",135,135,"Pomo",NA,"Nc18","General_TL5B_avg_final",3.25,"gestalt",8
+"NS29",136,136,"Yokuts",NA,"Nc24","General_TL1_avg_final",2.75,"law",1
+"NS29",136,136,"Yokuts",NA,"Nc24","Soc_TL1_avg_final",2.75,"social",2
+"NS29",136,136,"Yokuts",NA,"Nc24","Gender_TL1_avg_final",3.125,"gender",3
+"NS29",136,136,"Yokuts",NA,"Nc24","Mar_TL1_avg_final",2.875,"marriage",4
+"NS29",136,136,"Yokuts",NA,"Nc24","Sex_TL1_avg_final",2.75,"sex",5
+"NS29",136,136,"Yokuts",NA,"Nc24","FM_TL1_avg_final",3.375,"funeral",6
+"NS29",136,136,"Yokuts",NA,"Nc24","Ov_tl_avg",2.9375,"overall",7
+"NS29",136,136,"Yokuts",NA,"Nc24","General_TL5B_avg_final",2.75,"gestalt",8
+"NR10",138,138,"Klamath","44","Nc08","General_TL1_avg_final",NA,"law",1
+"NR10",138,138,"Klamath","44","Nc08","Soc_TL1_avg_final",NA,"social",2
+"NR10",138,138,"Klamath","44","Nc08","Gender_TL1_avg_final",NA,"gender",3
+"NR10",138,138,"Klamath","44","Nc08","Mar_TL1_avg_final",NA,"marriage",4
+"NR10",138,138,"Klamath","44","Nc08","Sex_TL1_avg_final",NA,"sex",5
+"NR10",138,138,"Klamath","44","Nc08","FM_TL1_avg_final",NA,"funeral",6
+"NR10",138,138,"Klamath","44","Nc08","Ov_tl_avg",NA,"overall",7
+"NR10",138,138,"Klamath","44","Nc08","General_TL5B_avg_final",NA,"gestalt",8
+"NQ14",141,141,"Hidatsa",NA,"Ne15","General_TL1_avg_final",2,"law",1
+"NQ14",141,141,"Hidatsa",NA,"Ne15","Soc_TL1_avg_final",NA,"social",2
+"NQ14",141,141,"Hidatsa",NA,"Ne15","Gender_TL1_avg_final",1.75,"gender",3
+"NQ14",141,141,"Hidatsa",NA,"Ne15","Mar_TL1_avg_final",1.25,"marriage",4
+"NQ14",141,141,"Hidatsa",NA,"Ne15","Sex_TL1_avg_final",NA,"sex",5
+"NQ14",141,141,"Hidatsa",NA,"Ne15","FM_TL1_avg_final",NA,"funeral",6
+"NQ14",141,141,"Hidatsa",NA,"Ne15","Ov_tl_avg",1.66666666666667,"overall",7
+"NQ14",141,141,"Hidatsa",NA,"Ne15","General_TL5B_avg_final",1.25,"gestalt",8
+"NQ18",142,142,"Pawnee","46","Nf06","General_TL1_avg_final",2.25,"law",1
+"NQ18",142,142,"Pawnee","46","Nf06","Soc_TL1_avg_final",2.25,"social",2
+"NQ18",142,142,"Pawnee","46","Nf06","Gender_TL1_avg_final",2.25,"gender",3
+"NQ18",142,142,"Pawnee","46","Nf06","Mar_TL1_avg_final",2.25,"marriage",4
+"NQ18",142,142,"Pawnee","46","Nf06","Sex_TL1_avg_final",3.25,"sex",5
+"NQ18",142,142,"Pawnee","46","Nf06","FM_TL1_avg_final",1.25,"funeral",6
+"NQ18",142,142,"Pawnee","46","Nf06","Ov_tl_avg",2.25,"overall",7
+"NQ18",142,142,"Pawnee","46","Nf06","General_TL5B_avg_final",2.25,"gestalt",8
+"NG05",144,144,"Huron/Wendat",NA,"Ng01","General_TL1_avg_final",2.25,"law",1
+"NG05",144,144,"Huron/Wendat",NA,"Ng01","Soc_TL1_avg_final",1.25,"social",2
+"NG05",144,144,"Huron/Wendat",NA,"Ng01","Gender_TL1_avg_final",2,"gender",3
+"NG05",144,144,"Huron/Wendat",NA,"Ng01","Mar_TL1_avg_final",2.25,"marriage",4
+"NG05",144,144,"Huron/Wendat",NA,"Ng01","Sex_TL1_avg_final",1,"sex",5
+"NG05",144,144,"Huron/Wendat",NA,"Ng01","FM_TL1_avg_final",3.75,"funeral",6
+"NG05",144,144,"Huron/Wendat",NA,"Ng01","Ov_tl_avg",2.08333333333333,"overall",7
+"NG05",144,144,"Huron/Wendat",NA,"Ng01","General_TL5B_avg_final",2,"gestalt",8
+"NT14",150,150,"Havasupai",NA,"Nd03","General_TL1_avg_final",1.25,"law",1
+"NT14",150,150,"Havasupai",NA,"Nd03","Soc_TL1_avg_final",1.25,"social",2
+"NT14",150,150,"Havasupai",NA,"Nd03","Gender_TL1_avg_final",2.75,"gender",3
+"NT14",150,150,"Havasupai",NA,"Nd03","Mar_TL1_avg_final",1.75,"marriage",4
+"NT14",150,150,"Havasupai",NA,"Nd03","Sex_TL1_avg_final",2.833333333,"sex",5
+"NT14",150,150,"Havasupai",NA,"Nd03","FM_TL1_avg_final",1.75,"funeral",6
+"NT14",150,150,"Havasupai",NA,"Nd03","Ov_tl_avg",1.9305555555,"overall",7
+"NT14",150,150,"Havasupai",NA,"Nd03","General_TL5B_avg_final",1.75,"gestalt",8
+"NU79",151,151,"O'odham",NA,"Ni02","General_TL1_avg_final",NA,"law",1
+"NU79",151,151,"O'odham",NA,"Ni02","Soc_TL1_avg_final",3,"social",2
+"NU79",151,151,"O'odham",NA,"Ni02","Gender_TL1_avg_final",3,"gender",3
+"NU79",151,151,"O'odham",NA,"Ni02","Mar_TL1_avg_final",3,"marriage",4
+"NU79",151,151,"O'odham",NA,"Ni02","Sex_TL1_avg_final",2,"sex",5
+"NU79",151,151,"O'odham",NA,"Ni02","FM_TL1_avg_final",3,"funeral",6
+"NU79",151,151,"O'odham",NA,"Ni02","Ov_tl_avg",2.8,"overall",7
+"NU79",151,151,"O'odham",NA,"Ni02","General_TL5B_avg_final",2.25,"gestalt",8
+"NU30",154,154,"Popoluca",NA,"Nj03","General_TL1_avg_final",3.25,"law",1
+"NU30",154,154,"Popoluca",NA,"Nj03","Soc_TL1_avg_final",3,"social",2
+"NU30",154,154,"Popoluca",NA,"Nj03","Gender_TL1_avg_final",3,"gender",3
+"NU30",154,154,"Popoluca",NA,"Nj03","Mar_TL1_avg_final",3.25,"marriage",4
+"NU30",154,154,"Popoluca",NA,"Nj03","Sex_TL1_avg_final",3.75,"sex",5
+"NU30",154,154,"Popoluca",NA,"Nj03","FM_TL1_avg_final",4,"funeral",6
+"NU30",154,154,"Popoluca",NA,"Nj03","Ov_tl_avg",3.375,"overall",7
+"NU30",154,154,"Popoluca",NA,"Nj03","General_TL5B_avg_final",3.25,"gestalt",8
+"SA15",156,156,"Miskito",NA,"Sa09","General_TL1_avg_final",3.25,"law",1
+"SA15",156,156,"Miskito",NA,"Sa09","Soc_TL1_avg_final",1.625,"social",2
+"SA15",156,156,"Miskito",NA,"Sa09","Gender_TL1_avg_final",3.875,"gender",3
+"SA15",156,156,"Miskito",NA,"Sa09","Mar_TL1_avg_final",3,"marriage",4
+"SA15",156,156,"Miskito",NA,"Sa09","Sex_TL1_avg_final",4,"sex",5
+"SA15",156,156,"Miskito",NA,"Sa09","FM_TL1_avg_final",3.875,"funeral",6
+"SA15",156,156,"Miskito",NA,"Sa09","Ov_tl_avg",3.27083333333333,"overall",7
+"SA15",156,156,"Miskito",NA,"Sa09","General_TL5B_avg_final",3,"gestalt",8
+"SB05",158,158,"Kuna","51","Sa01","General_TL1_avg_final",3.625,"law",1
+"SB05",158,158,"Kuna","51","Sa01","Soc_TL1_avg_final",3.875,"social",2
+"SB05",158,158,"Kuna","51","Sa01","Gender_TL1_avg_final",3.375,"gender",3
+"SB05",158,158,"Kuna","51","Sa01","Mar_TL1_avg_final",3.5,"marriage",4
+"SB05",158,158,"Kuna","51","Sa01","Sex_TL1_avg_final",3.75,"sex",5
+"SB05",158,158,"Kuna","51","Sa01","FM_TL1_avg_final",4,"funeral",6
+"SB05",158,158,"Kuna","51","Sa01","Ov_tl_avg",3.6875,"overall",7
+"SB05",158,158,"Kuna","51","Sa01","General_TL5B_avg_final",3.75,"gestalt",8
+"SC13",159,159,"Goajiro",NA,"Sb06","General_TL1_avg_final",3.75,"law",1
+"SC13",159,159,"Goajiro",NA,"Sb06","Soc_TL1_avg_final",NA,"social",2
+"SC13",159,159,"Goajiro",NA,"Sb06","Gender_TL1_avg_final",NA,"gender",3
+"SC13",159,159,"Goajiro",NA,"Sb06","Mar_TL1_avg_final",NA,"marriage",4
+"SC13",159,159,"Goajiro",NA,"Sb06","Sex_TL1_avg_final",NA,"sex",5
+"SC13",159,159,"Goajiro",NA,"Sb06","FM_TL1_avg_final",NA,"funeral",6
+"SC13",159,159,"Goajiro",NA,"Sb06","Ov_tl_avg",3.75,"overall",7
+"SC13",159,159,"Goajiro",NA,"Sb06","General_TL5B_avg_final",NA,"gestalt",8
+"SV03",160,160,"Haitians",NA,"Sb09","General_TL1_avg_final",3.75,"law",1
+"SV03",160,160,"Haitians",NA,"Sb09","Soc_TL1_avg_final",3.75,"social",2
+"SV03",160,160,"Haitians",NA,"Sb09","Gender_TL1_avg_final",3,"gender",3
+"SV03",160,160,"Haitians",NA,"Sb09","Mar_TL1_avg_final",2.75,"marriage",4
+"SV03",160,160,"Haitians",NA,"Sb09","Sex_TL1_avg_final",2.75,"sex",5
+"SV03",160,160,"Haitians",NA,"Sb09","FM_TL1_avg_final",4,"funeral",6
+"SV03",160,160,"Haitians",NA,"Sb09","Ov_tl_avg",3.33333333333333,"overall",7
+"SV03",160,160,"Haitians",NA,"Sb09","General_TL5B_avg_final",3.75,"gestalt",8
+"SS18",162,162,"Warao",NA,"Sc01","General_TL1_avg_final",2.875,"law",1
+"SS18",162,162,"Warao",NA,"Sc01","Soc_TL1_avg_final",1,"social",2
+"SS18",162,162,"Warao",NA,"Sc01","Gender_TL1_avg_final",1.75,"gender",3
+"SS18",162,162,"Warao",NA,"Sc01","Mar_TL1_avg_final",2.375,"marriage",4
+"SS18",162,162,"Warao",NA,"Sc01","Sex_TL1_avg_final",2,"sex",5
+"SS18",162,162,"Warao",NA,"Sc01","FM_TL1_avg_final",2.5,"funeral",6
+"SS18",162,162,"Warao",NA,"Sc01","Ov_tl_avg",2.08333333333333,"overall",7
+"SS18",162,162,"Warao",NA,"Sc01","General_TL5B_avg_final",1.75,"gestalt",8
+"SQ18",163,163,"Yanoama","60","Sd09","General_TL1_avg_final",2,"law",1
+"SQ18",163,163,"Yanoama","60","Sd09","Soc_TL1_avg_final",3.125,"social",2
+"SQ18",163,163,"Yanoama","60","Sd09","Gender_TL1_avg_final",3.875,"gender",3
+"SQ18",163,163,"Yanoama","60","Sd09","Mar_TL1_avg_final",2.125,"marriage",4
+"SQ18",163,163,"Yanoama","60","Sd09","Sex_TL1_avg_final",2.75,"sex",5
+"SQ18",163,163,"Yanoama","60","Sd09","FM_TL1_avg_final",3.5,"funeral",6
+"SQ18",163,163,"Yanoama","60","Sd09","Ov_tl_avg",2.89583333333333,"overall",7
+"SQ18",163,163,"Yanoama","60","Sd09","General_TL5B_avg_final",2.25,"gestalt",8
+"SR09",164,164,"Barama River Carib",NA,"Sc03","General_TL1_avg_final",2.125,"law",1
+"SR09",164,164,"Barama River Carib",NA,"Sc03","Soc_TL1_avg_final",2.125,"social",2
+"SR09",164,164,"Barama River Carib",NA,"Sc03","Gender_TL1_avg_final",2.625,"gender",3
+"SR09",164,164,"Barama River Carib",NA,"Sc03","Mar_TL1_avg_final",2.125,"marriage",4
+"SR09",164,164,"Barama River Carib",NA,"Sc03","Sex_TL1_avg_final",2,"sex",5
+"SR09",164,164,"Barama River Carib",NA,"Sc03","FM_TL1_avg_final",2.5,"funeral",6
+"SR09",164,164,"Barama River Carib",NA,"Sc03","Ov_tl_avg",2.25,"overall",7
+"SR09",164,164,"Barama River Carib",NA,"Sc03","General_TL5B_avg_final",2.125,"gestalt",8
+"SR15",165,165,"Saramaka","59","Sc06","General_TL1_avg_final",4,"law",1
+"SR15",165,165,"Saramaka","59","Sc06","Soc_TL1_avg_final",2.75,"social",2
+"SR15",165,165,"Saramaka","59","Sc06","Gender_TL1_avg_final",2.75,"gender",3
+"SR15",165,165,"Saramaka","59","Sc06","Mar_TL1_avg_final",2.75,"marriage",4
+"SR15",165,165,"Saramaka","59","Sc06","Sex_TL1_avg_final",3,"sex",5
+"SR15",165,165,"Saramaka","59","Sc06","FM_TL1_avg_final",4,"funeral",6
+"SR15",165,165,"Saramaka","59","Sc06","Ov_tl_avg",3.20833333333333,"overall",7
+"SR15",165,165,"Saramaka","59","Sc06","General_TL5B_avg_final",3.75,"gestalt",8
+"SQ19",167,167,"Tukano","58","Se12","General_TL1_avg_final",2.75,"law",1
+"SQ19",167,167,"Tukano","58","Se12","Soc_TL1_avg_final",2.875,"social",2
+"SQ19",167,167,"Tukano","58","Se12","Gender_TL1_avg_final",3.125,"gender",3
+"SQ19",167,167,"Tukano","58","Se12","Mar_TL1_avg_final",3.125,"marriage",4
+"SQ19",167,167,"Tukano","58","Se12","Sex_TL1_avg_final",3,"sex",5
+"SQ19",167,167,"Tukano","58","Se12","FM_TL1_avg_final",3.5,"funeral",6
+"SQ19",167,167,"Tukano","58","Se12","Ov_tl_avg",3.0625,"overall",7
+"SQ19",167,167,"Tukano","58","Se12","General_TL5B_avg_final",2.75,"gestalt",8
+"SD06",168,168,"Chachi",NA,"Sf03","General_TL1_avg_final",3.75,"law",1
+"SD06",168,168,"Chachi",NA,"Sf03","Soc_TL1_avg_final",3.125,"social",2
+"SD06",168,168,"Chachi",NA,"Sf03","Gender_TL1_avg_final",3.875,"gender",3
+"SD06",168,168,"Chachi",NA,"Sf03","Mar_TL1_avg_final",4,"marriage",4
+"SD06",168,168,"Chachi",NA,"Sf03","Sex_TL1_avg_final",4,"sex",5
+"SD06",168,168,"Chachi",NA,"Sf03","FM_TL1_avg_final",3.875,"funeral",6
+"SD06",168,168,"Chachi",NA,"Sf03","Ov_tl_avg",3.77083333333333,"overall",7
+"SD06",168,168,"Chachi",NA,"Sf03","General_TL5B_avg_final",4,"gestalt",8
+"SF05",172,172,"Aymara","53","Sf02","General_TL1_avg_final",3.75,"law",1
+"SF05",172,172,"Aymara","53","Sf02","Soc_TL1_avg_final",3.75,"social",2
+"SF05",172,172,"Aymara","53","Sf02","Gender_TL1_avg_final",3,"gender",3
+"SF05",172,172,"Aymara","53","Sf02","Mar_TL1_avg_final",1.25,"marriage",4
+"SF05",172,172,"Aymara","53","Sf02","Sex_TL1_avg_final",2,"sex",5
+"SF05",172,172,"Aymara","53","Sf02","FM_TL1_avg_final",3.25,"funeral",6
+"SF05",172,172,"Aymara","53","Sf02","Ov_tl_avg",2.83333333333333,"overall",7
+"SF05",172,172,"Aymara","53","Sf02","General_TL5B_avg_final",3,"gestalt",8
+"SF21",173,173,"Sirionó",NA,"Se01","General_TL1_avg_final",1,"law",1
+"SF21",173,173,"Sirionó",NA,"Se01","Soc_TL1_avg_final",2,"social",2
+"SF21",173,173,"Sirionó",NA,"Se01","Gender_TL1_avg_final",3,"gender",3
+"SF21",173,173,"Sirionó",NA,"Se01","Mar_TL1_avg_final",2,"marriage",4
+"SF21",173,173,"Sirionó",NA,"Se01","Sex_TL1_avg_final",2,"sex",5
+"SF21",173,173,"Sirionó",NA,"Se01","FM_TL1_avg_final",3,"funeral",6
+"SF21",173,173,"Sirionó",NA,"Se01","Ov_tl_avg",2.16666666666667,"overall",7
+"SF21",173,173,"Sirionó",NA,"Se01","General_TL5B_avg_final",NA,"gestalt",8
+"SP26",179,179,"Xavante",NA,"Sj11","General_TL1_avg_final",1.875,"law",1
+"SP26",179,179,"Xavante",NA,"Sj11","Soc_TL1_avg_final",1.25,"social",2
+"SP26",179,179,"Xavante",NA,"Sj11","Gender_TL1_avg_final",2.25,"gender",3
+"SP26",179,179,"Xavante",NA,"Sj11","Mar_TL1_avg_final",2.25,"marriage",4
+"SP26",179,179,"Xavante",NA,"Sj11","Sex_TL1_avg_final",2.5,"sex",5
+"SP26",179,179,"Xavante",NA,"Sj11","FM_TL1_avg_final",2.75,"funeral",6
+"SP26",179,179,"Xavante",NA,"Sj11","Ov_tl_avg",2.14583333333333,"overall",7
+"SP26",179,179,"Xavante",NA,"Sj11","General_TL5B_avg_final",1.875,"gestalt",8
+"SM04",181,181,"Guaraní","56","Sj10","General_TL1_avg_final",2.875,"law",1
+"SM04",181,181,"Guaraní","56","Sj10","Soc_TL1_avg_final",3,"social",2
+"SM04",181,181,"Guaraní","56","Sj10","Gender_TL1_avg_final",3,"gender",3
+"SM04",181,181,"Guaraní","56","Sj10","Mar_TL1_avg_final",3,"marriage",4
+"SM04",181,181,"Guaraní","56","Sj10","Sex_TL1_avg_final",NA,"sex",5
+"SM04",181,181,"Guaraní","56","Sj10","FM_TL1_avg_final",3,"funeral",6
+"SM04",181,181,"Guaraní","56","Sj10","Ov_tl_avg",2.975,"overall",7
+"SM04",181,181,"Guaraní","56","Sj10","General_TL5B_avg_final",3,"gestalt",8
+"SK15",182,182,"Enxet and Enlhet",NA,"Sh09","General_TL1_avg_final",2.25,"law",1
+"SK15",182,182,"Enxet and Enlhet",NA,"Sh09","Soc_TL1_avg_final",1,"social",2
+"SK15",182,182,"Enxet and Enlhet",NA,"Sh09","Gender_TL1_avg_final",1.75,"gender",3
+"SK15",182,182,"Enxet and Enlhet",NA,"Sh09","Mar_TL1_avg_final",1.25,"marriage",4
+"SK15",182,182,"Enxet and Enlhet",NA,"Sh09","Sex_TL1_avg_final",NA,"sex",5
+"SK15",182,182,"Enxet and Enlhet",NA,"Sh09","FM_TL1_avg_final",3.25,"funeral",6
+"SK15",182,182,"Enxet and Enlhet",NA,"Sh09","Ov_tl_avg",1.9,"overall",7
+"SK15",182,182,"Enxet and Enlhet",NA,"Sh09","General_TL5B_avg_final",2,"gestalt",8
+"SG04",184,184,"Mapuche",NA,"Sg02","General_TL1_avg_final",3.25,"law",1
+"SG04",184,184,"Mapuche",NA,"Sg02","Soc_TL1_avg_final",3,"social",2
+"SG04",184,184,"Mapuche",NA,"Sg02","Gender_TL1_avg_final",2.75,"gender",3
+"SG04",184,184,"Mapuche",NA,"Sg02","Mar_TL1_avg_final",2.25,"marriage",4
+"SG04",184,184,"Mapuche",NA,"Sg02","Sex_TL1_avg_final",2.25,"sex",5
+"SG04",184,184,"Mapuche",NA,"Sg02","FM_TL1_avg_final",3.75,"funeral",6
+"SG04",184,184,"Mapuche",NA,"Sg02","Ov_tl_avg",2.875,"overall",7
+"SG04",184,184,"Mapuche",NA,"Sg02","General_TL5B_avg_final",3,"gestalt",8
+"SH05",185,185,"Tehuelche",NA,"Sg04","General_TL1_avg_final",1,"law",1
+"SH05",185,185,"Tehuelche",NA,"Sg04","Soc_TL1_avg_final",1,"social",2
+"SH05",185,185,"Tehuelche",NA,"Sg04","Gender_TL1_avg_final",2,"gender",3
+"SH05",185,185,"Tehuelche",NA,"Sg04","Mar_TL1_avg_final",1,"marriage",4
+"SH05",185,185,"Tehuelche",NA,"Sg04","Sex_TL1_avg_final",NA,"sex",5
+"SH05",185,185,"Tehuelche",NA,"Sg04","FM_TL1_avg_final",2.75,"funeral",6
+"SH05",185,185,"Tehuelche",NA,"Sg04","Ov_tl_avg",1.55,"overall",7
+"SH05",185,185,"Tehuelche",NA,"Sg04","General_TL5B_avg_final",1,"gestalt",8
+"SH06",186,186,"Yahgan",NA,"Sg01","General_TL1_avg_final",2.5,"law",1
+"SH06",186,186,"Yahgan",NA,"Sg01","Soc_TL1_avg_final",3.625,"social",2
+"SH06",186,186,"Yahgan",NA,"Sg01","Gender_TL1_avg_final",2.125,"gender",3
+"SH06",186,186,"Yahgan",NA,"Sg01","Mar_TL1_avg_final",1.875,"marriage",4
+"SH06",186,186,"Yahgan",NA,"Sg01","Sex_TL1_avg_final",3.5,"sex",5
+"SH06",186,186,"Yahgan",NA,"Sg01","FM_TL1_avg_final",NA,"funeral",6
+"SH06",186,186,"Yahgan",NA,"Sg01","Ov_tl_avg",2.725,"overall",7
+"SH06",186,186,"Yahgan",NA,"Sg01","General_TL5B_avg_final",2.875,"gestalt",8
+"AD05",NA,201,"Taiwan Hokkien","26",NA,"General_TL1_avg_final",3.625,"law",1
+"AD05",NA,201,"Taiwan Hokkien","26",NA,"Soc_TL1_avg_final",3.625,"social",2
+"AD05",NA,201,"Taiwan Hokkien","26",NA,"Gender_TL1_avg_final",2.875,"gender",3
+"AD05",NA,201,"Taiwan Hokkien","26",NA,"Mar_TL1_avg_final",3.625,"marriage",4
+"AD05",NA,201,"Taiwan Hokkien","26",NA,"Sex_TL1_avg_final",3.5,"sex",5
+"AD05",NA,201,"Taiwan Hokkien","26",NA,"FM_TL1_avg_final",4,"funeral",6
+"AD05",NA,201,"Taiwan Hokkien","26",NA,"Ov_tl_avg",3.54166666666667,"overall",7
+"AD05",NA,201,"Taiwan Hokkien","26",NA,"General_TL5B_avg_final",3.5,"gestalt",8
+"AR07",NA,202,"Khasi","29","Ei08","General_TL1_avg_final",3,"law",1
+"AR07",NA,202,"Khasi","29","Ei08","Soc_TL1_avg_final",NA,"social",2
+"AR07",NA,202,"Khasi","29","Ei08","Gender_TL1_avg_final",4,"gender",3
+"AR07",NA,202,"Khasi","29","Ei08","Mar_TL1_avg_final",2.75,"marriage",4
+"AR07",NA,202,"Khasi","29","Ei08","Sex_TL1_avg_final",NA,"sex",5
+"AR07",NA,202,"Khasi","29","Ei08","FM_TL1_avg_final",2.875,"funeral",6
+"AR07",NA,202,"Khasi","29","Ei08","Ov_tl_avg",3.15625,"overall",7
+"AR07",NA,202,"Khasi","29","Ei08","General_TL5B_avg_final",2.875,"gestalt",8
+"AX04",NA,203,"Sinhalese","22","Eh06","General_TL1_avg_final",3.25,"law",1
+"AX04",NA,203,"Sinhalese","22","Eh06","Soc_TL1_avg_final",NA,"social",2
+"AX04",NA,203,"Sinhalese","22","Eh06","Gender_TL1_avg_final",3.5,"gender",3
+"AX04",NA,203,"Sinhalese","22","Eh06","Mar_TL1_avg_final",2.875,"marriage",4
+"AX04",NA,203,"Sinhalese","22","Eh06","Sex_TL1_avg_final",3,"sex",5
+"AX04",NA,203,"Sinhalese","22","Eh06","FM_TL1_avg_final",3.625,"funeral",6
+"AX04",NA,203,"Sinhalese","22","Eh06","Ov_tl_avg",3.25,"overall",7
+"AX04",NA,203,"Sinhalese","22","Eh06","General_TL5B_avg_final",3,"gestalt",8
+"EF06",NA,204,"Serbs","19","Ch01","General_TL1_avg_final",2.125,"law",1
+"EF06",NA,204,"Serbs","19","Ch01","Soc_TL1_avg_final",2.875,"social",2
+"EF06",NA,204,"Serbs","19","Ch01","Gender_TL1_avg_final",3,"gender",3
+"EF06",NA,204,"Serbs","19","Ch01","Mar_TL1_avg_final",3,"marriage",4
+"EF06",NA,204,"Serbs","19","Ch01","Sex_TL1_avg_final",3.125,"sex",5
+"EF06",NA,204,"Serbs","19","Ch01","FM_TL1_avg_final",3.375,"funeral",6
+"EF06",NA,204,"Serbs","19","Ch01","Ov_tl_avg",2.91666666666667,"overall",7
+"EF06",NA,204,"Serbs","19","Ch01","General_TL5B_avg_final",3,"gestalt",8
+"ES10",NA,205,"Highland Scots","18a",NA,"General_TL1_avg_final",3.25,"law",1
+"ES10",NA,205,"Highland Scots","18a",NA,"Soc_TL1_avg_final",3.25,"social",2
+"ES10",NA,205,"Highland Scots","18a",NA,"Gender_TL1_avg_final",3.75,"gender",3
+"ES10",NA,205,"Highland Scots","18a",NA,"Mar_TL1_avg_final",3.75,"marriage",4
+"ES10",NA,205,"Highland Scots","18a",NA,"Sex_TL1_avg_final",3.75,"sex",5
+"ES10",NA,205,"Highland Scots","18a",NA,"FM_TL1_avg_final",4,"funeral",6
+"ES10",NA,205,"Highland Scots","18a",NA,"Ov_tl_avg",3.625,"overall",7
+"ES10",NA,205,"Highland Scots","18a",NA,"General_TL5B_avg_final",3.25,"gestalt",8
+"FA16",NA,206,"Dogon","8","Ag03","General_TL1_avg_final",3.5,"law",1
+"FA16",NA,206,"Dogon","8","Ag03","Soc_TL1_avg_final",3.125,"social",2
+"FA16",NA,206,"Dogon","8","Ag03","Gender_TL1_avg_final",3.75,"gender",3
+"FA16",NA,206,"Dogon","8","Ag03","Mar_TL1_avg_final",3,"marriage",4
+"FA16",NA,206,"Dogon","8","Ag03","Sex_TL1_avg_final",3.625,"sex",5
+"FA16",NA,206,"Dogon","8","Ag03","FM_TL1_avg_final",4,"funeral",6
+"FA16",NA,206,"Dogon","8","Ag03","Ov_tl_avg",3.5,"overall",7
+"FA16",NA,206,"Dogon","8","Ag03","General_TL5B_avg_final",3.125,"gestalt",8
+"MS14",NA,207,"Kanuri","14","Cb19","General_TL1_avg_final",NA,"law",1
+"MS14",NA,207,"Kanuri","14","Cb19","Soc_TL1_avg_final",NA,"social",2
+"MS14",NA,207,"Kanuri","14","Cb19","Gender_TL1_avg_final",NA,"gender",3
+"MS14",NA,207,"Kanuri","14","Cb19","Mar_TL1_avg_final",NA,"marriage",4
+"MS14",NA,207,"Kanuri","14","Cb19","Sex_TL1_avg_final",NA,"sex",5
+"MS14",NA,207,"Kanuri","14","Cb19","FM_TL1_avg_final",NA,"funeral",6
+"MS14",NA,207,"Kanuri","14","Cb19","Ov_tl_avg",NA,"overall",7
+"MS14",NA,207,"Kanuri","14","Cb19","General_TL5B_avg_final",NA,"gestalt",8
+"MT09",NA,208,"Libyan Bedouin","16","Cd20","General_TL1_avg_final",2.625,"law",1
+"MT09",NA,208,"Libyan Bedouin","16","Cd20","Soc_TL1_avg_final",NA,"social",2
+"MT09",NA,208,"Libyan Bedouin","16","Cd20","Gender_TL1_avg_final",2,"gender",3
+"MT09",NA,208,"Libyan Bedouin","16","Cd20","Mar_TL1_avg_final",3,"marriage",4
+"MT09",NA,208,"Libyan Bedouin","16","Cd20","Sex_TL1_avg_final",NA,"sex",5
+"MT09",NA,208,"Libyan Bedouin","16","Cd20","FM_TL1_avg_final",NA,"funeral",6
+"MT09",NA,208,"Libyan Bedouin","16","Cd20","Ov_tl_avg",2.54166666666667,"overall",7
+"MT09",NA,208,"Libyan Bedouin","16","Cd20","General_TL5B_avg_final",3,"gestalt",8
+"MW11",NA,209,"Shluh","15","Cd05","General_TL1_avg_final",3,"law",1
+"MW11",NA,209,"Shluh","15","Cd05","Soc_TL1_avg_final",NA,"social",2
+"MW11",NA,209,"Shluh","15","Cd05","Gender_TL1_avg_final",3.375,"gender",3
+"MW11",NA,209,"Shluh","15","Cd05","Mar_TL1_avg_final",2.125,"marriage",4
+"MW11",NA,209,"Shluh","15","Cd05","Sex_TL1_avg_final",NA,"sex",5
+"MW11",NA,209,"Shluh","15","Cd05","FM_TL1_avg_final",NA,"funeral",6
+"MW11",NA,209,"Shluh","15","Cd05","Ov_tl_avg",2.83333333333333,"overall",7
+"MW11",NA,209,"Shluh","15","Cd05","General_TL5B_avg_final",3,"gestalt",8
+"NA12",NA,210,"Tlingit","43","Nb22","General_TL1_avg_final",3.875,"law",1
+"NA12",NA,210,"Tlingit","43","Nb22","Soc_TL1_avg_final",3.125,"social",2
+"NA12",NA,210,"Tlingit","43","Nb22","Gender_TL1_avg_final",3.125,"gender",3
+"NA12",NA,210,"Tlingit","43","Nb22","Mar_TL1_avg_final",3,"marriage",4
+"NA12",NA,210,"Tlingit","43","Nb22","Sex_TL1_avg_final",3,"sex",5
+"NA12",NA,210,"Tlingit","43","Nb22","FM_TL1_avg_final",4,"funeral",6
+"NA12",NA,210,"Tlingit","43","Nb22","Ov_tl_avg",3.35416666666667,"overall",7
+"NA12",NA,210,"Tlingit","43","Nb22","General_TL5B_avg_final",3.75,"gestalt",8
+"NF06",NA,211,"Blackfoot","45","Ne12","General_TL1_avg_final",NA,"law",1
+"NF06",NA,211,"Blackfoot","45","Ne12","Soc_TL1_avg_final",NA,"social",2
+"NF06",NA,211,"Blackfoot","45","Ne12","Gender_TL1_avg_final",NA,"gender",3
+"NF06",NA,211,"Blackfoot","45","Ne12","Mar_TL1_avg_final",NA,"marriage",4
+"NF06",NA,211,"Blackfoot","45","Ne12","Sex_TL1_avg_final",NA,"sex",5
+"NF06",NA,211,"Blackfoot","45","Ne12","FM_TL1_avg_final",NA,"funeral",6
+"NF06",NA,211,"Blackfoot","45","Ne12","Ov_tl_avg",NA,"overall",7
+"NF06",NA,211,"Blackfoot","45","Ne12","General_TL5B_avg_final",NA,"gestalt",8
+"NM09",NA,212,"Iroquois","47","Ng10","General_TL1_avg_final",3.75,"law",1
+"NM09",NA,212,"Iroquois","47","Ng10","Soc_TL1_avg_final",3,"social",2
+"NM09",NA,212,"Iroquois","47","Ng10","Gender_TL1_avg_final",3.75,"gender",3
+"NM09",NA,212,"Iroquois","47","Ng10","Mar_TL1_avg_final",3,"marriage",4
+"NM09",NA,212,"Iroquois","47","Ng10","Sex_TL1_avg_final",NA,"sex",5
+"NM09",NA,212,"Iroquois","47","Ng10","FM_TL1_avg_final",4,"funeral",6
+"NM09",NA,212,"Iroquois","47","Ng10","Ov_tl_avg",3.5,"overall",7
+"NM09",NA,212,"Iroquois","47","Ng10","General_TL5B_avg_final",3.75,"gestalt",8
+"NT09",NA,213,"Hopi","48","Nh18","General_TL1_avg_final",3.75,"law",1
+"NT09",NA,213,"Hopi","48","Nh18","Soc_TL1_avg_final",4,"social",2
+"NT09",NA,213,"Hopi","48","Nh18","Gender_TL1_avg_final",4,"gender",3
+"NT09",NA,213,"Hopi","48","Nh18","Mar_TL1_avg_final",3.5,"marriage",4
+"NT09",NA,213,"Hopi","48","Nh18","Sex_TL1_avg_final",3.5,"sex",5
+"NT09",NA,213,"Hopi","48","Nh18","FM_TL1_avg_final",4,"funeral",6
+"NT09",NA,213,"Hopi","48","Nh18","Ov_tl_avg",3.79166666666667,"overall",7
+"NT09",NA,213,"Hopi","48","Nh18","General_TL5B_avg_final",3.875,"gestalt",8
+"NU33",NA,214,"Tarahumara","49","Ni01","General_TL1_avg_final",4,"law",1
+"NU33",NA,214,"Tarahumara","49","Ni01","Soc_TL1_avg_final",3.875,"social",2
+"NU33",NA,214,"Tarahumara","49","Ni01","Gender_TL1_avg_final",3.875,"gender",3
+"NU33",NA,214,"Tarahumara","49","Ni01","Mar_TL1_avg_final",2.75,"marriage",4
+"NU33",NA,214,"Tarahumara","49","Ni01","Sex_TL1_avg_final",2.25,"sex",5
+"NU33",NA,214,"Tarahumara","49","Ni01","FM_TL1_avg_final",3.5,"funeral",6
+"NU33",NA,214,"Tarahumara","49","Ni01","Ov_tl_avg",3.375,"overall",7
+"NU33",NA,214,"Tarahumara","49","Ni01","General_TL5B_avg_final",3.75,"gestalt",8
+"NU44",NA,215,"Zapotec","50.b","Nj10","General_TL1_avg_final",2.75,"law",1
+"NU44",NA,215,"Zapotec","50.b","Nj10","Soc_TL1_avg_final",3.5,"social",2
+"NU44",NA,215,"Zapotec","50.b","Nj10","Gender_TL1_avg_final",3,"gender",3
+"NU44",NA,215,"Zapotec","50.b","Nj10","Mar_TL1_avg_final",3.125,"marriage",4
+"NU44",NA,215,"Zapotec","50.b","Nj10","Sex_TL1_avg_final",3.25,"sex",5
+"NU44",NA,215,"Zapotec","50.b","Nj10","FM_TL1_avg_final",3.5,"funeral",6
+"NU44",NA,215,"Zapotec","50.b","Nj10","Ov_tl_avg",3.1875,"overall",7
+"NU44",NA,215,"Zapotec","50.b","Nj10","General_TL5B_avg_final",3,"gestalt",8
+"OQ06",NA,217,"Lau Fijians","39","Ih04","General_TL1_avg_final",3,"law",1
+"OQ06",NA,217,"Lau Fijians","39","Ih04","Soc_TL1_avg_final",1.25,"social",2
+"OQ06",NA,217,"Lau Fijians","39","Ih04","Gender_TL1_avg_final",2.5,"gender",3
+"OQ06",NA,217,"Lau Fijians","39","Ih04","Mar_TL1_avg_final",2.375,"marriage",4
+"OQ06",NA,217,"Lau Fijians","39","Ih04","Sex_TL1_avg_final",2.125,"sex",5
+"OQ06",NA,217,"Lau Fijians","39","Ih04","FM_TL1_avg_final",3.125,"funeral",6
+"OQ06",NA,217,"Lau Fijians","39","Ih04","Ov_tl_avg",2.39583333333333,"overall",7
+"OQ06",NA,217,"Lau Fijians","39","Ih04","General_TL5B_avg_final",2.5,"gestalt",8
+"RV02",NA,218,"Yakut","23","Ec02","General_TL1_avg_final",NA,"law",1
+"RV02",NA,218,"Yakut","23","Ec02","Soc_TL1_avg_final",NA,"social",2
+"RV02",NA,218,"Yakut","23","Ec02","Gender_TL1_avg_final",NA,"gender",3
+"RV02",NA,218,"Yakut","23","Ec02","Mar_TL1_avg_final",NA,"marriage",4
+"RV02",NA,218,"Yakut","23","Ec02","Sex_TL1_avg_final",NA,"sex",5
+"RV02",NA,218,"Yakut","23","Ec02","FM_TL1_avg_final",NA,"funeral",6
+"RV02",NA,218,"Yakut","23","Ec02","Ov_tl_avg",NA,"overall",7
+"RV02",NA,218,"Yakut","23","Ec02","General_TL5B_avg_final",NA,"gestalt",8
+"SC07",NA,219,"Kogi","52","Sb02","General_TL1_avg_final",3.875,"law",1
+"SC07",NA,219,"Kogi","52","Sb02","Soc_TL1_avg_final",3.875,"social",2
+"SC07",NA,219,"Kogi","52","Sb02","Gender_TL1_avg_final",4,"gender",3
+"SC07",NA,219,"Kogi","52","Sb02","Mar_TL1_avg_final",3,"marriage",4
+"SC07",NA,219,"Kogi","52","Sb02","Sex_TL1_avg_final",3.75,"sex",5
+"SC07",NA,219,"Kogi","52","Sb02","FM_TL1_avg_final",4,"funeral",6
+"SC07",NA,219,"Kogi","52","Sb02","Ov_tl_avg",3.75,"overall",7
+"SC07",NA,219,"Kogi","52","Sb02","General_TL5B_avg_final",4,"gestalt",8
+"SH04",NA,220,"Ona","54","Sg03","General_TL1_avg_final",4,"law",1
+"SH04",NA,220,"Ona","54","Sg03","Soc_TL1_avg_final",3.75,"social",2
+"SH04",NA,220,"Ona","54","Sg03","Gender_TL1_avg_final",4,"gender",3
+"SH04",NA,220,"Ona","54","Sg03","Mar_TL1_avg_final",3.5,"marriage",4
+"SH04",NA,220,"Ona","54","Sg03","Sex_TL1_avg_final",3.25,"sex",5
+"SH04",NA,220,"Ona","54","Sg03","FM_TL1_avg_final",4,"funeral",6
+"SH04",NA,220,"Ona","54","Sg03","Ov_tl_avg",3.75,"overall",7
+"SH04",NA,220,"Ona","54","Sg03","General_TL5B_avg_final",4,"gestalt",8
+"SI07",NA,221,"Mataco","55","Sh01","General_TL1_avg_final",2.875,"law",1
+"SI07",NA,221,"Mataco","55","Sh01","Soc_TL1_avg_final",1.25,"social",2
+"SI07",NA,221,"Mataco","55","Sh01","Gender_TL1_avg_final",3.625,"gender",3
+"SI07",NA,221,"Mataco","55","Sh01","Mar_TL1_avg_final",2.125,"marriage",4
+"SI07",NA,221,"Mataco","55","Sh01","Sex_TL1_avg_final",2.875,"sex",5
+"SI07",NA,221,"Mataco","55","Sh01","FM_TL1_avg_final",3.875,"funeral",6
+"SI07",NA,221,"Mataco","55","Sh01","Ov_tl_avg",2.77083333333333,"overall",7
+"SI07",NA,221,"Mataco","55","Sh01","General_TL5B_avg_final",3,"gestalt",8
+"SO11",NA,222,"Bahia Brazilians","18b",NA,"General_TL1_avg_final",3.125,"law",1
+"SO11",NA,222,"Bahia Brazilians","18b",NA,"Soc_TL1_avg_final",3.125,"social",2
+"SO11",NA,222,"Bahia Brazilians","18b",NA,"Gender_TL1_avg_final",3.125,"gender",3
+"SO11",NA,222,"Bahia Brazilians","18b",NA,"Mar_TL1_avg_final",3,"marriage",4
+"SO11",NA,222,"Bahia Brazilians","18b",NA,"Sex_TL1_avg_final",2.875,"sex",5
+"SO11",NA,222,"Bahia Brazilians","18b",NA,"FM_TL1_avg_final",3.375,"funeral",6
+"SO11",NA,222,"Bahia Brazilians","18b",NA,"Ov_tl_avg",3.10416666666667,"overall",7
+"SO11",NA,222,"Bahia Brazilians","18b",NA,"General_TL5B_avg_final",3.125,"gestalt",8
+"SP08",NA,223,"Bororo","57","Si01","General_TL1_avg_final",NA,"law",1
+"SP08",NA,223,"Bororo","57","Si01","Soc_TL1_avg_final",NA,"social",2
+"SP08",NA,223,"Bororo","57","Si01","Gender_TL1_avg_final",NA,"gender",3
+"SP08",NA,223,"Bororo","57","Si01","Mar_TL1_avg_final",NA,"marriage",4
+"SP08",NA,223,"Bororo","57","Si01","Sex_TL1_avg_final",NA,"sex",5
+"SP08",NA,223,"Bororo","57","Si01","FM_TL1_avg_final",NA,"funeral",6
+"SP08",NA,223,"Bororo","57","Si01","Ov_tl_avg",NA,"overall",7
+"SP08",NA,223,"Bororo","57","Si01","General_TL5B_avg_final",NA,"gestalt",8
